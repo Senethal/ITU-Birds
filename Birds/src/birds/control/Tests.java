@@ -7,6 +7,7 @@
 package birds.control;
 
 import java.io.*;
+import java.util.Arrays;
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
@@ -60,6 +61,22 @@ public class Tests {
         return value;       
     }  
 
+    public static void main(String argv[]) throws ParserConfigurationException, SAXException, IOException {
+        
+       Tests pokus = new Tests(); 
+     
+       System.out.println(Arrays.toString(pokus.Questions));
+       System.out.println(Arrays.toString(pokus.Rights_A));
+       
+       System.out.println(pokus.NextQuestion());
+       System.out.println(pokus.NextQuestion());
+       System.out.println(pokus.NextQuestion());
+       System.out.println(pokus.NextQuestion());
+       System.out.println(pokus.PreviousQuestion()); 
+       System.out.println(pokus.PreviousQuestion());
+       System.out.println(Arrays.toString(pokus.GetAnswers()));
+       
+    }
 /**
  * Metoda naplni prislusna pole pro spravnou funkci testu
  * 
@@ -86,27 +103,10 @@ public class Tests {
                 
                 if (Integer.toString(id).equals(element.getAttribute("id"))) {
                     this.Questions[index] = element.getElementsByTagName("quest").item(0).getTextContent();
-                    
-                    NodeList nList2 = element.getElementsByTagName("ans");
-                        for (int temp2 = 0; temp2 < nList2.getLength(); temp2++) {
-                            Node nNode2 = nList2.item(temp2);
-                            if (nNode2.getNodeType() == Node.ELEMENT_NODE) {
-                                Element elem = (Element) nNode2;
-                                
-                                if ("A".equals(elem.getAttribute("id")))
-                                    this.Answers[index][0] = elem.getTextContent();
-                            
-                                if ("B".equals(elem.getAttribute("id")))
-                                    this.Answers[index][1] = elem.getTextContent();
-                                
-                                if ("C".equals(elem.getAttribute("id")))
-                                    this.Answers[index][2] = elem.getTextContent();
-                            
-                                if ("D".equals(elem.getAttribute("id")))
-                                    this.Answers[index][3] = elem.getTextContent();
-                            }  
-                        }   
-                        
+                    this.Answers[index][0] = element.getElementsByTagName("ansA").item(0).getTextContent();
+                    this.Answers[index][1] = element.getElementsByTagName("ansB").item(0).getTextContent();
+                    this.Answers[index][2] = element.getElementsByTagName("ansC").item(0).getTextContent();
+                    this.Answers[index][3] = element.getElementsByTagName("ansD").item(0).getTextContent();  
                     this.Rights_A[index] = element.getElementsByTagName("rigans").item(0).getTextContent();
                 }   
             }            

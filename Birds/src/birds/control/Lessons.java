@@ -12,4 +12,12 @@ package birds.control;
  */
 public class Lessons {
     
+
+    public void Lessons() {
+        
+    }
+
+    
+    
+
 }

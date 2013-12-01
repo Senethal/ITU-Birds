@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<questions>
+
+
+  <question id="1">
+    <quest>1</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+
+  <question id="2">
+    <quest>2</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+
+  <question id="3">
+    <quest>3</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="4">
+    <quest>4</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="5">
+    <quest>5 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="6">
+    <quest>6 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="7">
+    <quest>7 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="8">
+    <quest>8 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="9">
+    <quest>9 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="10">
+    <quest>10 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="11">
+    <quest>11 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="12">
+    <quest>12 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="13">
+    <quest>13 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="14">
+    <quest>14 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="15">
+    <quest>15 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="16">
+    <quest>16 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="17">
+    <quest>17 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="18">
+    <quest>18 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="19">
+    <quest>19 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+  
+  <question id="20">
+    <quest>20 sa</quest>
+    <ansA>blaA</ansA>
+    <ansB>blaB</ansB>
+    <ansC>blaC</ansC>
+    <ansD>blaD</ansD>
+    <rigans>B</rigans>
+  </question>
+
+</questions>
+
+
+
