@@ -61,22 +61,6 @@ public class Tests {
         return value;       
     }  
 
-    public static void main(String argv[]) throws ParserConfigurationException, SAXException, IOException {
-        
-       Tests pokus = new Tests(); 
-     
-       System.out.println(Arrays.toString(pokus.Questions));
-       System.out.println(Arrays.toString(pokus.Rights_A));
-       
-       System.out.println(pokus.NextQuestion());
-       System.out.println(pokus.NextQuestion());
-       System.out.println(pokus.NextQuestion());
-       System.out.println(pokus.NextQuestion());
-       System.out.println(pokus.PreviousQuestion()); 
-       System.out.println(pokus.PreviousQuestion());
-       System.out.println(Arrays.toString(pokus.GetAnswers()));
-       
-    }
 /**
  * Metoda naplni prislusna pole pro spravnou funkci testu
  * 
