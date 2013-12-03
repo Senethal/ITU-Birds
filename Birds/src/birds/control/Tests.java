@@ -6,9 +6,10 @@
 
 package birds.control;
 
+import birds.users.UserDatabase;
 import java.io.*;
-import java.util.Arrays;
 import javax.xml.parsers.*;
+import javax.xml.transform.TransformerException;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
@@ -60,7 +61,8 @@ public class Tests {
         }         
         return value;       
     }  
-
+    
+    
 /**
  * Metoda naplni prislusna pole pro spravnou funkci testu
  * 
@@ -97,31 +99,53 @@ public class Tests {
         }      
     }
     
-    protected String NextQuestion() {
-        this.index++;
+    private String NextQuestion() {
+        if (this.index < this.maxim)
+            this.index++;
         return this.Questions[this.index];
     }
     
-    protected String PreviousQuestion() {
-        this.index--;
+    private String PreviousQuestion() {
+        if (this.index > 0)
+            this.index--;
         return this.Questions[this.index];        
     }
 
-    protected String GetQuestion() {
+    private String GetQuestion() {
         return this.Questions[this.index]; 
     }
         
-    protected void SaveAnswer(String answer) {
+    private void SaveAnswer(String answer) {
        this.Users_A[this.index] = answer;
     }
     
-    protected String[] GetAnswers() {
+    private String[] GetAnswers() {
         String[] ret_val = new String[4];
         
         for (int i = 0; i<4; i++) {
             ret_val[i] = this.Answers[this.index][i]; 
         }      
         return ret_val;
+    }
+    
+    private void Evaluate(String Name) throws ParserConfigurationException, SAXException, IOException, TransformerException {
+    
+        int rights = 0;
+        
+        for (int i = 0; i < this.maxim; i++ ) {
+            if (this.Rights_A[i].equals(this.Users_A[i])) {
+                rights++;
+            }
+            
+        }
+         
+        rights = rights*this.maxim;
+
+        
+        rights = UserDatabase.AddTest(rights, Name);
+        UserDatabase.AddOut(rights, Name);
+        
+        
     }
     
 }

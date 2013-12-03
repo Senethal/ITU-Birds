@@ -62,13 +62,16 @@ public class UserDatabase {
         Element Pass = doc.createElement("Heslo");
         Pass.appendChild(doc.createTextNode(password));
         user.appendChild(Pass);  
+
+        Element Out = doc.createElement("Vysledek");
+        Out.appendChild(doc.createTextNode("Nic"));
+        user.appendChild(Out);                  
         
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource source = new DOMSource(doc);
         StreamResult result = new StreamResult(new File("examples//databaze.xml"));
-        transformer.transform(source, result); 
-        
+        transformer.transform(source, result);       
     }
     
     public static String Get(String Name) throws ParserConfigurationException, SAXException, IOException {
@@ -133,4 +136,103 @@ public class UserDatabase {
         return false;   
     }
     
+    public static void AddOut(int proc, String Name) throws ParserConfigurationException, SAXException, TransformerConfigurationException, IOException, TransformerException {
+        DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance(); 
+        domFactory.setIgnoringComments(true);
+        DocumentBuilder builder = domFactory.newDocumentBuilder(); 
+        Document doc = builder.parse(new File("examples//databaze.xml")); 
+        
+        
+        NodeList nList = doc.getElementsByTagName("User");
+        
+        for (int temp = 0; temp < nList.getLength(); temp++) {
+            Node nNode = nList.item(temp);
+            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element eElement = (Element) nNode;          
+            
+                if (Name == null ? eElement.getElementsByTagName("Jmeno").item(0).getTextContent() == null : Name.equals(eElement.getElementsByTagName("Jmeno").item(0).getTextContent())) {
+                    Element Out = (Element) eElement.getElementsByTagName("Vysledek").item(0);
+                    eElement.removeChild(Out);
+                        
+                    Element vystup = doc.createElement("Vysledek");
+                    vystup.appendChild(doc.createTextNode(Integer.toString(proc)));
+                    eElement.appendChild(vystup);                            
+                }
+                    
+            }     
+        }       
+   
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = transformerFactory.newTransformer();
+        DOMSource source = new DOMSource(doc);
+        StreamResult result = new StreamResult(new File("examples//databaze.xml"));
+        transformer.transform(source, result);      
+    } 
+    
+    
+    public static int AddTest(int proc, String Name) throws ParserConfigurationException, SAXException, TransformerConfigurationException, IOException, TransformerException {
+        DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance(); 
+        domFactory.setIgnoringComments(true);
+        DocumentBuilder builder = domFactory.newDocumentBuilder(); 
+        Document doc = builder.parse(new File("examples//databaze.xml"));
+        int max = 0;
+        int celkem = 0;
+        
+        
+        
+         NodeList nUser = doc.getElementsByTagName("User");
+        
+        for (int temp2 = 0; temp2 < nUser.getLength(); temp2++) {
+            Node nNode2 = nUser.item(temp2);
+            if (nNode2.getNodeType() == Node.ELEMENT_NODE) {
+                Element eElement2 = (Element) nNode2;          
+            
+                if (Name == null ? eElement2.getElementsByTagName("Jmeno").item(0).getTextContent() == null : Name.equals(eElement2.getElementsByTagName("Jmeno").item(0).getTextContent())) {
+                    celkem = proc;        
+                    NodeList nList = doc.getElementsByTagName("Testik");
+
+                    if (nList != null ) {
+                        max = Integer.parseInt(eElement2.getElementsByTagName("Maximum").item(0).getTextContent());
+            
+                        Element Delete = (Element) eElement2.getElementsByTagName("Maximum").item(0);
+                        eElement2.removeChild(Delete);
+                 
+                        for (int temp = 0; temp < nList.getLength(); temp++) {
+                             Node nNode = nList.item(temp);
+                             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                                
+                                Element element = (Element) nNode;
+                                celkem += Integer.parseInt(element.getTextContent());
+                                if (Integer.toString(max).equals(element.getAttribute("Test"))) {
+                                    max++;
+                                    celkem = (celkem)/(max+1); 
+                       
+                                }   
+                             }            
+                        }        
+                    }
+
+                    Element Max = doc.createElement("Maximum");
+                    Max.appendChild(doc.createTextNode(Integer.toString(max)));
+                    eElement2.appendChild(Max); 
+                        
+                    Element pom = doc.createElement("Testik");
+                    pom.appendChild(doc.createTextNode(Integer.toString(proc)));
+                    pom.setAttribute("Test", Integer.toString(max));
+                    eElement2.appendChild(pom);                  
+                }
+                    
+            }       
+
+        }
+    
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = transformerFactory.newTransformer();
+        DOMSource source = new DOMSource(doc);
+        StreamResult result = new StreamResult(new File("examples//databaze.xml"));
+        transformer.transform(source, result); 
+        
+        return celkem;
+    }
+   
 }

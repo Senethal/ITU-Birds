@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="windows-1250"?>
-
-
-
+<lection idc="1">
+  <bird id="2">
+    <name>Bekasina větší</name>
+    <latname>Gallinago media</latname>
+    <trida>ptáci</trida>
+    <podtrida>letci</podtrida>
+    <rad>dlouhokřídlí</rad>
+    <celed>slukovití</celed>
+    <rod>bekasina</rod>
+    <popis>Bekasina větší (Gallinago media) je slukovitý bahňák, příbuzný běžnější bekasině otavní. Liší se od ní poněkud kratším zobákem, více proužkovaným břichem a především bílými krajními ocasními pery. Hnízdí na vlhkých loukách a svazích hor severní a východní Evropy. Pravidelně v malém počtu protahuje i Českou republikou, kde byla po roce 1989 zaznamenána nejméně 28×, nejčastěji na jaře. </popis>
+    <image>1. Bekasina otavní.jpg</image>
+  </bird>
+  <bird id="1">
+    <name>Bělořit okrový</name>
+    <latname>Oenanthe hispanica</latname>
+    <trida>ptáci</trida>
+    <podtrida>letci</podtrida>
+    <rad>pěvci</rad>
+    <celed>drozdovití</celed>
+    <rod>bělořit</rod>
+    <popis>Bělořit okrový (Oenanthe hispanica) je malý drozdovitý pták, příbuzný bělořita šedého. Samec má okrové temeno, týl, hřbet a hruď, bílé břicho a kostřec, černou masku, křídla a černý ocas s bílými kořeny krajních per. Samice je zbarvena podobně, ale méně kontrastně. Hnízdí v oblasti Středozemního moře. Výjimečně zalétl dvakrát i do České republiky. </popis>
+    <image>1. Bekasinaaaa otavní.jpg</image>
+  </bird>
+</lection>
