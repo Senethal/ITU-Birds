@@ -98,28 +98,36 @@ public class Tests {
             }            
         }      
     }
+///////////////////////////////////////////////////////////////////////////////////////////////// 
+/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
+/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
+/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
+/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
+/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
+/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
+/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
+/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////   
+/////////////////////////////////////////////////////////////////////////////////////////////////
     
-    private String NextQuestion() {
+    public void NextQuestion() {
         if (this.index < this.maxim)
             this.index++;
-        return this.Questions[this.index];
     }
     
-    private String PreviousQuestion() {
+    public void PreviousQuestion() {
         if (this.index > 0)
-            this.index--;
-        return this.Questions[this.index];        
+            this.index--;       
     }
 
-    private String GetQuestion() {
+    public String GetQuestion() {
         return this.Questions[this.index]; 
     }
         
-    private void SaveAnswer(String answer) {
+    public void SaveAnswer(String answer) {
        this.Users_A[this.index] = answer;
     }
     
-    private String[] GetAnswers() {
+    public String[] GetAnswers() {
         String[] ret_val = new String[4];
         
         for (int i = 0; i<4; i++) {
@@ -128,23 +136,20 @@ public class Tests {
         return ret_val;
     }
     
-    private void Evaluate(String Name) throws ParserConfigurationException, SAXException, IOException, TransformerException {
+    public void Evaluate(String Name) throws ParserConfigurationException, SAXException, IOException, TransformerException {
     
         int rights = 0;
         
         for (int i = 0; i < this.maxim; i++ ) {
             if (this.Rights_A[i].equals(this.Users_A[i])) {
                 rights++;
-            }
-            
+            }   
         }
          
-        rights = rights*this.maxim;
-
+        rights = rights*this.maxim; 
         
         rights = UserDatabase.AddTest(rights, Name);
         UserDatabase.AddOut(rights, Name);
-        
         
     }
     
