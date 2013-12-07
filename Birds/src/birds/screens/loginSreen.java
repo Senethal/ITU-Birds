@@ -27,6 +27,7 @@ public class loginSreen extends Background {
         super();
         initComponents();
         this.Prihlaseni.setVisible(true);
+        this.wrongLogin.setVisible(false);
 
     }
 
@@ -40,6 +41,7 @@ public class loginSreen extends Background {
     private void initComponents() {
 
         Popis = new javax.swing.JLabel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         Prihlaseni = new birds.graphics.loginPanel();
         loginLabel = new javax.swing.JLabel();
         loginField = new javax.swing.JTextField();
@@ -48,6 +50,11 @@ public class loginSreen extends Background {
         loginButton = new javax.swing.JButton();
         ukoncit = new javax.swing.JButton();
         regButton = new javax.swing.JButton();
+        wrongLogin = new birds.graphics.loginPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1000, 700));
         setMinimumSize(new java.awt.Dimension(1000, 700));
@@ -59,6 +66,8 @@ public class loginSreen extends Background {
         Popis.setMaximumSize(new java.awt.Dimension(500, 80));
         Popis.setMinimumSize(new java.awt.Dimension(500, 80));
         Popis.setPreferredSize(new java.awt.Dimension(500, 80));
+
+        jLayeredPane1.setPreferredSize(new java.awt.Dimension(300, 400));
 
         Prihlaseni.setMaximumSize(new java.awt.Dimension(300, 400));
         Prihlaseni.setMinimumSize(new java.awt.Dimension(300, 400));
@@ -163,6 +172,67 @@ public class loginSreen extends Background {
                 .addContainerGap())
         );
 
+        Prihlaseni.setBounds(0, 0, 300, 400);
+        jLayeredPane1.add(Prihlaseni, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        wrongLogin.setOpaque(false);
+        wrongLogin.setPreferredSize(new java.awt.Dimension(300, 400));
+        wrongLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                wrongLoginMouseClicked(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Špatně zadaný login, nebo heslo.");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel2.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Pokud nevlastníte účet, klikněte");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel3.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("na tlačítko \"Vytvořit\".");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel4.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Pro návrat klikněte sem.");
+        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        javax.swing.GroupLayout wrongLoginLayout = new javax.swing.GroupLayout(wrongLogin);
+        wrongLogin.setLayout(wrongLoginLayout);
+        wrongLoginLayout.setHorizontalGroup(
+            wrongLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(wrongLoginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(wrongLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        wrongLoginLayout.setVerticalGroup(
+            wrongLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(wrongLoginLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 116, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
+        );
+
+        wrongLogin.setBounds(0, 0, 300, 400);
+        jLayeredPane1.add(wrongLogin, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -174,8 +244,8 @@ public class loginSreen extends Background {
                         .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(350, 350, 350)
-                        .addComponent(Prihlaseni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(250, Short.MAX_VALUE))
+                        .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(350, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,7 +253,7 @@ public class loginSreen extends Background {
                 .addGap(22, 22, 22)
                 .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48)
-                .addComponent(Prihlaseni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(150, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -211,6 +281,12 @@ public class loginSreen extends Background {
                 
                 //Zviditelneni hlavniho menu
                 this.Okno.setHlavniMenuVisible(true);
+            }else{
+                // Zneviditelneni panelu prihlaseni
+                this.Prihlaseni.setVisible(false);
+                
+                //Zviditelneni chybove hlasky
+                this.wrongLogin.setVisible(true);
             }           
         } catch (ParserConfigurationException | SAXException | IOException ex) {
             Logger.getLogger(loginSreen.class.getName()).log(Level.SEVERE, null, ex);
@@ -231,14 +307,34 @@ public class loginSreen extends Background {
      * Tlacitko vytvorti zmacknuto
      */
     private void regButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regButtonActionPerformed
+        
         this.Okno.setprihlObrazovkaVisible(false);
         this.Okno.setregObrazovkaVisible(true);
     }//GEN-LAST:event_regButtonActionPerformed
+
+    private void wrongLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wrongLoginMouseClicked
+        
+        //Zviditelneni chybove hlasky
+                this.wrongLogin.setVisible(false);
+        
+        //Vynulovani prihlasovaci obrazovky
+                this.loginPass.setText("");
+                this.loginField.setText("");
+                
+        // Zneviditelneni panelu prihlaseni
+                this.Prihlaseni.setVisible(true);
+                        
+    }//GEN-LAST:event_wrongLoginMouseClicked
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Popis;
     private birds.graphics.loginPanel Prihlaseni;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JButton loginButton;
     private javax.swing.JTextField loginField;
     private javax.swing.JLabel loginLabel;
@@ -246,5 +342,6 @@ public class loginSreen extends Background {
     private javax.swing.JPasswordField loginPass;
     private javax.swing.JButton regButton;
     private javax.swing.JButton ukoncit;
+    private birds.graphics.loginPanel wrongLogin;
     // End of variables declaration//GEN-END:variables
 }

@@ -25,6 +25,8 @@ public class RegistrationScreen extends Background {
      */
     public RegistrationScreen() {
         initComponents();
+        this.registrace.setVisible(true);
+        this.success.setVisible(false);
     }
 
     /**
@@ -37,7 +39,8 @@ public class RegistrationScreen extends Background {
     private void initComponents() {
 
         Popis = new javax.swing.JLabel();
-        Prihlaseni = new birds.graphics.loginPanel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        registrace = new birds.graphics.loginPanel();
         loginLabel = new javax.swing.JLabel();
         loginField = new javax.swing.JTextField();
         passLabel = new javax.swing.JLabel();
@@ -46,6 +49,11 @@ public class RegistrationScreen extends Background {
         loginPassAgain = new javax.swing.JPasswordField();
         passLabelAgain = new javax.swing.JLabel();
         cancel = new javax.swing.JButton();
+        success = new birds.graphics.loginPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1000, 700));
         setMinimumSize(new java.awt.Dimension(1000, 700));
@@ -58,9 +66,9 @@ public class RegistrationScreen extends Background {
         Popis.setMinimumSize(new java.awt.Dimension(500, 80));
         Popis.setPreferredSize(new java.awt.Dimension(500, 80));
 
-        Prihlaseni.setMaximumSize(new java.awt.Dimension(300, 400));
-        Prihlaseni.setMinimumSize(new java.awt.Dimension(300, 400));
-        Prihlaseni.setOpaque(false);
+        registrace.setMaximumSize(new java.awt.Dimension(300, 400));
+        registrace.setMinimumSize(new java.awt.Dimension(300, 400));
+        registrace.setOpaque(false);
 
         loginLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         loginLabel.setText("Přihlašovací jméno");
@@ -108,28 +116,28 @@ public class RegistrationScreen extends Background {
             }
         });
 
-        javax.swing.GroupLayout PrihlaseniLayout = new javax.swing.GroupLayout(Prihlaseni);
-        Prihlaseni.setLayout(PrihlaseniLayout);
-        PrihlaseniLayout.setHorizontalGroup(
-            PrihlaseniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PrihlaseniLayout.createSequentialGroup()
+        javax.swing.GroupLayout registraceLayout = new javax.swing.GroupLayout(registrace);
+        registrace.setLayout(registraceLayout);
+        registraceLayout.setHorizontalGroup(
+            registraceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(registraceLayout.createSequentialGroup()
                 .addGap(41, 41, 41)
-                .addGroup(PrihlaseniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(registraceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(loginPass)
                     .addComponent(passLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(loginLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
                     .addComponent(loginField)
                     .addComponent(loginPassAgain)
                     .addComponent(passLabelAgain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PrihlaseniLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, registraceLayout.createSequentialGroup()
                         .addComponent(regButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(42, 42, 42))
         );
-        PrihlaseniLayout.setVerticalGroup(
-            PrihlaseniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PrihlaseniLayout.createSequentialGroup()
+        registraceLayout.setVerticalGroup(
+            registraceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(registraceLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(loginLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
@@ -143,25 +151,85 @@ public class RegistrationScreen extends Background {
                 .addGap(5, 5, 5)
                 .addComponent(loginPassAgain, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15)
-                .addGroup(PrihlaseniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(registraceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(regButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
+
+        registrace.setBounds(0, 0, 300, 410);
+        jLayeredPane1.add(registrace, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        success.setOpaque(false);
+        success.setPreferredSize(new java.awt.Dimension(300, 400));
+        success.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                successMouseClicked(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Účet byl úspěšně vytvořen.");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel4.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("obrazovku klikněte sem.");
+        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel3.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Nyní se můžete přihlásit.");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel5.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Pro návrat na přihlašovací ");
+        jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        javax.swing.GroupLayout successLayout = new javax.swing.GroupLayout(success);
+        success.setLayout(successLayout);
+        successLayout.setHorizontalGroup(
+            successLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(successLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(successLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        successLayout.setVerticalGroup(
+            successLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(successLayout.createSequentialGroup()
+                .addGap(58, 58, 58)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53))
+        );
+
+        success.setBounds(0, 0, 300, 400);
+        jLayeredPane1.add(success, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(250, 250, 250)
-                        .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(350, 350, 350)
-                        .addComponent(Prihlaseni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(250, Short.MAX_VALUE))
+                .addGap(250, 250, 250)
+                .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(350, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(350, 350, 350)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -169,7 +237,7 @@ public class RegistrationScreen extends Background {
                 .addGap(22, 22, 22)
                 .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48)
-                .addComponent(Prihlaseni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(170, 170, 170))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -187,8 +255,8 @@ public class RegistrationScreen extends Background {
                         this.loginPass.setText("");
                         this.loginField.setText("");
                         this.loginPassAgain.setText("");
-                        this.Okno.setregObrazovkaVisible(false);
-                        this.Okno.setprihlObrazovkaVisible(true);
+                        this.registrace.setVisible(false);
+                        this.success.setVisible(true);
                         
                     } catch (ParserConfigurationException | SAXException | IOException | TransformerException ex) {
                         Logger.getLogger(RegistrationScreen.class.getName()).log(Level.SEVERE, null, ex);
@@ -214,10 +282,23 @@ public class RegistrationScreen extends Background {
         this.Okno.setprihlObrazovkaVisible(true);
     }//GEN-LAST:event_cancelActionPerformed
 
+    private void successMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_successMouseClicked
+
+        this.success.setVisible(false);
+        this.registrace.setVisible(true);
+        this.Okno.setregObrazovkaVisible(false);
+        this.Okno.setprihlObrazovkaVisible(true);
+
+    }//GEN-LAST:event_successMouseClicked
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Popis;
-    private birds.graphics.loginPanel Prihlaseni;
     private javax.swing.JButton cancel;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JTextField loginField;
     private javax.swing.JLabel loginLabel;
     private javax.swing.JPasswordField loginPass;
@@ -225,5 +306,7 @@ public class RegistrationScreen extends Background {
     private javax.swing.JLabel passLabel;
     private javax.swing.JLabel passLabelAgain;
     private javax.swing.JButton regButton;
+    private birds.graphics.loginPanel registrace;
+    private birds.graphics.loginPanel success;
     // End of variables declaration//GEN-END:variables
 }
