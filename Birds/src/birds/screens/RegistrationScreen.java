@@ -248,7 +248,7 @@ public class RegistrationScreen extends Background {
         String hesloAgain = new String(this.loginPassAgain.getPassword());
         
         try {
-            if (UserDatabase.TestName(login)!=true) {
+            if ((!login.equals("") || !heslo.equals("") || !hesloAgain.equals("")) && (UserDatabase.TestName(login)!=true)) {
                 if (heslo.equals(hesloAgain)) {
                     try {
                         UserDatabase.AddUser(login,heslo);
