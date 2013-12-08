@@ -180,7 +180,7 @@ public class UserDatabase {
         
         
         
-        NodeList nUser = doc.getElementsByTagName("User");
+         NodeList nUser = doc.getElementsByTagName("User");
         
         for (int temp2 = 0; temp2 < nUser.getLength(); temp2++) {
             Node nNode2 = nUser.item(temp2);
@@ -189,8 +189,8 @@ public class UserDatabase {
             
                 if (Name == null ? eElement2.getElementsByTagName("Jmeno").item(0).getTextContent() == null : Name.equals(eElement2.getElementsByTagName("Jmeno").item(0).getTextContent())) {
                     celkem = proc;        
-                    NodeList nList = eElement2.getElementsByTagName("Testik");
-                    
+                    NodeList nList = doc.getElementsByTagName("Testik");
+
                     if (nList != null ) {
                         max = Integer.parseInt(eElement2.getElementsByTagName("Maximum").item(0).getTextContent());
             
