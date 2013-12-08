@@ -63,6 +63,10 @@ public class UserDatabase {
         Pass.appendChild(doc.createTextNode(password));
         user.appendChild(Pass);  
 
+        Element Max = doc.createElement("Maximum");
+        Max.appendChild(doc.createTextNode("0"));
+        user.appendChild(Max);        
+        
         Element Out = doc.createElement("Vysledek");
         Out.appendChild(doc.createTextNode("Nic"));
         user.appendChild(Out);                  
