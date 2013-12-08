@@ -6,6 +6,7 @@ package birds.screens;
 
 import birds.graphics.Background;
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -20,6 +21,7 @@ public class LessonScreen extends Background {
         initComponents();
         this.BirdInfo.setBackground(new Color(255,255,255,0));
         this.BirdInfo.setForeground(new Color(0,0,0,255));
+        this.Picture.setIcon(new ImageIcon("lib\\orel.jpg"));
     }
 
     /**
@@ -38,11 +40,13 @@ public class LessonScreen extends Background {
         Picture = new javax.swing.JLabel();
         baseStat = new birds.graphics.LessonPanel();
         jmenoLabel = new javax.swing.JLabel();
-        druhLabel = new javax.swing.JLabel();
+        radLabel = new javax.swing.JLabel();
         celedLabel = new javax.swing.JLabel();
         jmeno = new javax.swing.JLabel();
         celed = new javax.swing.JLabel();
-        druh = new javax.swing.JLabel();
+        rad = new javax.swing.JLabel();
+        celedLabel1 = new javax.swing.JLabel();
+        celed1 = new javax.swing.JLabel();
         BirdInfo = new birds.graphics.TextArea();
 
         setMaximumSize(new java.awt.Dimension(1000, 700));
@@ -67,17 +71,26 @@ public class LessonScreen extends Background {
         jmenoLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         jmenoLabel.setText("Jméno:");
 
-        druhLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        druhLabel.setText("Druh:");
+        radLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        radLabel.setText("Řád:");
 
         celedLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         celedLabel.setText("Čeleď:");
 
         jmeno.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jmeno.setText("Orel Bělohlavý");
 
         celed.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        celed.setText("jestřábovití");
 
-        druh.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        rad.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        rad.setText("dravci");
+
+        celedLabel1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        celedLabel1.setText("Rod:");
+
+        celed1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        celed1.setText("orel");
 
         javax.swing.GroupLayout baseStatLayout = new javax.swing.GroupLayout(baseStat);
         baseStat.setLayout(baseStatLayout);
@@ -87,13 +100,17 @@ public class LessonScreen extends Background {
                 .addGap(31, 31, 31)
                 .addGroup(baseStatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(baseStatLayout.createSequentialGroup()
+                        .addComponent(celedLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(celed1, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
+                    .addGroup(baseStatLayout.createSequentialGroup()
                         .addComponent(jmenoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jmeno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(baseStatLayout.createSequentialGroup()
-                        .addComponent(druhLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(radLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(druh, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
+                        .addComponent(rad, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
                     .addGroup(baseStatLayout.createSequentialGroup()
                         .addComponent(celedLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -109,13 +126,17 @@ public class LessonScreen extends Background {
                     .addComponent(jmeno, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(baseStatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(druhLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(druh, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(radLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rad, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(baseStatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(celedLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(celed, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(baseStatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(celedLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(celed1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(93, Short.MAX_VALUE))
         );
 
         BirdInfo.setEditable(false);
@@ -123,7 +144,7 @@ public class LessonScreen extends Background {
         BirdInfo.setColumns(20);
         BirdInfo.setRows(5);
         BirdInfo.setTabSize(4);
-        BirdInfo.setText("\n    Popis:\n        ");
+        BirdInfo.setText("\n        Popis:\n        Dospělý jedinec má hnědé peří na těle a bílé na hlavě a ocasu. \n        Ocas nemá příliš dlouhý a jeho tvar poněkud připomíná \n        trojúhelník. Samci i samice jsou zbarveni stejně. Zobák,\n        pařáty a duhovky má orel bělohlavý svítivě žluté. \n        Na neopeřených pařátech má krátké silné prsty s velkými drápy. ");
         BirdInfo.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         BirdInfo.setMaximumSize(new java.awt.Dimension(500, 200));
         BirdInfo.setMinimumSize(new java.awt.Dimension(500, 200));
@@ -194,11 +215,13 @@ public class LessonScreen extends Background {
     private birds.graphics.Background background1;
     private birds.graphics.LessonPanel baseStat;
     private javax.swing.JLabel celed;
+    private javax.swing.JLabel celed1;
     private javax.swing.JLabel celedLabel;
-    private javax.swing.JLabel druh;
-    private javax.swing.JLabel druhLabel;
+    private javax.swing.JLabel celedLabel1;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JLabel jmeno;
     private javax.swing.JLabel jmenoLabel;
+    private javax.swing.JLabel rad;
+    private javax.swing.JLabel radLabel;
     // End of variables declaration//GEN-END:variables
 }

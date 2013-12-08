@@ -165,14 +165,19 @@
                           <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
+                                  <Component id="celedLabel1" min="-2" pref="58" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="celed1" pref="245" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
                                   <Component id="jmenoLabel" min="-2" pref="58" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jmeno" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="druhLabel" min="-2" pref="58" max="-2" attributes="0"/>
+                                  <Component id="radLabel" min="-2" pref="58" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="druh" pref="245" max="32767" attributes="0"/>
+                                  <Component id="rad" pref="245" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="celedLabel" min="-2" pref="58" max="-2" attributes="0"/>
@@ -194,15 +199,20 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="druhLabel" min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="druh" min="-2" pref="38" max="-2" attributes="0"/>
+                              <Component id="radLabel" min="-2" pref="38" max="-2" attributes="0"/>
+                              <Component id="rad" min="-2" pref="38" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="celedLabel" min="-2" pref="38" max="-2" attributes="0"/>
                               <Component id="celed" min="-2" pref="38" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="137" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="celedLabel1" min="-2" pref="38" max="-2" attributes="0"/>
+                              <Component id="celed1" min="-2" pref="38" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="93" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -216,12 +226,12 @@
                     <Property name="text" type="java.lang.String" value="Jm&#xe9;no:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="druhLabel">
+                <Component class="javax.swing.JLabel" name="radLabel">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Impact" size="18" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Druh:"/>
+                    <Property name="text" type="java.lang.String" value="&#x158;&#xe1;d:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="celedLabel">
@@ -237,6 +247,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Impact" size="18" style="0"/>
                     </Property>
+                    <Property name="text" type="java.lang.String" value="Orel B&#x11b;lohlav&#xfd;"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="celed">
@@ -244,13 +255,31 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Impact" size="18" style="0"/>
                     </Property>
+                    <Property name="text" type="java.lang.String" value="jest&#x159;&#xe1;bovit&#xed;"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="druh">
+                <Component class="javax.swing.JLabel" name="rad">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Impact" size="18" style="0"/>
                     </Property>
+                    <Property name="text" type="java.lang.String" value="dravci"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="celedLabel1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Impact" size="18" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Rod:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="celed1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Impact" size="18" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="orel"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -264,7 +293,7 @@
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
                 <Property name="tabSize" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" value="&#xa;    Popis:&#xa;        "/>
+                <Property name="text" type="java.lang.String" value="&#xa;        Popis:&#xa;        Dosp&#x11b;l&#xfd; jedinec m&#xe1; hn&#x11b;d&#xe9; pe&#x159;&#xed; na t&#x11b;le a b&#xed;l&#xe9; na hlav&#x11b; a ocasu. &#xa;        Ocas nem&#xe1; p&#x159;&#xed;li&#x161; dlouh&#xfd; a jeho tvar pon&#x11b;kud p&#x159;ipom&#xed;n&#xe1; &#xa;        troj&#xfa;heln&#xed;k. Samci i samice jsou zbarveni stejn&#x11b;. Zob&#xe1;k,&#xa;        pa&#x159;&#xe1;ty a duhovky m&#xe1; orel b&#x11b;lohlav&#xfd; sv&#xed;tiv&#x11b; &#x17e;lut&#xe9;. &#xa;        Na neope&#x159;en&#xfd;ch pa&#x159;&#xe1;tech m&#xe1; kr&#xe1;tk&#xe9; siln&#xe9; prsty s velk&#xfd;mi dr&#xe1;py. "/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Impact" size="18" style="0"/>
                 </Property>
