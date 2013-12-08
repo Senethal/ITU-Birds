@@ -62,11 +62,8 @@ public class ClassicTestScreen extends Background {
 
         setMaximumSize(new java.awt.Dimension(1000, 700));
         setMinimumSize(new java.awt.Dimension(1000, 700));
-        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         vrstva.setPreferredSize(new java.awt.Dimension(1000, 700));
-
-        Test.setPreferredSize(new java.awt.Dimension(1000, 700));
 
         Popis.setFont(new java.awt.Font("Impact", 0, 28)); // NOI18N
         Popis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -234,8 +231,6 @@ public class ClassicTestScreen extends Background {
         Test.setBounds(0, 0, 1000, 700);
         vrstva.add(Test, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        Vyhodnoceni.setPreferredSize(new java.awt.Dimension(1000, 700));
-
         Popis1.setFont(new java.awt.Font("Impact", 0, 28)); // NOI18N
         Popis1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Popis1.setText("Klasický test - Vyhodnocení");
@@ -253,6 +248,11 @@ public class ClassicTestScreen extends Background {
         Potvrdit.setMaximumSize(new java.awt.Dimension(300, 70));
         Potvrdit.setMinimumSize(new java.awt.Dimension(300, 70));
         Potvrdit.setPreferredSize(new java.awt.Dimension(300, 70));
+        Potvrdit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PotvrditActionPerformed(evt);
+            }
+        });
 
         TestProgress1.setForeground(new java.awt.Color(252, 197, 80));
         TestProgress1.setMaximum(10);
@@ -556,6 +556,10 @@ public class ClassicTestScreen extends Background {
         this.TestProgress.setValue(9);
         this.Test.setVisible(true);
     }//GEN-LAST:event_Quest10MouseClicked
+
+    private void PotvrditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PotvrditActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PotvrditActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private birds.graphics.CheckButton AnswerA;
