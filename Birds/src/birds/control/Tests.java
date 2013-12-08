@@ -19,14 +19,14 @@ import org.xml.sax.SAXException;
  */
 public class Tests {
     
-    protected String[] Questions; 
-    protected String[][] Answers;
-    protected String[] Users_A;
-    protected String[] Rights_A;
+    public String[] Questions; 
+    public String[][] Answers;
+    public String[] Users_A;
+    public String[] Rights_A;
     public int Diff = 0;
     
-    protected int maxim = 10;
-    protected int index;
+    public int maxim = 10;
+    public int index;
  
     
     public Tests() throws ParserConfigurationException, SAXException, IOException {       
@@ -39,7 +39,7 @@ public class Tests {
         
         for (int i =0; i<10; i++) {
             Test[i] = this.Generate(Test);
-            this.Fill(i,Test[i]);
+            this.FillKlasik(i,Test[i]);
         }      
     }
      
@@ -72,7 +72,7 @@ public class Tests {
      * @throws org.xml.sax.SAXException
      * @throws java.io.IOException
  */    
-    private void Fill(int index,int id) throws ParserConfigurationException, SAXException, IOException {
+    private void FillKlasik(int index,int id) throws ParserConfigurationException, SAXException, IOException {
         DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance(); 
         domFactory.setIgnoringComments(true);
         DocumentBuilder builder = domFactory.newDocumentBuilder(); 
@@ -88,7 +88,7 @@ public class Tests {
                 Element element = (Element) nNode;
                 
                 if (Integer.toString(id).equals(element.getAttribute("id"))) {
-                    this.Questions[index] = element.getElementsByTagName("quest").item(0).getTextContent();
+                    this.Questions[index] = Format(element.getElementsByTagName("quest").item(0).getTextContent());
                     this.Answers[index][0] = element.getElementsByTagName("ansA").item(0).getTextContent();
                     this.Answers[index][1] = element.getElementsByTagName("ansB").item(0).getTextContent();
                     this.Answers[index][2] = element.getElementsByTagName("ansC").item(0).getTextContent();
@@ -99,15 +99,17 @@ public class Tests {
         }      
     }
 ///////////////////////////////////////////////////////////////////////////////////////////////// 
-/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
-/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
-/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
-/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
-/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
-/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
-/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////
-/////////////////////////////PRO TEBE LUKASI !!!!!!!!!!!!!!!/////////////////////////////////////   
-/////////////////////////////////////////////////////////////////////////////////////////////////
+   
+    public String Format(String s) {
+        
+        String text;
+        
+        text = "\n" + "\n";
+        text += "           " + s + "\n";
+
+        
+        return text;
+    }
     
     public void NextQuestion() {
         if (this.index < this.maxim)
@@ -118,7 +120,7 @@ public class Tests {
         if (this.index > 0)
             this.index--;       
     }
-
+    
     public String GetQuestion() {
         return this.Questions[this.index]; 
     }
@@ -127,15 +129,25 @@ public class Tests {
        this.Users_A[this.index] = answer;
     }
     
-    public String[] GetAnswers() {
-        String[] ret_val = new String[4];
-        
-        for (int i = 0; i<4; i++) {
-            ret_val[i] = this.Answers[this.index][i]; 
-        }      
-        return ret_val;
+    public String GetAnswerA() {
+        return this.Answers[this.index][0];      
     }
     
+    public String GetAnswerB() {
+        return this.Answers[this.index][1];      
+    }
+    
+    public String GetAnswerC() {
+        return this.Answers[this.index][2];      
+    }
+    
+    public String GetAnswerD() {
+        return this.Answers[this.index][3];      
+    }
+    
+    public String GetUserAns() {
+        return this.Users_A[this.index];
+    }
     public void Evaluate(String Name) throws ParserConfigurationException, SAXException, IOException, TransformerException {
     
         int rights = 0;

@@ -4,8 +4,14 @@
  */
 package birds.screens;
 
+import birds.control.Tests;
 import birds.graphics.Background;
 import java.awt.Color;
+import java.io.IOException;
+import java.util.logging.*;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
+import org.xml.sax.SAXException;
 
 /**
  *
@@ -16,12 +22,19 @@ public class ClassicTestScreen extends Background {
     /**
      * Creates new form ClassicTestScreen
      */
-    public ClassicTestScreen() {
+    public ClassicTestScreen() throws ParserConfigurationException, SAXException, IOException {
         initComponents();
         this.Question.setBackground(new Color(255,255,255,0));
         this.Question.setForeground(new Color(0,0,0,255));
         this.Test.setVisible(true);
         this.Vyhodnoceni.setVisible(false);
+        this.Tester = new Tests();
+        
+       this.Question.setText(this.Tester.GetQuestion());
+       this.AnswerA.setText(this.Tester.GetAnswerA());
+       this.AnswerB.setText(this.Tester.GetAnswerB());
+       this.AnswerC.setText(this.Tester.GetAnswerC());
+       this.AnswerD.setText(this.Tester.GetAnswerD());
     }
 
     /**
@@ -62,11 +75,8 @@ public class ClassicTestScreen extends Background {
 
         setMaximumSize(new java.awt.Dimension(1000, 700));
         setMinimumSize(new java.awt.Dimension(1000, 700));
-        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         vrstva.setPreferredSize(new java.awt.Dimension(1000, 700));
-
-        Test.setPreferredSize(new java.awt.Dimension(1000, 700));
 
         Popis.setFont(new java.awt.Font("Impact", 0, 28)); // NOI18N
         Popis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -231,10 +241,8 @@ public class ClassicTestScreen extends Background {
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
+        vrstva.add(Test);
         Test.setBounds(0, 0, 1000, 700);
-        vrstva.add(Test, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        Vyhodnoceni.setPreferredSize(new java.awt.Dimension(1000, 700));
 
         Popis1.setFont(new java.awt.Font("Impact", 0, 28)); // NOI18N
         Popis1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -253,6 +261,11 @@ public class ClassicTestScreen extends Background {
         Potvrdit.setMaximumSize(new java.awt.Dimension(300, 70));
         Potvrdit.setMinimumSize(new java.awt.Dimension(300, 70));
         Potvrdit.setPreferredSize(new java.awt.Dimension(300, 70));
+        Potvrdit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PotvrditActionPerformed(evt);
+            }
+        });
 
         TestProgress1.setForeground(new java.awt.Color(252, 197, 80));
         TestProgress1.setMaximum(10);
@@ -437,8 +450,8 @@ public class ClassicTestScreen extends Background {
                 .addGap(21, 21, 21))
         );
 
+        vrstva.add(Vyhodnoceni);
         Vyhodnoceni.setBounds(0, 0, 1000, 700);
-        vrstva.add(Vyhodnoceni, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -457,6 +470,8 @@ public class ClassicTestScreen extends Background {
             this.AnswerB.setSelected(false);
             this.AnswerC.setSelected(false);
             this.AnswerD.setSelected(false);
+            this.Tester.index = this.TestProgress.getValue();
+            this.Tester.SaveAnswer("A");
         }
     }//GEN-LAST:event_AnswerAActionPerformed
 
@@ -465,6 +480,8 @@ public class ClassicTestScreen extends Background {
             this.AnswerA.setSelected(false);
             this.AnswerC.setSelected(false);
             this.AnswerD.setSelected(false);
+            this.Tester.index = this.TestProgress.getValue();
+            this.Tester.SaveAnswer("B");
         }
     }//GEN-LAST:event_AnswerBActionPerformed
 
@@ -473,6 +490,8 @@ public class ClassicTestScreen extends Background {
             this.AnswerB.setSelected(false);
             this.AnswerA.setSelected(false);
             this.AnswerD.setSelected(false);
+            this.Tester.index = this.TestProgress.getValue();
+            this.Tester.SaveAnswer("C");
         }
     }//GEN-LAST:event_AnswerCActionPerformed
 
@@ -481,20 +500,99 @@ public class ClassicTestScreen extends Background {
             this.AnswerB.setSelected(false);
             this.AnswerC.setSelected(false);
             this.AnswerA.setSelected(false);
+            this.Tester.index = this.TestProgress.getValue();
+            this.Tester.SaveAnswer("D");
         }
     }//GEN-LAST:event_AnswerDActionPerformed
 
     private void nextQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextQActionPerformed
         this.TestProgress.setValue(this.TestProgress.getValue()+1);
+        this.Tester.NextQuestion();
         if (this.TestProgress.getValue() == 10){
             this.Test.setVisible(false);
             this.Vyhodnoceni.setVisible(true);
         }
+        this.Tester.index = this.TestProgress.getValue();
+        if (this.Tester.index < this.Tester.maxim) {
+            this.Question.setText(this.Tester.GetQuestion());
+            this.AnswerA.setText(this.Tester.GetAnswerA());
+            this.AnswerB.setText(this.Tester.GetAnswerB());
+            this.AnswerC.setText(this.Tester.GetAnswerC());
+            this.AnswerD.setText(this.Tester.GetAnswerD());
+            
+            if (this.Tester.GetUserAns() == "A") {
+                this.AnswerA.setSelected(true);
+                this.AnswerB.setSelected(false);
+                this.AnswerC.setSelected(false);
+                this.AnswerD.setSelected(false); 
+            }
+            else if (this.Tester.GetUserAns() == "B") {
+                this.AnswerB.setSelected(true);
+                this.AnswerC.setSelected(false);
+                this.AnswerA.setSelected(false);
+                this.AnswerD.setSelected(false);  
+            }
+            else if (this.Tester.GetUserAns() == "C") {
+                this.AnswerC.setSelected(true);
+                this.AnswerB.setSelected(false);
+                this.AnswerA.setSelected(false);
+                this.AnswerD.setSelected(false);   
+            }
+            else if (this.Tester.GetUserAns() == "D") {
+                this.AnswerD.setSelected(true);
+                this.AnswerB.setSelected(false);
+                this.AnswerA.setSelected(false);
+                this.AnswerC.setSelected(false);   
+            }
+            else {
+                this.AnswerB.setSelected(false);
+                this.AnswerA.setSelected(false);
+                this.AnswerD.setSelected(false); 
+                this.AnswerC.setSelected(false);  
+            }
+        }
     }//GEN-LAST:event_nextQActionPerformed
 
     private void previousQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_previousQActionPerformed
-
         this.TestProgress.setValue(this.TestProgress.getValue()-1);
+        this.Tester.PreviousQuestion();
+        this.Tester.index = this.TestProgress.getValue();
+        this.Question.setText(this.Tester.GetQuestion());
+        this.AnswerA.setText(this.Tester.GetAnswerA());
+        this.AnswerB.setText(this.Tester.GetAnswerB());
+        this.AnswerC.setText(this.Tester.GetAnswerC());
+        this.AnswerD.setText(this.Tester.GetAnswerD());
+        
+            if (this.Tester.GetUserAns() == "A") {
+                this.AnswerA.setSelected(true);
+                this.AnswerB.setSelected(false);
+                this.AnswerC.setSelected(false);
+                this.AnswerD.setSelected(false); 
+            }
+            else if (this.Tester.GetUserAns() == "B") {
+                this.AnswerB.setSelected(true);
+                this.AnswerC.setSelected(false);
+                this.AnswerA.setSelected(false);
+                this.AnswerD.setSelected(false);  
+            }
+            else if (this.Tester.GetUserAns() == "C") {
+                this.AnswerC.setSelected(true);
+                this.AnswerB.setSelected(false);
+                this.AnswerA.setSelected(false);
+                this.AnswerD.setSelected(false);   
+            }
+            else if (this.Tester.GetUserAns() == "D") {
+                this.AnswerD.setSelected(true);
+                this.AnswerB.setSelected(false);
+                this.AnswerA.setSelected(false);
+                this.AnswerC.setSelected(false);   
+            }
+            else {
+                this.AnswerB.setSelected(false);
+                this.AnswerA.setSelected(false);
+                this.AnswerD.setSelected(false); 
+                this.AnswerC.setSelected(false);  
+            }
     }//GEN-LAST:event_previousQActionPerformed
 
     private void Quest1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Quest1MouseClicked
@@ -557,6 +655,15 @@ public class ClassicTestScreen extends Background {
         this.Test.setVisible(true);
     }//GEN-LAST:event_Quest10MouseClicked
 
+    private void PotvrditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PotvrditActionPerformed
+        try {
+            this.Tester.Evaluate(this.Okno.getUserName());
+        } catch (ParserConfigurationException | SAXException | IOException | TransformerException ex) {
+            Logger.getLogger(ClassicTestScreen.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_PotvrditActionPerformed
+
+    private birds.control.Tests Tester;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private birds.graphics.CheckButton AnswerA;
     private birds.graphics.CheckButton AnswerB;

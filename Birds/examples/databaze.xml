@@ -8,8 +8,8 @@
   <User>
     <Jmeno>Student</Jmeno>
     <Heslo>Student</Heslo>
-    <Maximum>0</Maximum> 
-    <Vysledek>Nic</Vysledek>
-  </User>
+     
+    
+ <Testik Test="0">100</Testik><Testik Test="1">100</Testik><Testik Test="2">60</Testik><Testik Test="3">40</Testik><Testik Test="4">70</Testik><Maximum>5</Maximum><Testik Test="5">100</Testik><Vysledek>78</Vysledek></User>
   
-<User><Jmeno>Luke</Jmeno><Heslo>123</Heslo><Vysledek>Nic</Vysledek></User><User><Jmeno>ucitel</Jmeno><Heslo>ucitel</Heslo><Vysledek>Nic</Vysledek></User></Users>
+<User><Jmeno>Luke</Jmeno><Heslo>123</Heslo><Maximum>0</Maximum><Vysledek>Nic</Vysledek></User><User><Jmeno>ucitel</Jmeno><Heslo>ucitel</Heslo><Maximum>0</Maximum><Vysledek>Nic</Vysledek></User></Users>
