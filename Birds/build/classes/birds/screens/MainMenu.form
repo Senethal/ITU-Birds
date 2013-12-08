@@ -149,6 +149,9 @@
           <Dimension value="[300, 70]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TestyActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Vysledky">
       <Properties>

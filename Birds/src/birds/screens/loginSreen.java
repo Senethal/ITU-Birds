@@ -8,6 +8,7 @@ package birds.screens;
 
 import birds.users.UserDatabase;
 import birds.graphics.Background;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,12 +19,12 @@ import org.xml.sax.SAXException;
  *
  * @author Lukas
  */
-public class loginSreen extends Background {
+public class LoginSreen extends Background {
 
     /**
      * Creates new form loginSreen
      */
-    public loginSreen() {
+    public LoginSreen() {
         super();
         initComponents();
         this.Prihlaseni.setVisible(true);
@@ -84,6 +85,11 @@ public class loginSreen extends Background {
         loginLabel1.setText("Heslo");
 
         loginPass.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(251, 171, 0), 8));
+        loginPass.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                loginPassKeyReleased(evt);
+            }
+        });
 
         loginButton.setBackground(new java.awt.Color(252, 197, 80));
         loginButton.setFont(new java.awt.Font("Impact", 0, 20)); // NOI18N
@@ -259,13 +265,7 @@ public class loginSreen extends Background {
     }// </editor-fold>//GEN-END:initComponents
 
     
-    
-    /*
-     * Zmacknuti tlacitka prihlaseni
-     * potreba spojit s databazi uzivatelu
-     */
-    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        
+    private void logMeIn(){
         String login = this.loginField.getText();
         String heslo = new String(this.loginPass.getPassword());
         
@@ -279,6 +279,9 @@ public class loginSreen extends Background {
                 this.loginPass.setText("");
                 this.loginField.setText("");
                 
+                //Ulozeni jmena uzivatele
+                this.Okno.setUserName(login);
+                
                 //Zviditelneni hlavniho menu
                 this.Okno.setHlavniMenuVisible(true);
             }else{
@@ -289,8 +292,19 @@ public class loginSreen extends Background {
                 this.wrongLogin.setVisible(true);
             }           
         } catch (ParserConfigurationException | SAXException | IOException ex) {
-            Logger.getLogger(loginSreen.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LoginSreen.class.getName()).log(Level.SEVERE, null, ex);
         }
+    
+    }
+    
+    
+    /*
+     * Zmacknuti tlacitka prihlaseni
+     * potreba spojit s databazi uzivatelu
+     */
+    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
+        
+        this.logMeIn();
 
     }//GEN-LAST:event_loginButtonActionPerformed
 
@@ -325,6 +339,12 @@ public class loginSreen extends Background {
                 this.Prihlaseni.setVisible(true);
                         
     }//GEN-LAST:event_wrongLoginMouseClicked
+
+    private void loginPassKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loginPassKeyReleased
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            this.logMeIn();
+        }
+    }//GEN-LAST:event_loginPassKeyReleased
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables

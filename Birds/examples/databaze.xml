@@ -12,4 +12,4 @@
     <Vysledek>Nic</Vysledek>
   </User>
   
-</Users>
+<User><Jmeno>Luke</Jmeno><Heslo>123</Heslo><Vysledek>Nic</Vysledek></User><User><Jmeno>ucitel</Jmeno><Heslo>ucitel</Heslo><Vysledek>Nic</Vysledek></User></Users>

@@ -23,12 +23,16 @@ public class Birds extends javax.swing.JFrame {
         //Zneviditelnovani ostatnich oken
         this.hlavniMenu.setVisible(false);
         this.regObrazovka.setVisible(false);
+        this.vyberTestuObrazovka.setVisible(false);
+        this.klasickyTestObrazovka.setVisible(false);
         ////////////////////////////////////////////////////
         
         //Pridavani odkazu na okno jednotlivym obrazovkam
         this.hlavniMenu.addFrame(this);
         this.prihlObrazovka.addFrame(this);
         this.regObrazovka.addFrame(this);
+        this.vyberTestuObrazovka.addFrame(this);
+        this.klasickyTestObrazovka.addFrame(this);
         ////////////////////////////////////////////////////
     }
 
@@ -42,21 +46,27 @@ public class Birds extends javax.swing.JFrame {
     private void initComponents() {
 
         vrstva = new javax.swing.JLayeredPane();
-        prihlObrazovka = new birds.screens.loginSreen();
+        prihlObrazovka = new birds.screens.LoginSreen();
         regObrazovka = new birds.screens.RegistrationScreen();
         hlavniMenu = new birds.screens.MainMenu();
+        vyberTestuObrazovka = new birds.screens.TestChooseScreen();
+        klasickyTestObrazovka = new birds.screens.ClassicTestScreen();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1000, 700));
         setMinimumSize(new java.awt.Dimension(1000, 700));
         setResizable(false);
 
-        prihlObrazovka.setBounds(0, 0, 1000, 700);
+        prihlObrazovka.setBounds(0, 0, 1100, 700);
         vrstva.add(prihlObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        regObrazovka.setBounds(0, 0, 1000, 730);
+        regObrazovka.setBounds(0, 0, 1100, 720);
         vrstva.add(regObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
         hlavniMenu.setBounds(0, 0, 1000, 700);
         vrstva.add(hlavniMenu, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        vyberTestuObrazovka.setBounds(0, 0, 1000, 700);
+        vrstva.add(vyberTestuObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        klasickyTestObrazovka.setBounds(0, 0, 1000, 700);
+        vrstva.add(klasickyTestObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -124,12 +134,33 @@ public class Birds extends javax.swing.JFrame {
     public void setregObrazovkaVisible(boolean b) {
         this.regObrazovka.setVisible(b);
     }
+    
+    public void setvyberTestuObrazovkaObrazovkaVisible(boolean b) {
+        this.vyberTestuObrazovka.setVisible(b);
+    }
+    
+    public void setklasickyTestObrazovkaVisible(boolean b) {
+        this.klasickyTestObrazovka.setVisible(b);
+    }
    /*********************************************/ 
-   
+    
+    public void setUserName(String name){
+        this.UserName = name;
+    }
+    
+    public String getUserName(){
+        return this.UserName;
+    }
+    
+    
+    
+    private String UserName;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private birds.screens.MainMenu hlavniMenu;
-    private birds.screens.loginSreen prihlObrazovka;
+    private birds.screens.ClassicTestScreen klasickyTestObrazovka;
+    private birds.screens.LoginSreen prihlObrazovka;
     private birds.screens.RegistrationScreen regObrazovka;
     private javax.swing.JLayeredPane vrstva;
+    private birds.screens.TestChooseScreen vyberTestuObrazovka;
     // End of variables declaration//GEN-END:variables
 }
