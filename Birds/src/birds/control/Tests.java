@@ -104,8 +104,8 @@ public class Tests {
         
         String text;
         
-        text = "\n" + "\n";
-        text += "           " + s + "\n";
+        text = "\n" + "\n" + "\n";
+        text += "                     " + s + "\n";
 
         
         return text;

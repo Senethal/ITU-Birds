@@ -1,24 +1,571 @@
-<lection idc="1">
-  <bird id="2">
-    <name>Bekasina větší</name>
-    <latname>Gallinago media</latname>
-    <trida>ptáci</trida>
-    <podtrida>letci</podtrida>
-    <rad>dlouhokřídlí</rad>
-    <celed>slukovití</celed>
-    <rod>bekasina</rod>
-    <popis>Bekasina větší (Gallinago media) je slukovitý bahňák, příbuzný běžnější bekasině otavní. Liší se od ní poněkud kratším zobákem, více proužkovaným břichem a především bílými krajními ocasními pery. Hnízdí na vlhkých loukách a svazích hor severní a východní Evropy. Pravidelně v malém počtu protahuje i Českou republikou, kde byla po roce 1989 zaznamenána nejméně 28×, nejčastěji na jaře. </popis>
-    <image>1. Bekasina otavní.jpg</image>
-  </bird>
-  <bird id="1">
-    <name>Bělořit okrový</name>
-    <latname>Oenanthe hispanica</latname>
-    <trida>ptáci</trida>
-    <podtrida>letci</podtrida>
-    <rad>pěvci</rad>
-    <celed>drozdovití</celed>
-    <rod>bělořit</rod>
-    <popis>Bělořit okrový (Oenanthe hispanica) je malý drozdovitý pták, příbuzný bělořita šedého. Samec má okrové temeno, týl, hřbet a hruď, bílé břicho a kostřec, černou masku, křídla a černý ocas s bílými kořeny krajních per. Samice je zbarvena podobně, ale méně kontrastně. Hnízdí v oblasti Středozemního moře. Výjimečně zalétl dvakrát i do České republiky. </popis>
-    <image>1. Bekasinaaaa otavní.jpg</image>
-  </bird>
-</lection>
+<?xml version="1.0" encoding="utf-8"?>
+<lections>
+  <lection idl="1">
+    <count>8</count>
+    <bird id="1">
+      <name>Sova pálená</name>
+      <latname>Tyto alba</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>sovy</rad>
+      <celed>sovovití</celed>
+      <rod>sova</rod>
+      <popis>Sova pálená (Tyto alba) je široce rozšířený druh sovy z čeledi sovovitých (Tytonidae). Sova pálená je středně velká sova měřící na délku 29-44 cm a vážící obvykle 250 až 450 g. Má dlouhá, nádherně zbarvená křídla, která v plném rozpětí dosahují 80 až 90 cm. Břicho, dlouhé končetiny, hlava a spodní strany křídelních per jsou čistě bílé až našedlé a na hlavě má sova pálená nezaměnitelný srdcovitý obličej s dvěma velkýma černýma očima a růžovým zobákem. Svrchní strana křídelních per a hlavy je zbarvena v kombinaci s černou a oranžovou. Při letu jsou nápadné i zubaté okraje vnějších letek a krátký ocas. Již okolo roku 2009 byla předními českými ornitology zaznamenána nápadná ztráta peří v oblasti crania (tj. lebeční), kterýžto úkaz se stal předmětem mnoha vášnivých debat, jež zaznamenaly svůj největší rozpuk v lednu až květnu 2013. Spekuluje se o negativním vlivu znečištění ovzduší na imunitu tohoto druhu i o možnosti výskytu nového parazita, jenž by mohl sovy pálené napadat.</popis>
+      <image>145. Sova pálená.jpg</image>
+    </bird>
+    <bird id="2">
+      <name>Kalous ušatý</name>
+      <latname>Asio otus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>sovy</rad>
+      <celed>puštíkovití</celed>
+      <rod>kalous</rod>
+      <popis>Kalous ušatý (Asio otus) je středně velký druh sovy z čeledi puštíkovitých hnědého a černého zbarvení s charakteristickým prodlouženým opeřením kolem ušních otvorů, díky kterému získal svůj název v mnoha světových jazycích. Kalous ušatý náleží mezi středně velké druhy sov. Co do velikosti je srovnatelný s holubem domácím (Columba livia f. domestica) nebo s blízce příbuzným puštíkem obecným (Strix aluco), v porovnání s ním je však zřetelně štíhlejší. Délka jeho těla činí 35–40, průměrně tedy 38 cm a v rozpětí křídel měří 90–100 cm. Hmotnost u samců se pohybuje mezi 220–305 g, u samic pak mezi 260–435 g.</popis>
+      <image>55. Kalous ušatý.jpg</image>
+    </bird>
+    <bird id="3">
+      <name>Kulíšek nejmenší</name>
+      <latname>Glaucidium passerinum</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>sovy</rad>
+      <celed>puštíkovití</celed>
+      <rod>kulíšek</rod>
+      <popis>Kulíšek nejmenší (Glaucidium passerinum) je nejmenší sova Evropy. Má nenápadně hnědě zabarvený hřbet s menšími bělavými skvrnami a světlou spodní stranu těla s tmavšími podélnými skvrnami. Je poměrně nenápadný, loví za soumraku, jen v době hnízdění po celý den, ale není příliš plachý. Pokud ho naleznete sedět ve větvích stromu, je možné ho pozorovat poměrně zblízka, aniž ulétne. V rámci České republiky jde o silně ohrožený, zvláště chráněný druh. Kulíšek nejmenší měří pouhých 16 cm, což je sotva velikost špačka. Rozpětí křídel je 34-45 cm. Základní barva vrchní části těla je tmavě hnědá s výraznými bílými či žlutobílými skvrnami, spodek je světlý s podélnými tmavými proužky. Na tmavohnědých letkách je světlé skvrnění, které na křídle tvoří tři až čtyři příčné proužky. Ocas je také tmavohnědý, s bílými konci per a několika světlými příčnými proužky. Má v poměru k tělu malou kulatou hlavu s nepříliš zřetelným závojem zbarvenou podobně jako záda. Duhovka je živě žlutá, zobák voskově žlutý, u kořene zelenavý, nohy opeřené, špinavě bílé s hnědými skvrnami, drápy černohnědé. Samec a samice se navzájem neliší, mláďata jsou pouze tmavší. Let kulíška je vlnkovitý, v období hnízdění létá i ve dne.</popis>
+      <image>73. Kulíšek nejmenší.jpg</image>
+    </bird>
+      <bird id="4">
+      <name>Puštík obecný</name>
+      <latname>Strix aluco</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>sovy</rad>
+      <celed>puštíkovití</celed>
+      <rod>puštík</rod>
+      <popis>Puštík obecný (Strix aluco) je noční pták z čeledi puštíkovití. Je sovou běžně se vyskytující na českém území. Nenápadná sova o něco větší něž kalous ušatý (obvykle 36 až 43 cm). Má mohutnou kulatou hlavu a okrouhlý obličej se závojem a hnědočernýma očima. Nohy jsou krátké a opeřené až po prsty, křídla jsou relativně krátká (rozpětí 81 až 96 cm), široká a zaoblená, ocas krátký. Zbarvení je velmi variabilní, základní barva se pohybuje od šedé přes různé odstíny hnědé až po rezavou, s tmavým žíháním. Samice jsou (jako u všech sov) o něco větší.</popis>
+      <image>124. Puštík obecný.jpg</image>
+    </bird>
+    <bird id="5">
+      <name>Sýc rousný</name>
+      <latname>Aegolius funereus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>sovy</rad>
+      <celed>puštíkovití</celed>
+      <rod>Binomické jméno</rod>
+      <popis>Sýc rousný (Aegolius funereus) je menší druh sovy z čeledi puštíkovitých (Strigidae). Velikostí i vzhledem připomíná sýčka obecného (délka těla 22–27 cm, rozpětí křídel 50–62 cm). Hmotnost samců se pohybuje mezi 95-110 g, samic mezi 123-210 g. Svrchu je hnědý, s bílým skvrněním a světlým pruhem při kořeni křídla, spodina je bělavá, hnědě pruhovaná. Závoj je světlý, černě ohraničený, duhovka jasně žlutá, zobák žlutý a peří na nohou bílé. Obě pohlaví jsou zbarvena podobně, mladí ptáci jsou převážně čokoládově hnědí.</popis>
+      <image>156. Sýc rousný.jpg</image>
+    </bird>
+    <bird id="6">
+      <name>Sýček obecný</name>
+      <latname>Athene noctua</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>sovy</rad>
+      <celed>puštíkovití</celed>
+      <rod>sýček</rod>
+      <popis> Sýček obecný dorůstá sotva velikosti holuba domácího. Má robustní tělo, širokou a nízkou hlavu, krátký ocas a silné končetiny s ostrými a silnými drápy. Hřbet a hlavu má tmavě hnědé se světlejším skvrněním, břicho hnědě pruhované, spodní část ocasu a končetiny čistě bílé. Výrazné jsou i velké žluté oči a zobák a bílý pruh nad očima, který poskytuje sýčkovi charakteristický vážný výraz v obličeji. Obě pohlaví se zbarvením neliší, mladí ptáci jsou jednotvárnější a mají méně viditelný bílý pruh nad očima.</popis>
+      <image>157. Sýček obecný.jpg</image>
+    </bird>
+    <bird id="7">
+      <name>Výr velký</name>
+      <latname>Bubo bubo</latname>
+      <trida>ptáci</trida>
+      <podtrida>Letci</podtrida>
+      <rad>Sovy</rad>
+      <celed>Puštíkovití</celed>
+      <rod>Výr</rod>
+      <popis>Výr velký (Bubo bubo) je velký noční pták z čeledi puštíkovití. Je největší žijící sovou. Často je mu přezdíváno král noci. Výr velký je velký pták, větší než káně lesní, ale na druhou stranu zřetelně menší než např. orel skalní. Samice jsou těžší než samci a mají větší rozpětí křídel. Délka těla se u dospělce pohybuje obvykle mezi 60–70 cm, rozpětí křídel se u dospělce pohybuje okolo 170 cm. Hmotnost se pohybuje obvykle mezi 1800–3000 g, obzvlášť velcí jedinci však dosahují až hmotnosti přes 4 kg.</popis>
+      <image>182. Výr velký.jpg</image>
+    </bird>
+    <bird id="8">
+      <name>Kalous pustovka</name>
+      <latname>Asio flammeus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>sovy</rad>
+      <celed>puštíkovití</celed>
+      <rod>kalous</rod>
+      <popis>Kalous pustovka (Asio flammeus) je „ušatá sova“ z čeledi puštíkovítých. Jde o jednu z nejrozšířenějších sov světa, vyskytuje se na všech kontinentech kromě Austrálie a Antarktidy. V České republice běžně protahuje a zimuje, hnízdí jen sporadicky. Od příbuzného kalouse ušatého se snadno rozeznatelná podle krátkých, někdy až neznatelných „oušek“. Kalous pustovka je středně velká sova jen nepatrně větší než kalous ušatý (tělo je dlouhé 34-43 cm; hmotnost 206-475 g). Na rozdíl od něj má „ušní“ pírka (2-4 kusy) krátká a obvykle sklopená, ouška jsou tedy nevýrazná, někdy až neviditelná (v angl. se kalous ušatý jmenuje Long-eared Owl - dlouhouchá sova a kalous pustovka Short-eared Owl - krátkouchá sova). Svrchu je barva peří rezavě žlutá až nahnědlá s černohnědými skvrnami podél peří, na břiše světlejší až bělavé. Ocas je rezavě žlutý, hnědě napříč pruhovaný. Rozpětí křídel činí 85-103 cm. Samice se od samců zbarvením neliší, jen jsou mírně větší.</popis>
+      <image>54. Kalous pustovka.jpg</image>
+    </bird>
+  </lection>
+  <lection idl="2">
+    <count>7</count>
+    <bird id="1">
+      <name>Datel černý</name>
+      <latname>Dryocopus martius</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>šplhavci</rad>
+      <celed>datlovití</celed>
+      <rod>datel</rod>
+      <popis>Datel černý (Dryocopus martius) je největší evropský zástupce čeledi datlovitých. Vyskytuje se v borových, bukových i smíšených lesích na velkém území Eurasie. Datel černý je se svou délkou 45-50 cm, hmotností 250-320 g a rozpětím křídel kolem 76 cm velký zhruba jako vrána. Má štíhlé, černé tělo se světlým silným zobákem, protáhlou hranatou hlavou, šedými končetinami a bílýma očima. U pohlaví je slabě vyvinut pohlavní dimorfismus. Samec má na hlavě červenou „čepičku“, samice má pouze červený týl. Na rozdíl od ostatních datlovitých létá datel černý přímo, a nikoli ve vlnovkách.</popis>
+      <image>23. Datel černý.jpg</image>
+    </bird>
+    <bird id="2">
+      <name>Datlík tříprstý</name>
+      <latname>Picoides tridactylus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>šplhavci</rad>
+      <celed>datlovití</celed>
+      <rod>datlík</rod>
+      <popis>Datlík tříprstý (Picoides tridactylus) je středně velký druh šplhavce z čeledi datlovitých (Picidae). Téměř velikosti strakapouda velkého (délka těla 21,5–24 cm). Svrchu je černavý, s bílým pruhem za okem a bíle proužkovaným hřbetem a křídly.Spodina je bílá, hustě černě proužkovaná.Ocas černý s bílými okraji.které jsou černě pruhované.Samec temeno žluté, samice černé,bíle pruhované.Jeden z prstů chybí.Přesto je datlík tříprstý výborný šplhavec.</popis>
+      <image>24. Datlík tříprstý.jpg</image>
+    </bird>
+    <bird id="3">
+      <name>Strakapoud jižní</name>
+      <latname>Dendrocopos syriacus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>šplhavci</rad>
+      <celed>datlovití</celed>
+      <rod>strakapoud</rod>
+      <popis>Strakapoud jižní (Dendrocopos syriacus) je pták z čeledi datlovitých, velmi podobný strakapoudu velkému. V přírodě se můžeme setkat i se smíšenými páry, jejichž mláďata připomínají vzhledem i vlastnostmi oba rodičovské druhy. Černobílý strakatý pták, na rozdíl od strakapouda velkého má mezi okem a lícemi jednu velkou bílou skvrnu.Na bílém krku je černý vous,nikoliv kříž jak u strakapouda velkého.Také všechny červené znaky jsou růžovější než má strakapoud velký. Hmotnost 74-82 g, rozpětí křídel asi 12,5-13,6 cm.Má kňouravý hlas.</popis>
+      <image>147. Strakapoud jižní.jpg</image>
+    </bird>
+    <bird id="4">
+      <name>Strakapoud prostřední</name>
+      <latname>Dendrocopos medius</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>šplhavci</rad>
+      <celed>datlovití</celed>
+      <rod>strakapoud</rod>
+      <popis>Strakapoud prostřední (Dendrocopos medius) je středně velkým druhem šplhavce z čeledi datlovitých (Picidae). Je jen o něco menší než strakapoud velký (D. major), ale zároveň zřetelně větší, než strakapoud malý (D. minor). Dorůstá délky 20–22 cm a v rozpětí křídel měří 33–34 cm, hmotnost se pak pohybuje mezi 50–58 g. Hřbet a křídla má leskle černá, bíle skvrnitá, s kulatou bílou skvrnou v ramenní oblasti. Ocas je černý s bílými, tmavě pruhovanými vnějšími pery. Temeno má červené bez černého okraje, šíjový proužek černý, neuzavřený. Boky jsou šedě pruhované, hruď světle žlutá a břicho a spodní krovky ocasní růžové. Zobák je poměrně krátký, slabší, světle šedě zbarvený. Ze všech druhů strakapoudů v Evropě má nejméně rozvinutý sexuální dimorfismus patrný pouze na červené čepičce, která je u samic o něco kratší a na zadním okraji špinavě oranžově žlutá.</popis>
+      <image>148. Strakapoud prostřední.jpg</image>
+    </bird>
+    <bird id="5">
+      <name>Strakapoud velký</name>
+      <latname>Dendrocopos major</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>šplhavci</rad>
+      <celed>datlovití</celed>
+      <rod>strakapoud</rod>
+      <popis>Strakapoud velký (Dendrocopos major) je široce rozšířený šplhavec z čeledi datlovitých (Picidae). Je průměrně 22,5 cm dlouhý, černobíle zbarvený s červenými spodními krovkami ocasními. U pohlaví je přitom vyvinut nápadný pohlavní dimorfismus, samci mají na rozdíl od samic totiž i červený týl. Strakapoud velký dosahuje přibližně stejné velikosti jako špaček, dorůstá 22–23 cm, v rozpětí křídel měří 34–39 cm a jeho hmotnost se pohybuje mezi 70–90 g.</popis>
+      <image>149. Strakapoud velký.jpg</image>
+    </bird>
+    <bird id="6">
+      <name>Žluna šedá</name>
+      <latname>Picus canus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>šplhavci</rad>
+      <celed>živočichové</celed>
+      <rod>žluna</rod>
+      <popis>Žluna šedá (Picus canus) je středně velký šplhavý pták z čeledi datlovití. Podobá se příbuzné žluně zelené (Picus viridis), od níž se liší především tvarem „vousu“ - skvrny táhnoucí se od zobáku pod oko - který je výrazně užší a u samců bez vložené červené skvrny. Dále se liší hlasem, který je méně výbušný, klesající a melancholicky zabarvený.</popis>
+      <image>186. Žluna šedá.jpg</image>
+    </bird>
+    <bird id="7">
+      <name>Žluna zelená</name>
+      <latname>Picus viridis</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>šplhavci</rad>
+      <celed>živočichové</celed>
+      <rod>žluna</rod>
+      <popis>Žluna zelená (Picus viridis) je středně velký šplhavý pták z čeledi datlovitých. Hojně se vyskytuje v západní Asii a celé Evropě s výjimkou Irska, většinového území Skandinávského poloostrova a několika středozemních ostrovů, což ji činí jedním z nejrozšířenějších evropských zástupců své čeledi. Žluna zelená je nápadný pták s několika anatomickými adaptacemi pro život na stromech. Mezi nejdůležitější patří zajisté silný zašpičatělý zobák, vhodný pro rozsekávání dřeva, silné drápy, které žluna používá při zachycování na kmeni stromů, nepříliš dlouhý, ale přesto silný ocas, který má funkci opěrnou, a v neposlední řadě i ochranné zbarvení.</popis>
+      <image>187. Žluna zelená.jpg</image>
+    </bird>
+  </lection>
+  <lection idl="3">
+    <count>7</count>
+    <bird id="1">
+      <name>Hohol severní</name>
+      <latname>Bucephala clangula</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>vrubozobí</rad>
+      <celed>kachnovití</celed>
+      <rod>hohol</rod>
+      <popis>Hohol severní (Bucephala clangula) je středně velká potápivá kachna. Je velký přibližně jako kachnička mandarínská, dorůstá 40 - 48 cm, váží 600 - 1300 g a v rozpětí křídel měří kolem 77 - 83 cm. Všichni hoholové mají velmi svérázný vzhled a jsou poměrně snadno rozpoznatelní podle zvláštního tvaru hlavy. Samec má tmavou hlavu s jasně zelenavým odstínem, výraznou bílou skvrnu na obličeji, tmavý zobák, černý hřbet a ocas, příčné černobílé pruhování na bocích, světlé břicho, hruď a hrdlo a oranžové končetiny. Samice jsou celé hnědé a mají černožlutě zbarvený zobák.</popis>
+      <image>33. Hohol severní.jpg</image>
+    </bird>
+    <bird id="2">
+      <name>Husa velká</name>
+      <latname>Anser anser</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>vrubozobí</rad>
+      <celed>kachnovití</celed>
+      <rod>husa</rod>
+      <popis>Husa velká (též husa divoká nebo šedá; Anser anser) je široce rozšířený druh eurasijské husy. Společně s husou labutí (A. cygnoides) je též předkem všech plemen husy domácí (A. anser f. domesticus) vyšlechtěné ve střední Evropě. Je naší největší původní husou, dorůstá délky 75–100 cm, v rozpětí křídel měří 147–180 cm a váží 2,5–4 kg. Hmotnost u samců se přitom pohybuje mezi 3–5 kg, u samic pak mezi 2-3,5 kg. Má zavalité tělo, dlouhá silná brka a silný zobák. Opeření má hnědošedé s tmavším zbarvením na hlavě a světlejším břichem s proměnlivým černým pruhováním. Svrchní strana křídel je převážně světlá s černými letkami, končetiny má růžové a zobák žlutý (u poddruhu husa velká evropská - A. a. anser) nebo růžový (u poddruhu husa velká asijská - A. a. rubrirostris). Obě pohlaví se zbarvením neliší, mladí ptáci pak postrádají černé zbarvení na břiše a mají navíc i šedé končetiny a šedožlutý zobák.</popis>
+      <image>39. Husa velká.jpg</image>
+    </bird>
+    <bird id="3">
+      <name>Čírka obecná</name>
+      <latname>Anas crecca</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>vrubozobí</rad>
+      <celed>kachnovití</celed>
+      <rod>kachna</rod>
+      <popis>Čírka obecná (Anas crecca) je malá plovavá kachna z čeledi kachnovití. Samci mají tmavohnědou hlavu s jemnou světlou kresbou, samice jsou nenápadně zbarvené. Je to nejmenší kachna žijící na území ČR, dorůstají délky 34-38 cm a vážící 200-400 g. Hnízdo si s oblibou staví ve vřesovištích. Snáší 8-10 vajec, na kterých sedí samice. Nejmenší z evropských plovaných kachen, dlouhá asi 37 cm a o rozpětí asi 60 cm. Váží asi 300 g. Kačeři mají od října do května svatební šat, který je z dálky nenápadný, z blízka je však pestrý: spodní ocasní pera jsou žlutá, hlavu zdobí po stranách tmavě zelený světle orámovaný ovál. V prostém šatu jej či kachnu stěží rozeznáme od poněkud větší čírky modré (Anas querquedula), neboť obě pohlaví u obou druhů mají zelená zrcátka na křídlech. Čírka obecná má zobák lehce prohnutý. Hlasité volání „Krik..krik“, které je původem německého názvu (Krickente), je pro čírku též charakteristické. Čírky obecné patří mezi nejšikovnější letce mezi našimi kachnami. Vylétají téměř kolmo z vody a létají velmi rychle v sevřených šicích. Jsou to ptáci velice společenští, jen zřídka se však přimíchají mezi jiné kachny. Jsou zvláště čilé za soumraku nebo za světlých měsíčních nocí. Proto obvykle polední hodiny prospí.</popis>
+      <image>21. Čírka obecná.jpg</image>
+    </bird>
+    <bird id="4">
+      <name>Kopřivka obecná</name>
+      <latname>Anas strepera</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>vrubozobí</rad>
+      <celed>kachnovití</celed>
+      <rod>kachna</rod>
+      <popis>Kopřivka obecná (Anas strepera) je hojně rozšířená menší plovavá kachna. Kopřivka obecná dorůstá 46 - 56 cm a v rozpětí křídel měří 78 - 90 cm. Samec ve svatebním šatě je nápadný svým převážně šedým opeřením, světle hnědou hlavou, tmavým zobákem a kostřcem a výrazným bílým zrcátkem, které je dobře viditelné především v letu. V prostém šatě se podobá spíše samici, která je celá světle hnědá s nažloutlým zobákem. Bývá také často zaměňována se samicemi kachny divoké, na rozdíl od které dorůstá viditelně menších rozměrů a na místo světle modrého má stejně jako samec bílé zrcátko.</popis>
+      <image>63. Kopřivka obecná.jpg</image>
+    </bird>
+    <bird id="5">
+      <name>Hvízdák eurasijský</name>
+      <latname>Anas penelope</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>vrubozobí</rad>
+      <celed>kachnovití</celed>
+      <rod>kachna</rod>
+      <popis>Hvízdák eurasijský (Anas penelope, původně Mareca penelope) je středně velká plovací kachna z čeledi kachnovitých, jeden ze tří druhů hvízdáků. Hvízdák eurasijský je nápadný, asi 42 - 50 cm velký pták s rozpětím křídel 71 - 80 cm a hmotností mezi 400 - 1090 g. Samec ve svatebním šatě je naprosto nezaměnitelný. Má šedé boky a hřbet, černé letky a bílé zrcátka viditelné zvláště za letu, tmavý ocas, bílé břicho, růžovou hruď a kaštanově zbarvenou hlavu se světlým, dobře viditelným pruhem na čele a temeni a šedým zobákem. V prostém šatě se velmi podobá hnědočerné samici s oranžovým odstínem na bocích, hrudi a břiše.</popis>
+      <image>41. Hvízdák eurasijský.jpg</image>
+    </bird>
+    <bird id="6">
+      <name>Labuť velká</name>
+      <latname>Cygnus olor</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>vrubozobí</rad>
+      <celed>kachnovití</celed>
+      <rod>labuť</rod>
+      <popis>Labuť velká (Cygnus olor) je velký vrubozobý pták z čeledi kachnovití. Labuť velká patří mezi naše největší ptáky. Má dlouhé, bíle zbarvené tělo s krátkým ocasem, černýma nohama, obloukovitě zahnutým štíhlým krkem a oranžovým zobákem s hrbolem na kořeni, který je u samce viditelně větší než u samice.</popis>
+      <image>75. Labuť velká.jpg</image>
+    </bird>
+    <bird id="7">
+      <name>Polák velký</name>
+      <latname>Aythya ferina</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>vrubozobí</rad>
+      <celed>kachnovití</celed>
+      <rod>polák</rod>
+      <popis>Polák velký (Aythya ferina) je hojně rozšířená potápivá kachna. Patří k velkým druhům poláků, dorůstá přibližně 42 - 49 cm, váží 550 - 1300 g a v rozpětí křídel měří 67 - 75 cm. Stejně jako ostatní poláci má silné tělo, velmi krátký ocas a krk a vzhledem k poměru těla poměrně velkou hlavu. Samec ve svatebním šatě má bílý hřbet, křídla a boky s jemným černým pruhováním, jasně červené oči, kaštanově hnědou hlavu, šedý zobák s tmavou špičkou a zbytek těla převážně černý. V prostém šatě se podobá spíše samici, která je převážně tmavě hnědá se světlejšími boky, hlavou a částečně i křídly.</popis>
+      <image>117. Polák velký.jpg</image>
+    </bird>
+  </lection>
+  <lection idl="4">
+    <count>10</count>
+    <bird id="1">
+      <name>Bělořit šedý</name>
+      <latname>Oenanthe oenanthe</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>drozdovití</celed>
+      <rod>bělořit</rod>
+      <popis>Bělořit šedý (Oenanthe oenanthe) je pták z řádu pěvců, který je velký jako vrabec. Tažný; ze zimovišť se vrací koncem března a v dubnu, odlétá koncem srpna a v září. Hnízdí v dutinách mezi kameny, v pískových nebo hlinitých stěnách apod. Silně ohrožený, zvláště chráněný druh. Bělořit šedý je pták veliký asi jako vrabec domácí. Je dlouhý 14,5 až 15,5 cm, v rozpětí má 26 až 32 cm. Váží 17 až 30 g. Žije až 5 let. Samice ani samec v prostém šatě nejsou moc kontrastně zbarveni. Sameček má v době hnízdění šedou hlavu, bílý proužek přes oko, černou skvrnu za okem, bílou pásku nad okem a černá křídla i konec ocasu. Spodní strana těla je žlutá. Severoafričtí bělořiti mají hrdlo černé. Typický je bílý kostřec, podle kterého dostal pták české jméno. Mláďata jsou skvrnitá. Zdržuje se zejména na zemi, rád sedává na velkých balvanech.</popis>
+      <image>2. Bělořit šedý.jpg</image>
+    </bird>
+    <bird id="2">
+      <name>Červenka obecná</name>
+      <latname>Erithacus rubecula</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>lejskovití</celed>
+      <rod>červenka</rod>
+      <popis>Červenka obecná (Erithacus rubecula) je malý pták z čeledi lejskovitých. Červenka obecná je velká asi jako vrabec domácí. Má kulovité tělo s dlouhým ocasem a končetinami a krátkými křídly a zašpičatělým zobákem. Svrchu je světle hnědá, zespodu modrošedá a bílá, na hrdle a na obličeji má nápadnou oranžovočervenou náprsenku. Oči a zobák jsou černé, končetiny šedé. Obě pohlaví se zbarvením neliší, mladí ptáci jsou skvrnití a postrádají oranžovou skvrnu.</popis>
+      <image>20. Červenka obecná.jpg</image>
+    </bird>
+    <bird id="3">
+      <name>Drozd zpěvný</name>
+      <latname>Turdus philomelos</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>drozdovití</celed>
+      <rod>drozd</rod>
+      <popis>Drozd zpěvný (Turdus philomelos) je středně velký pták z čeledi drozdovitých. Drozd zpěvný je o málo menší než jeho příbuzný kos černý (20 - 23,5 cm) a váží 50 – 107 g, shora je hnědý, na hrdle a prsou světle okrový s tmavě hnědými podélnými skvrnami. Obě pohlaví jsou zbarvena stejně.</popis>
+      <image>28. Drozd zpěvný.jpg</image>
+    </bird>
+    <bird id="4">
+      <name>Drozd kvíčala</name>
+      <latname>Turdus pilaris</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>drozdovití</celed>
+      <rod>drozd</rod>
+      <popis>Drozd kvíčala (Turdus pilaris) je malý zpěvný pták z čeledi drozdovití. Drozd kvíčala je pěvec veliký asi jako kos černý, se štíhlým tělem, poměrně dlouhým ocasem a tenkým zašpičatělým zobákem. Dospělý pták má hnědý ocas, křídla, boky a hrdlo s černými šípovitými skvrnami, bílé břicho, šedý zátylek a hlavu s bílým pruhem nad okem. Zobák je žlutý, končetiny hnědožluté. Samec i samice jsou zbarveny stejně. Ve střední Evropě se jedná mezi drozdy o naprosto nezaměnitelný druh.</popis>
+      <image>27. Drozd kvíčala.jpg</image>
+    </bird>
+    <bird id="5">
+      <name>Kos černý</name>
+      <latname>Turdus merula</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>drozdovití</celed>
+      <rod>Turdus</rod>
+      <popis>Kos černý (Turdus merula) je pták žijící v celé Evropě a v jižní Asii, byl introdukován i do Austrálie a na Nový Zéland. Díky své přizpůsobivosti se adaptoval na život v blízkosti člověka a úspěšně žije a hnízdí i v těsném sousedství lidských sídel. Samci jsou nepřehlédnutelní svým charakteristickým černým peřím a žlutým zobákem, upozorňují na sebe také melodickým zpěvem. Kos černý je středně velký pták, o něco menší než hrdlička zahradní. Dospělý samec je matně černý s oranžově žlutým zobákem a žlutým kroužkem okolo očí. Samice je hnědavá s bělavějším hrdlem a nezřetelně skvrnitou hrudí, nohy jsou téměř černé, zobák má tmavý, jen částečně oranžový. Mláďata jsou podobná samici, jsou ale světlejší a mohou mít hnědě tečkovanou hruď a světlé podélné proužky na zádech. Samice ani mláďata nemají oční kroužek. Mladí, roční samci nemají ještě vybarvený zobák, který zůstává černavý.</popis>
+      <image>64. Kos černý.jpg</image>
+    </bird>
+    <bird id="6">
+      <name>Slavík obecný</name>
+      <latname>Luscinia megarhynchos</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>drozdovití</celed>
+      <rod>slavík</rod>
+      <popis>Slavík obecný (Luscinia megarhynchos) je malý druh pěvce z čeledi lejskovitých. Velikosti vrabce (délka těla 15-16,5 cm). Svrchu je hnědý s rezavočerveným kostřecem a ocasem, spodní část těla má šedobéžovou s o něco světlejším hrdlem. Nad okem se táhne nevýrazný světlý proužek. Pohlaví se zbarvením nijak neliší. Od velmi podobného slavíka tmavého jej mnohdy nejde odlišit; má o něco červenější ocas a spodní část hrdla a hrudi bez zřetelného vlnkování. Liší se hlavně zpěvem.</popis>
+      <image>140. Slavík obecný.jpg</image>
+    </bird>
+    <bird id="7">
+      <name>Rehek zahradní</name>
+      <latname>Phoenicurus phoenicurus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>drozdovití</celed>
+      <rod>rehek</rod>
+      <popis>Rehek zahradní (Phoenicurus phoenicurus) je malý stěhovaný pták z řádu pěvců. Sameček má jasně bílé čelo, boky hlavy a hrdlo černé, horní stranu těla břidlicově namodrale šedou, spodní stranu, kostřec a ocas rezavě červené., ocasní pera kromě prostředního páru rezavé Samička je hnědavá, na spodní straně rezavá, podobná samičce rehka domácího.</popis>
+      <image>136. Rehek zahradní.jpg</image>
+    </bird>
+    <bird id="8">
+      <name>Bramborníček hnědý</name>
+      <latname>Saxicola rubetra</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>drozdovití</celed>
+      <rod>bramborníček</rod>
+      <popis>Bramborníček hnědý (Saxicola rubetra) je malý monotypický druh drozdovitého ptáka z rodu bramborníček. Dorůstá délky 13–14 cm, v rozpětí křídel měří 21–24 cm a váží 15–20 g. Samec má hnědavě černé strany hlavy lemované bílými proužky, oranžově béžové hrdlo a hruď, bělavé břicho a skvrnitou svrchní část těla. Samice a mláďata jsou podobná, jen méně kontrastně zbarvená.</popis>
+      <image>3. Bramborníček hnědý.jpg</image>
+    </bird>
+    <bird id="9">
+      <name>Konipas luční</name>
+      <latname>Motacilla flava</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>konipasovití</celed>
+      <rod>konipas</rod>
+      <popis>Konipas luční (Motacilla flava) je malý zpěvný pták z čeledi konipasovitých. Velikosti štíhlého vrabce (délka těla 15–16 cm). Samec má žlutou spodinu těla, šedozelený hřbet a hnědavě šedá křídla s výraznými, ale úzkými světlými křídelními páskami; samice je méně výrazně zbarvená. Nohy jsou ve všech šatech černé.</popis>
+      <image>61. Konipas luční.jpg</image>
+    </bird>
+    <bird id="10">
+      <name>Linduška luční</name>
+      <latname>Anthus pratensis</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>konipasovití</celed>
+      <rod>linduška</rod>
+      <popis>Linduška luční (Anthus pratensis) je malý zpěvný pták z čeledi konipasovitých (Motacillidae). Je přibližně stejně velká jako vrabec (Passer domesticus), dorůstá délky 14–15 cm, v rozpětí křídel měří 22–25 cm a váží 18-20 g. Opeření má nevýrazné, svrchu šedohnědé, na spodině krémově bílé, s černým pruhováním na většině těla. Světlého zbarvení jsou také vnější okraje hnědého ocasu a dvojice úzkých pruhů na křídlech. Oči i tenký zobák má tmavý, končetiny s nápadně dlouhým zadním drápem růžové. Obě pohlaví jsou zbarvena stejně.</popis>
+      <image>84. Linduška luční.jpg</image>
+    </bird>
+  </lection>
+    <lection idl="5">
+    <count>7</count>
+    <bird id="1">
+      <name>Krkavec velký</name>
+      <latname>Corvus corax</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>krkavcovití</celed>
+      <rod>krkavec</rod>
+      <popis>Krkavec velký (Corvus corax) je velký černý pták z čeledi krkavcovitých. Je největším pěvcem České republiky. Je chráněný zákonem jako ohrožený druh. Krkavec velký dorůstá velikosti kolem 50 centimetrů a hmotnosti 1,5 kilogramu. Krkavec velký je velký černý pták s mohutným vysokým zobákem, na rozdíl od podstatně menšího havrana polního má opeřený kořen zobáku. Jeho šat je černý s kovovým leskem, na hrdle mu charakteristicky odstává peří. Jeho křídla jsou dlouhá a i na konci široká, prstovitě zakončená jako u některých dravců. V rozpětí křídel dosahuje kolem 1 metru. Krkavec má klínovitý ocas, který jej v letu odlišuje od havrana polního a vrány obecné. Let krkavce je klidný s volnými rázy křídel, někdy klouzá zvolna vzduchem. Umí dobře plachtit. Za potravou se ochotně snáší i na zem, ale zůstává ostražitý. Krkavec velký je znám svou opatrností a nedůvěřivostí.</popis>
+      <image>69. Krkavec velký.jpg</image>
+    </bird>
+    <bird id="2">
+      <name>Sojka obecná</name>
+      <latname>Garrulus glandarius</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>krkavcovití</celed>
+      <rod>sojka</rod>
+      <popis>Sojka obecná (Garrulus glandarius) je pták velikosti holuba z čeledi krkavcovití, rozšířený v celé Evropě, Asii a v severozápadní Africe. Sojka obecná je nejbarvitější evropský zástupce své čeledi. Je oranžovohnědá s černým ocasem a zobákem, růžovooranžovými končetinami, hnědýma očima a bílým kostřcem, který je zvlášť nápadný při letu. Na křídlech má modrá pírka s černými příčnými proužky, pod okem černou podélnou skvrnu. Létá těžce, vlnovitě a třepotavě, na zemi poskakuje. Pohlaví se od sebe zbarvením neliší, mladí ptáci jsou tmavší a mají méně výrazná modrá pírka na křídlech.</popis>
+      <image>143. Sojka obecná.jpg</image>
+    </bird>
+    <bird id="3">
+      <name>Straka obecná</name>
+      <latname>Pica pica</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>krkavcovití</celed>
+      <rod>straka</rod>
+      <popis>Straka obecná (Pica pica) je krkavcovitý pěvec velikosti hrdličky, s výrazným černobílým zbarvením a dlouhým stupňovitým ocasem. Má poměrně krátká a široká křídla a její let je ve srovnání s jinými krkavcovitými těžkopádný. Straka se vyskytuje v Eurasii, severní Africe a Severní Americe. Tento druh se dělí na cca 12 poddruhů; ve střední Evropě se vyskytuje straka obecná středoevropská (Pica pica pica, vyskytuje se od Velké Británie až po Ukrajinu a Turecko). U strak obecných se samec od samice neliší vzhledem. Typické jsou zřetelně oddělené černé a bílé plochy. Černá je hlava, horní část hřbetu, krk, vole, ocas, valná většina křídla. Bílá jsou prsa a břicho, lopatky, dolní část hřbetu, kostřec a vnitřní prapory ručních letek. Černé části křídel a rýdovací pera nejsou opravdu černá. Jak je vidět na obrázku straky v letu, ocas se leskne do zelena a křídla do modra. Mláďata nemají kovový lesk v černém peří a mají širší černý okraj bílých částí ručních letek. Přitahují ji třpitivé věci.</popis>
+      <image>146. Straka obecná.jpg</image>
+    </bird>
+    <bird id="4">
+      <name>Budníček lesní</name>
+      <latname>Phylloscopus sibilatrix</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>Sylvioidea</celed>
+      <rod>budníček</rod>
+      <popis>Budníček lesní (Phylloscopus sibilatrix) je malým druhem pěvce z čeledi budníčkovitých (Phylloscopidae). Štíhlý, menší než vrabec. Dorůstá délky 11–13 cm a v rozpětí křídel měří 19–24 cm. Hmotnost se pak pohybuje mezi 8–13 g. Svrchní stranu těla má světle zelenou a spodinu těla na rozdíl od podobných druhů budníčků výrazně bílou, kontrastující se žlutou hrudí, tváří a nadočním proužkem. Končetiny má hnědé. Obě pohlaví jsou zbarvena stejně.</popis>
+      <image>6. Budníček lesní.jpg</image>
+    </bird>
+    <bird id="5">
+      <name>Pěnice černohlavá</name>
+      <latname>Sylvia atricapilla</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>pěnicovití</celed>
+      <rod>pěnice</rod>
+      <popis>Pěnice černohlavá (Sylvia atricapilla, lidově také "černohlávek") je malý tažný zpěvný pták z čeledi pěnicovití.  Jedna z větších pěnic. Ozývá se čistým flétnovým hlasem a samci dokáží mistrně napodobit hlas jiných druhů ptáků (např. slavíků, kosa, drozdů nebo červenky). "Černohlávek" se snadno pozná podle typické čepičky na hlavě, sahající k hornímu okraji oka. Dospělý samec má čepičku černou (od prvního přepeření do konce zimy má čepičku hnědou, černou nebo černohnědou). Po stranách hlavy je samec šedý, svrchu šedý a naspodu olivově šedý. Samice má čepičku rezavohnědou. Svrchu je tmavěji šedohnědá, na spodu světleší ale celkově oproti samci s hnědým nádechem. Mladí ptáci (do prvního přepeření) mají čepičku zbarvenou jako samice. Na ocase nemá v žádném šatu bílou barvu. Nohy i zobák jsou šedé.</popis>
+      <image>106. Pěnice černohlavá.jpg</image>
+    </bird>
+    <bird id="6">
+      <name>Rákosník proužkovaný</name>
+      <latname>Acrocephalus schoenobaenus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>Sylvioidea</celed>
+      <rod>rákosník</rod>
+      <popis>Rákosník proužkovaný (Acrocephalus schoenobaenus) je středně velkým monotypickým druhem pěvce z čeledi rákosníkovitých (Acrocephalidae). Dorůstá délky 11,5–13 cm, v rozpětí křídel měří 17–21 cm a váží 10–15 g. Má hnědý, tmavě skvrnitý hřbet a křídla, černě žíhané temeno, světlou spodinu těla a bělavý nadoční proužek. Končetiny jsou šedavé. Obě pohlaví jsou zbarvena stejně, mladí ptáci mají tmavé skvrnění na hrudi.</popis>
+      <image>131. Rákosník proužkovaný.jpg</image>
+    </bird>
+    <bird id="7">
+      <name>Sedmihlásek hajní</name>
+      <latname>Hippolais icterina</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>Sylvioidea</celed>
+      <rod>sedmihlásek</rod>
+      <popis>Sedmihlásek hajní (Hippolais icterina) je malý zpěvný pták z čeledi rákosníkovitých (Acrocephalidae). Je menší než vrabec, štíhlý, nenápadně zbarvený. Dorůstá délky 12–14 cm, v rozpětí křídel měří 21–24 cm a váží 14-20 g. Svrchní stranu těla má zelenavě hnědou, se světlým polem v křídlech, spodinu a tenký nadoční proužek světle žlutý, delší, zašpičatělý zobák oranžový, oči černé a končetiny modrošedé. Obě pohlaví jsou zbarvena stejně, mladí ptáci pak mají bledší spodinu těla.</popis>
+      <image>137. Sedmihlásek hajní.jpg</image>
+    </bird>
+  </lection>
+  <lection idl="6">
+    <count>11</count>
+    <bird id="1">
+      <name>Pěnkava obecná</name>
+      <latname>Fringilla coelebs</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>živočichové</celed>
+      <rod>pěnkava</rod>
+      <popis>Pěnkava obecná (Fringilla coelebs) je malý pěvec z čeledi pěnkavovitých. Je široce rozšířená, vyskytuje se na všech kontinentech východní polokoule a díky svému častému výskytu v těsné blízkosti lidských obydlí je i dobře známá. Samec je díky svému zbarvení naprosto nezaměnitelný. Naproti tomu samice je převážně nevýrazně hnědá se světle růžovým břichem. Pěnkava obecná je velká asi jako vrabec domácí, dorůstá 14 – 16 cm, v rozpětí křídel měří 24,5 - 28,5 cm a dosahuje hmotnosti kolem mezi 18 - 29 g. Má poměrně štíhlé tělo, dlouhý ocas a krátký silný zobák typický pro semenožravé ptáky.</popis>
+      <image>112. Pěnkava obecná.jpg</image>
+    </bird>
+    <bird id="2">
+      <name>Dlask tlustozobý</name>
+      <latname>Coccothraustes coccothraustes</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>pěnkavovití</celed>
+      <rod>dlask</rod>
+      <popis>Dlask tlustozobý (Coccothraustes coccothraustes) je středně velký pták z čeledi pěnkavovitých. Dlask tlustozobý je dlouhý 16,5–18 cm, v rozpětí křídel měří 29–33 cm a váží cca 48-62 g. Má nápadně silný kuželovitý zobák, velkou hlavu a krátký ocas. Peří je převážně rezavohnědé a béžové, s černou uzdičkou a skvrnou pod zobákem a leskle modročernými křídly s kapkovitě rozšířenými konci ručních letek. Za letu jsou nápadné bílé křídelní pásky a bílý konec ocasu. Zobák je v létě šedočerný a v zimě slonovinově bílý nebo světle žlutohnědý. Obě pohlaví jsou podobná, samice je matněji a méně výrazněji zbarvená, s popelavě šedým polem na loketních letkách (u samce jsou letky celé černé). Mladý pták má šedožlutou hruď a tmavě tečkované břicho.</popis>
+      <image>25. Dlask tlustozobý.jpg</image>
+    </bird>
+    <bird id="3">
+      <name>Chocholouš obecný</name>
+      <latname>Galerida cristata</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>skřivanovití</celed>
+      <rod>chocholouš</rod>
+      <popis>Chocholouš obecný (Galerida cristata) je malý pěvec z čeledi skřivanovití rozšířený v Eurasii od Portugalska po severovýchodní Čínu a východní Indii a v subsaharské Africe až po Nigérii. Chocholouš obecný je o něco větší než podobný skřivan polní. Má zavalité tělo, poměrně krátký ocas a kulatou hlavu se zřetelnou chocholkou a štíhlým zobákem. Podobně jako ostatní skřivanovití není chocholouš nijak nápadně zbarvený, svrchu je světle hnědý s černými skvrnami a pruhy, které má nápadné i na prsou, zespodu špinavě bílý. Zobák a končetiny má růžové a na rozdíl od skřivana polního postrádá bílá pera na ocase. Pohlaví se zbarvením nijak neliší.</popis>
+      <image>45. Chocholouš obecný.jpg</image>
+    </bird>
+    <bird id="4">
+      <name>Skřivan lesní</name>
+      <latname>Lullula arborea</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>skřivanovití</celed>
+      <rod>Kaup</rod>
+      <popis>Skřivan lesní (Lullula arborea) je středně velký druh pěvce z čeledi skřivanovitých. Velikosti vrabce (délka těla 13,5–15 cm). Shora je hnědý, tmavě skvrnitý, spodinu má bílou, končetiny žlutavě hnědé a slabý zobák šedohnědý se světlejším kořenem. Na první pohled se podobá skřivanu polnímu, od kterého se liší následujícími znaky: ocas má bílou špičku (ne okraje), zadní okraj křídla není bílý, kresba křídla je kontrastní (tmavé ruční krovky se světlými špičkami), široký krémový nadoční proužek sahá až do týla. Obě pohlaví jsou zbarvena podobně.</popis>
+      <image>139. Skřivan lesní.jpg</image>
+    </bird>
+    <bird id="5">
+      <name>Špaček obecný</name>
+      <latname>Sturnus vulgaris</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>špačkovití</celed>
+      <rod>špaček</rod>
+      <popis>Špaček obecný (Sturnus vulgaris) je známý pěvec z čeledi špačkovitých. Dorůstá 19 - 22 cm, v rozpětí křídel měří 37 - 42 cm a váží 60 - 90 g. Je porostlý leskle černým opeřením, které ve svatebním šatě získává nápadný modravý nebo zelenavý odstín. Přes zimu se na jeho břiše objevuje husté bílé skvrnění, které je u samic zastoupeno ve větší míře. Končetiny má zbarveny růžově, zašpičatělý zobák je přes léto žlutý, u samců s modrým zbarvením u kořene, přes zimu je u obou pohlaví černý. Mladí ptáci jsou šedohnědí a dospělcům se začínají více podobat zpravidla po první zimě, jejich dobrým odlišovacím znakem však stále zůstává hnědě zbarvené opeření na určité části těla, nejčastěji na hlavě.</popis>
+      <image>166. Špaček obecný.jpg</image>
+    </bird>
+    <bird id="6">
+      <name>Sýkora koňadra</name>
+      <latname>Parus major</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>sýkorovití</celed>
+      <rod>sýkora</rod>
+      <popis>Sýkora koňadra (Parus major) je naše největší a nejrozšířenější sýkora. Původně dávala přednost listnatým lesům, ale dnes žije také v parcích a zahradách a velmi dobře se naučila využívat blízkosti lidí ve svůj prospěch. Koňadra je poměrně výrazně zbarvená. Má žluté bříško s podélným černým pruhem, černou čepičku a černě lemované bílé líce. Má velmi rozmanité hlasové projevy a je poměrně dobrý imitátor hlasů jiných druhů. V létě se živí hmyzem, ale v zimě musí přejít na semena s vysokým obsahem tuku, která často nacházejí na krmítkách (nejlépe slunečnice) a jsou ochotny si pro ně přiletět až na lidskou ruku. Dále ochotně konzumují různé živočišné tuky (např. hovězí lůj) a v Anglii prosluly sýkorky tím, že se naučily rozklovat hliníková víčka lahví s mlékem a sezobat smetanu pod ním. Sýkora koňadra je velká asi jako vrabec, ale štíhlejší. Je to naše největší sýkora, je 14 cm dlouhá a váží 20 g. Hlavu má černou, jen tváře a příuší jsou bílé. Černá barva pokračuje i na náprsenku a zužuje se do černého pruhu, který se táhne přes břicho (u samic je tento pruh tenčí a méně výrazný). Hřbet je žlutavý až zelený, břicho žluté, kostřec a svrchní krovky ocasní modrošedé, křídla jsou tmavá modrošedá s nevýraznou bílou páskou. Zobák je silný, kuželovitý a černý. Mladí ptáci jsou bledší a líce mají žlutavé, zobák hnědošedý.</popis>
+      <image>160. Sýkora koňadra.jpg</image>
+    </bird>
+    <bird id="7">
+      <name>Sýkora babka</name>
+      <latname>Parus palustris</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>sýkorovití</celed>
+      <rod>sýkora</rod>
+      <popis>Sýkora babka (Poecile palustris, syn. Parus palustris) je malý druh pěvce z čeledi sýkorovitých (Paridae). Je o něco menší než vrabec, dorůstá délky 11–12 cm, v rozpětí křídel měří 18–19 cm a váží 9-12 g. Svrchní část těla má šedohnědou, spodinu bělavou s hnědým odstínem patrným zejména na bocích a spodní části břicha, líce bílé a zátylek, temeno, čelo a bradu leskle černé. Zobák je černý a končetiny šedočerné. Obě pohlaví jsou zbarvena stejně, mladí ptáci mají jednotvárněji zbarvené temeno a bradu, šedší odstín na svrchní straně těla a světlejší spodinu; stejně jako dospělci jsou zbarvení po přepeření v září.</popis>
+      <image>159. Sýkora babka.jpg</image>
+    </bird>
+    <bird id="8">
+      <name>Vlaštovka obecná</name>
+      <latname>Hirundo rustica</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>Vlaštovkovití</celed>
+      <rod>Vlaštovka</rod>
+      <popis>Vlaštovka obecná (Hirundo rustica; L., 1758) je známý tažný pták z čeledi vlaštovkovitých. Podobně vypadající ptáci, kteří jsou někdy za ni považováni, jsou příbuzní jiřička obecná a břehule říční a nepříbuzný, ale podobný rorýs obecný. Vlaštovka obecná má dlouhý vidlicovitý ocas a dlouhá špičatá křídla. Čelo, brada a hrdlo je rezavě hnědé, svrchní strana těla jednolitě modročerně lesklá, spodní bílá (hruď, břicho a spodní krovky ocasní). Ocasní pera mají zespodu řadu bílých skvrn před koncem ocasu. Samec se od samice liší delšími ocasními pery. Mláďata mají matově zbarvené hrdlo i svrchní stranu těla a méně vykrojený ocas.</popis>
+      <image>173. Vlaštovka obecná.jpg</image>
+    </bird>
+    <bird id="9">
+      <name>Jiřička obecná</name>
+      <latname>Delichon urbica</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>vlaštovkovití</celed>
+      <rod>jiřička</rod>
+      <popis>Jiřička obecná (Delichon urbica) je malý pták z čeledi vlaštovkovití. Jiřička obecná je malý pták, dorůstá přibližně 13 cm, v rozpětí křídel měří 26 – 29 cm a její hmotnost se pohybuje kolem 18,3 g. Svrchu je modrá s ocelovým nádechem,křídla a ocas jsou hnědočerná, kostřec a spodní strana těla je bílá. Bílé opeření má i na nožkách. Pohlaví se zbarvením nijak výrazně neliší mladí ptáci jsou však v porovnání s dospělci na spodní straně tmavší a na křídlech mívají často řídké bílé zbarvení.Také horní strana je méně lesklá.</popis>
+      <image>53. Jiřička obecná.jpg</image>
+    </bird>
+    <bird id="10">
+      <name>Vrabec domácí</name>
+      <latname>Passer domesticus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>vrabcovití</celed>
+      <rod>vrabec</rod>
+      <popis>Vrabec domácí (Passer domesticus) je malý zástupce čeledi vrabcovitých a nejrozšířenější žijící pták na světě, vyskytující se na velkém území Eurasie a uměle vysazen v Americe, subsaharské Africe, Austrálii a na Novém Zélandu (viz mapka níže). Pochází pravděpodobně z Malé Asie nebo Arabského poloostrova a do Evropy se dostal již před tisíci lety. Podobně jako kos černý se i vrabec domácí skvěle přizpůsobil životu ve městech a dnes jde o typického obyvatele oblastí obývaných člověkem, který mu poskytuje úkryt a potravu. Vrabec domácí se v dálce jeví jako poměrně nenápadný zavalitý pták, ale při bližším pohledu, zvláště pak na samce, jde o poměrně pestře zbarveného ptáka. Má krátký zobák, poměrně dlouhá křídla a krátký ocas. Mezi oběma pohlavími je znatelně vyvinutý sexuální dimorfismus. Samec má špinavě šedou břišní část těla, svrchní stranu hnědou v různých odstínech s černými skvrnami a jednou větší bílou v úrovni hrdla. Od samice jej rozeznáme také díky černé skvrně na hrdle a černému proužku na hrdle. Samice jsou znatelně méně nápadné, šedohnědé, svrchu tmavší. Mladí ptáci jsou zbarveni stejně jako samice. V létě mají obě pohlaví modročerný zobák a hnědé končetiny, v zimě zobák nažloutle hnědý. V České republice si jej můžeme snadno splést s menším a štíhlejším vrabcem polním, který má na rozdíl od vrabce domácího kaštanově hnědou čepičku a černou skvrnu na lících.Samice vrabce se nazývá vrabčice a dítě vrabečátko</popis>
+      <image>180. Vrabec domácí.jpg</image>
+    </bird>
+    <bird id="11">
+      <name>Žluva hajní</name>
+      <latname>Oriolus oriolus</latname>
+      <trida>ptáci</trida>
+      <podtrida>letci</podtrida>
+      <rad>pěvci</rad>
+      <celed>žluvovití</celed>
+      <rod>žluva</rod>
+      <popis>Žluva hajní (Oriolus oriolus) je pták velikosti kosa. V ČR je to pravidelně se vyskytující pták, o celkové početnosti 8000 až 16000 hnízdících párů. Samec má výrazné žluté zbarvení těla, kontrastující s černým zbarvením křídel a ocasu. Zobák je červený, kolem oka je černá skvrnka. Samice je vybarvena nenápadně, její tělo je na hřbetě olivově zelené, spodina těla je šedá s podélnými proužky. Mladí jedinci jsou zespodu bílí a slabě proužkovaní, křídelní pera mají světlý lem.</popis>
+      <image>188. Žluva hajní.jpg</image>
+    </bird>
+  </lection>
+</lections>

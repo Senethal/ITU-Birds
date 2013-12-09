@@ -1,189 +1,166 @@
-<?xml version="1.0" encoding="windows-1250"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <questions>
-
-
   <question id="1">
-    <quest>1</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
+    <quest>Jaké velikosti v centimetrech může dorůst sova pálená?</quest>
+    <ansA>5-10 cm</ansA>
+    <ansB>29-44 cm</ansB>
+    <ansC>55-66 cm</ansC>
+    <ansD>nad 100 cm</ansD>
     <rigans>B</rigans>
   </question>
-
   <question id="2">
-    <quest>2</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Čím je charakteristický Kalous ušatý?</quest>
+    <ansA>Prodlouženým opeřením kolem uší</ansA>
+    <ansB>Tvarem nosu</ansB>
+    <ansC>Tvarem zobáku</ansC>
+    <ansD>Ostrýma drápama</ansD>
+    <rigans>A</rigans>
   </question>
-
   <question id="3">
-    <quest>3</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Co platí o ptáku z čeledi puštíkovitých Kulíškovi nejmenším?</quest>
+    <ansA>Je to nejmenší sova Evropy</ansA>
+    <ansB>Je to nejtlustší sova Evropy</ansB>
+    <ansC>Je to nejmenší sova Evropy</ansC>
+    <ansD>Je to nejrychlejší sova Evropy</ansD>
+    <rigans>A</rigans>
   </question>
-  
   <question id="4">
-    <quest>4</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Do jaké čeledi patří Puštík obecný?</quest>
+    <ansA>Sovovití</ansA>
+    <ansB>Datlovití</ansB>
+    <ansC>Strnadovití</ansC>
+    <ansD>Puštíkovití</ansD>
+    <rigans>D</rigans>
   </question>
-  
   <question id="5">
-    <quest>5 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Čím je typický Sýček obecný?</quest>
+    <ansA>Černýma končetinama</ansA>
+    <ansB>Hranatou hlavou</ansB>
+    <ansC>Bílým pruhem nad očima</ansC>
+    <ansD>Dlouhým ocesam</ansD>
+    <rigans>C</rigans>
   </question>
-  
   <question id="6">
-    <quest>6 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
+    <quest>Co platí o Výru velkém?</quest>
+    <ansA>Je nejmenší žijící sovou</ansA>
+    <ansB>Je největší žijící sovou</ansB>
+    <ansC>Je nejhubenější žijící sovou</ansC>
+    <ansD>Je nejškaredší žijící sovou</ansD>
     <rigans>B</rigans>
   </question>
-  
   <question id="7">
-    <quest>7 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Čím se vyznačují ptáci z řádu "sovy"?</quest>
+    <ansA>Přes den jsou nejaktivnější</ansA>
+    <ansB>Odlétají do teplých krajin</ansB>
+    <ansC>Žijí pod zemí</ansC>
+    <ansD>Nejčastěji přes den spí a v noci loví</ansD>
+    <rigans>D</rigans>
   </question>
-  
   <question id="8">
-    <quest>8 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Čím se vyznačují ptáci z řádu "sovy"?</quest>
+    <ansA>Přes den jsou nejaktivnější</ansA>
+    <ansB>Odlétají do teplých krajin</ansB>
+    <ansC>Žijí pod zemí</ansC>
+    <ansD>Nejčastěji přes den spí a v noci loví</ansD>
+    <rigans>D</rigans>
   </question>
   
   <question id="9">
-    <quest>9 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Čím se vyznačuje samec Datla černého?</quest>
+    <ansA>Má na hlavě žlutý klobouček</ansA>
+    <ansB>Má na hlavě zelenou kšiltovku</ansB>
+    <ansC>Má na hlavě červenou čepičku</ansC>
+    <ansD>Má plešatou hlavičku</ansD>
+    <rigans>C</rigans>
   </question>
-  
   <question id="10">
-    <quest>10 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
+    <quest>O Datlu černém je známo, že je:</quest>
+    <ansA>Kuchař lesa</ansA>
+    <ansB>Doktor lesa</ansB>
+    <ansC>Plavčík lesa</ansC>
+    <ansD>Prodavač lesa</ansD>
     <rigans>B</rigans>
   </question>
-  
   <question id="11">
-    <quest>11 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Čím se vyznačuje Datlík tříprstý?</quest>
+    <ansA>Chybí mu jeden prst</ansA>
+    <ansB>Má tři křídla</ansB>
+    <ansC>Neumí dobře šplhat</ansC>
+    <ansD>Neumí létat</ansD>
+    <rigans>A</rigans>
   </question>
-  
   <question id="12">
-    <quest>12 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Do jaké čeledi patří Strakapoud jižní?</quest>
+    <ansA>Lejskovití</ansA>
+    <ansB>Sovovití</ansB>
+    <ansC>Kachnovití</ansC>
+    <ansD>Datlovití</ansD>
+    <rigans>D</rigans>
   </question>
-  
   <question id="13">
-    <quest>13 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
+    <quest>Strakapoud velký patří mezi:</quest>
+    <ansA>Hlodavce</ansA>
+    <ansB>Šplhavce</ansB>
+    <ansC>Plavce</ansC>
+    <ansD>Nelétavce</ansD>
     <rigans>B</rigans>
   </question>
-  
   <question id="14">
-    <quest>14 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>K čemu používá Žluna zelená zašpičatělý zobák a silné drápy?</quest>
+    <ansA>Aby lépe slyšela</ansA>
+    <ansB>K rozsekávání ledu</ansB>
+    <ansC>K pití vody</ansC>
+    <ansD>K životu na stromě</ansD>
+    <rigans>D</rigans>
   </question>
-  
   <question id="15">
-    <quest>15 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
+    <quest></quest>
+    <ansA></ansA>
+    <ansB></ansB>
+    <ansC></ansC>
+    <ansD></ansD>
     <rigans>B</rigans>
   </question>
   
   <question id="16">
-    <quest>16 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Jaké délky v centimetrech dorůstá Husa velká?</quest>
+    <ansA>10-20 cm</ansA>
+    <ansB>30-50 cm</ansB>
+    <ansC>75-100 cm</ansC>
+    <ansD>více než 200 cm</ansD>
+    <rigans>C</rigans>
   </question>
-  
   <question id="17">
-    <quest>17 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Labuť velká patří mezi naše...doplňte</quest>
+    <ansA>Nejmenší ptáky</ansA>
+    <ansB>Nejméně rozšířené ptáky</ansB>
+    <ansC>Masožravé ptáky</ansC>
+    <ansD>Největší ptáky</ansD>
+    <rigans>D</rigans>
   </question>
-  
   <question id="18">
-    <quest>18 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
+    <quest>Čím se Labuť velká vyznačuje?</quest>
+    <ansA>Širokým krkem</ansA>
+    <ansB>Dlouhým krkem</ansB>
+    <ansC>Ostrými drápy</ansC>
+    <ansD>Velkými zuby</ansD>
     <rigans>B</rigans>
   </question>
-  
   <question id="19">
-    <quest>19 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Kde nejčastěji a nejhojněji žijí ptáci z čeledi kachnovití?</quest>
+    <ansA>Na vodních plochách</ansA>
+    <ansB>V lese</ansB>
+    <ansC>V parku</ansC>
+    <ansD>Na louce</ansD>
+    <rigans>A</rigans>
   </question>
-  
   <question id="20">
-    <quest>20 sa</quest>
-    <ansA>blaA</ansA>
-    <ansB>blaB</ansB>
-    <ansC>blaC</ansC>
-    <ansD>blaD</ansD>
-    <rigans>B</rigans>
+    <quest>Do jaké čeledi patří Labuť velká?</quest>
+    <ansA>Labuťovití</ansA>
+    <ansB>Drozdovití</ansB>
+    <ansC>Kachnovití</ansC>
+    <ansD>Letci</ansD>
+    <rigans>C</rigans>
   </question>
-
+ 
 </questions>
-
-
-
