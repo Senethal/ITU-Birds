@@ -27,7 +27,7 @@ public class PictureTestScreen extends Background {
         initComponents();
         this.Test.setVisible(true);
         this.Vyhodnoceni.setVisible(false);
-        this.Tester = new Tests();
+        this.Tester = new Tests(this.Okno.getLesson(),this.Okno.getTypeTest());
         
         //this.Question.setText(this.Tester.GetQuestion());
         this.AnswerA.setText(this.Tester.GetAnswerA());

@@ -29,7 +29,7 @@ public class Tests {
     public int index;
  
     
-    public Tests() throws ParserConfigurationException, SAXException, IOException {       
+    public Tests(int Less, int TypeTest) throws ParserConfigurationException, SAXException, IOException {       
         int[] Test = new int[maxim];
         this.Questions = new String[maxim];
         this.Answers = new String[maxim][4];
@@ -38,8 +38,15 @@ public class Tests {
         this.index = 0;
         
         for (int i =0; i<10; i++) {
-            Test[i] = this.Generate(Test);
-            this.FillKlasik(i,Test[i]);
+            if (TypeTest == 1) {
+                Test[i] = this.Generate(Test, Less);
+                this.Fill(i,Test[i], TypeTest);  
+            }
+            else if (TypeTest == 2) {
+                Test[i] = this.GenerateImage(Test);
+                this.Fill(i,Test[i], TypeTest);     
+            }
+
         }      
     }
      
@@ -48,7 +55,7 @@ public class Tests {
  * @param pole
  * @return 
  */
-    private int Generate(int[] pole) {
+    private int Generate(int[] pole, int TypeLess) {
             
         int value;
         value = (int)(Math.random()*19+1);
@@ -61,7 +68,25 @@ public class Tests {
         }         
         return value;       
     }  
-    
+
+/**
+ * Metoda, ktera nahodne generujicich cisel
+ * @param pole
+ * @return 
+ */
+    private int GenerateImage(int[] pole) {
+            
+        int value;
+        value = (int)(Math.random()*24+1);
+        
+        for (int i = 0;i<10;i++) {
+            if (pole[i] == value) {
+                value = (int)(Math.random()*24+1);
+                i = 0;
+            }   
+        }         
+        return value;       
+    }      
     
 /**
  * Metoda naplni prislusna pole pro spravnou funkci testu
@@ -72,12 +97,18 @@ public class Tests {
      * @throws org.xml.sax.SAXException
      * @throws java.io.IOException
  */    
-    private void FillKlasik(int index,int id) throws ParserConfigurationException, SAXException, IOException {
+    private void Fill(int index,int id, int Type) throws ParserConfigurationException, SAXException, IOException {
         DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance(); 
         domFactory.setIgnoringComments(true);
-        DocumentBuilder builder = domFactory.newDocumentBuilder(); 
-        Document doc = builder.parse(new File("examples//question.xml")); 
-            
+        DocumentBuilder builder = domFactory.newDocumentBuilder();
+        Document doc = null;
+        if (Type == 1) { 
+            doc = builder.parse(new File("examples//question.xml")); 
+        }
+        else if (Type == 2) {
+            doc = builder.parse(new File("examples//questionO.xml")); 
+        }
+        
         NodeList nList = doc.getElementsByTagName("question");
         
         for (int temp = 0; temp < nList.getLength(); temp++) {
