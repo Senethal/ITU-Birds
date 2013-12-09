@@ -26,6 +26,7 @@ public class Birds extends javax.swing.JFrame {
         this.vyberTestuObrazovka.setVisible(false);
         this.klasickyTestObrazovka.setVisible(false);
         this.lekceObrazovka.setVisible(false);
+        this.obrazTestObrazovka.setVisible(false);
         ////////////////////////////////////////////////////
         
         //Pridavani odkazu na okno jednotlivym obrazovkam
@@ -35,6 +36,7 @@ public class Birds extends javax.swing.JFrame {
         this.vyberTestuObrazovka.addFrame(this);
         this.klasickyTestObrazovka.addFrame(this);
         this.lekceObrazovka.addFrame(this);
+        this.obrazTestObrazovka.addFrame(this);
         ////////////////////////////////////////////////////
     }
 
@@ -52,8 +54,25 @@ public class Birds extends javax.swing.JFrame {
         regObrazovka = new birds.screens.RegistrationScreen();
         hlavniMenu = new birds.screens.MainMenu();
         vyberTestuObrazovka = new birds.screens.TestChooseScreen();
-        klasickyTestObrazovka = new birds.screens.ClassicTestScreen();
         lekceObrazovka = new birds.screens.LessonScreen();
+        try {
+            klasickyTestObrazovka = new birds.screens.ClassicTestScreen();
+        } catch (javax.xml.parsers.ParserConfigurationException e1) {
+            e1.printStackTrace();
+        } catch (org.xml.sax.SAXException e2) {
+            e2.printStackTrace();
+        } catch (java.io.IOException e3) {
+            e3.printStackTrace();
+        }
+        try {
+            obrazTestObrazovka = new birds.screens.PictureTestScreen();
+        } catch (javax.xml.parsers.ParserConfigurationException e1) {
+            e1.printStackTrace();
+        } catch (org.xml.sax.SAXException e2) {
+            e2.printStackTrace();
+        } catch (java.io.IOException e3) {
+            e3.printStackTrace();
+        }
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1000, 700));
@@ -68,10 +87,12 @@ public class Birds extends javax.swing.JFrame {
         vrstva.add(hlavniMenu, javax.swing.JLayeredPane.DEFAULT_LAYER);
         vyberTestuObrazovka.setBounds(0, 0, 1000, 700);
         vrstva.add(vyberTestuObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        klasickyTestObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(klasickyTestObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
         lekceObrazovka.setBounds(0, 0, 1000, 700);
         vrstva.add(lekceObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        klasickyTestObrazovka.setBounds(0, 0, 1000, 700);
+        vrstva.add(klasickyTestObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        obrazTestObrazovka.setBounds(0, 0, 1000, 700);
+        vrstva.add(obrazTestObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -151,6 +172,10 @@ public class Birds extends javax.swing.JFrame {
     public void setlekceObrazovkaVisible(boolean b) {
         this.lekceObrazovka.setVisible(b);
     }
+    
+    public void setobrazTestObrazovkaVisible(boolean b) {
+        this.obrazTestObrazovka.setVisible(b);
+    }
    /*********************************************/ 
     
     public void setUserName(String name){
@@ -168,6 +193,7 @@ public class Birds extends javax.swing.JFrame {
     private birds.screens.MainMenu hlavniMenu;
     private birds.screens.ClassicTestScreen klasickyTestObrazovka;
     private birds.screens.LessonScreen lekceObrazovka;
+    private birds.screens.PictureTestScreen obrazTestObrazovka;
     private birds.screens.LoginSreen prihlObrazovka;
     private birds.screens.RegistrationScreen regObrazovka;
     private javax.swing.JLayeredPane vrstva;

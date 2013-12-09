@@ -390,6 +390,8 @@ public class TestChooseScreen extends Background {
                             break;
                        }
                 case 2:{
+                            this.Okno.setvyberTestuObrazovkaObrazovkaVisible(false);
+                            this.Okno.setobrazTestObrazovkaVisible(true);
                             break;
                         }
                 case 3:{

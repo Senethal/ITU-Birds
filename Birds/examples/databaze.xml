@@ -12,4 +12,4 @@
     
   <Maximum>0</Maximum><Testik Test="0">50</Testik><Vysledek>50</Vysledek></User>
   
-<User><Jmeno>Luke</Jmeno><Heslo>123</Heslo><Maximum>0</Maximum><Vysledek>Nic</Vysledek></User><User><Jmeno>ucitel</Jmeno><Heslo>ucitel</Heslo><Testik Test="0">10</Testik><Maximum>1</Maximum><Testik Test="1">10</Testik><Vysledek>10</Vysledek></User></Users>
+<User><Jmeno>Luke</Jmeno><Heslo>123</Heslo><Maximum>0</Maximum><Vysledek>Nic</Vysledek></User><User><Jmeno>ucitel</Jmeno><Heslo>ucitel</Heslo><Testik Test="0">10</Testik><Testik Test="1">10</Testik><Testik Test="2">80</Testik><Testik Test="3">80</Testik><Testik Test="4">80</Testik><Testik Test="5">0</Testik><Maximum>6</Maximum><Testik Test="6">10</Testik><Vysledek>38</Vysledek></User></Users>

@@ -18,25 +18,18 @@ import org.xml.sax.SAXException;
  *
  * @author Lukas
  */
-public class ClassicTestScreen extends Background {
+public class PictureTestScreen extends Background {
 
     /**
      * Creates new form ClassicTestScreen
      */
-    public ClassicTestScreen() throws ParserConfigurationException, SAXException, IOException {
+    public PictureTestScreen() throws ParserConfigurationException, SAXException, IOException {
         initComponents();
-        this.Question.setBackground(new Color(255,255,255,0));
-        this.Question.setForeground(new Color(0,0,0,255));
         this.Test.setVisible(true);
         this.Vyhodnoceni.setVisible(false);
         this.Tester = new Tests();
         
-        for (this.Tester.index = 0; this.Tester.index < this.TestProgress.getMaximum(); this.Tester.index++){
-            this.Tester.Users_A[this.Tester.index] = "";
-        }
-        this.Tester.index = 0;
-        
-        this.Question.setText(this.Tester.GetQuestion());
+        //this.Question.setText(this.Tester.GetQuestion());
         this.AnswerA.setText(this.Tester.GetAnswerA());
         this.AnswerB.setText(this.Tester.GetAnswerB());
         this.AnswerC.setText(this.Tester.GetAnswerC());
@@ -58,11 +51,11 @@ public class ClassicTestScreen extends Background {
         TestProgress = new javax.swing.JProgressBar();
         previousQ = new javax.swing.JButton();
         nextQ = new javax.swing.JButton();
-        Question = new birds.graphics.TextArea();
         AnswerA = new birds.graphics.CheckButton();
         AnswerB = new birds.graphics.CheckButton();
         AnswerC = new birds.graphics.CheckButton();
         AnswerD = new birds.graphics.CheckButton();
+        jLabel1 = new javax.swing.JLabel();
         Vyhodnoceni = new birds.graphics.Background();
         Popis1 = new javax.swing.JLabel();
         Potvrdit = new javax.swing.JButton();
@@ -127,18 +120,6 @@ public class ClassicTestScreen extends Background {
             }
         });
 
-        Question.setEditable(false);
-        Question.setBorder(null);
-        Question.setColumns(20);
-        Question.setRows(5);
-        Question.setTabSize(4);
-        Question.setText("\n\n\tTohle je testovaci otazka ");
-        Question.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        Question.setMaximumSize(new java.awt.Dimension(500, 200));
-        Question.setMinimumSize(new java.awt.Dimension(500, 200));
-        Question.setPreferredSize(new java.awt.Dimension(500, 200));
-        Question.setRequestFocusEnabled(false);
-
         AnswerA.setText("Odpověď A");
         AnswerA.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         AnswerA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -187,6 +168,8 @@ public class ClassicTestScreen extends Background {
             }
         });
 
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(252, 171, 0), 4));
+
         javax.swing.GroupLayout TestLayout = new javax.swing.GroupLayout(Test);
         Test.setLayout(TestLayout);
         TestLayout.setHorizontalGroup(
@@ -199,10 +182,12 @@ public class ClassicTestScreen extends Background {
                         .addGap(100, 100, 100)
                         .addGroup(TestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(TestLayout.createSequentialGroup()
-                                .addComponent(Question, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(100, 100, 100)
-                                .addComponent(nextQ, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(150, 150, 150)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(TestLayout.createSequentialGroup()
+                                .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                                .addComponent(nextQ, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(TestLayout.createSequentialGroup()
                         .addGap(185, 185, 185)
                         .addGroup(TestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -215,26 +200,27 @@ public class ClassicTestScreen extends Background {
                                 .addGroup(TestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(AnswerD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(AnswerB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addGap(40, 40, 40))
         );
         TestLayout.setVerticalGroup(
             TestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TestLayout.createSequentialGroup()
                 .addGroup(TestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(TestLayout.createSequentialGroup()
-                        .addGap(175, 175, 175)
-                        .addComponent(nextQ, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(169, 169, 169)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(TestLayout.createSequentialGroup()
                         .addGroup(TestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(TestLayout.createSequentialGroup()
+                                .addGap(175, 175, 175)
+                                .addComponent(previousQ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(TestLayout.createSequentialGroup()
                                 .addGap(22, 22, 22)
-                                .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(30, 30, 30)
-                                .addComponent(Question, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(TestLayout.createSequentialGroup()
                                 .addGap(175, 175, 175)
-                                .addComponent(previousQ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(107, 107, 107)
+                                .addComponent(nextQ, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(173, 173, 173)
                         .addGroup(TestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(AnswerA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(AnswerB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -244,7 +230,7 @@ public class ClassicTestScreen extends Background {
                             .addComponent(AnswerC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(27, 27, 27)
                 .addComponent(TestProgress, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         Test.setBounds(0, 0, 1000, 700);
@@ -569,7 +555,7 @@ public class ClassicTestScreen extends Background {
     }
     
     private void ShowQuestion(){
-            this.Question.setText(this.Tester.GetQuestion());
+            //this.Question.setText(this.Tester.GetQuestion());
             this.AnswerA.setText(this.Tester.GetAnswerA());
             this.AnswerB.setText(this.Tester.GetAnswerB());
             this.AnswerC.setText(this.Tester.GetAnswerC());
@@ -651,6 +637,7 @@ public class ClassicTestScreen extends Background {
 
     private void nextQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextQActionPerformed
         this.TestProgress.setValue(this.TestProgress.getValue()+1);
+        this.Tester.NextQuestion();
         if (this.TestProgress.getValue() == 10){
             this.Test.setVisible(false);
             this.Vyhodnoceni.setVisible(true);
@@ -665,6 +652,7 @@ public class ClassicTestScreen extends Background {
     private void previousQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_previousQActionPerformed
 
         this.TestProgress.setValue(this.TestProgress.getValue()-1);
+        this.Tester.PreviousQuestion();
         this.Tester.index = this.TestProgress.getValue();
         this.ShowQuestion();
     }//GEN-LAST:event_previousQActionPerformed
@@ -753,7 +741,7 @@ public class ClassicTestScreen extends Background {
         try {
             this.Tester.Evaluate(this.Okno.getUserName());
         } catch (ParserConfigurationException | SAXException | IOException | TransformerException ex) {
-            Logger.getLogger(ClassicTestScreen.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PictureTestScreen.class.getName()).log(Level.SEVERE, null, ex);
         }
         this.Okno.setklasickyTestObrazovkaVisible(false);
         this.Okno.setHlavniMenuVisible(true);
@@ -778,12 +766,12 @@ public class ClassicTestScreen extends Background {
     private javax.swing.JRadioButton Quest7;
     private javax.swing.JRadioButton Quest8;
     private javax.swing.JRadioButton Quest9;
-    private birds.graphics.TextArea Question;
     private birds.graphics.Background Test;
     private javax.swing.JProgressBar TestProgress;
     private javax.swing.JProgressBar TestProgress1;
     private birds.graphics.Background Vyhodnoceni;
     private birds.graphics.loginPanel VyhodnoceniPanel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton nextQ;
     private javax.swing.JButton previousQ;
     private javax.swing.JLayeredPane vrstva;
