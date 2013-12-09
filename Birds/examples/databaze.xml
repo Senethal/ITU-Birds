@@ -4,12 +4,12 @@
     <Heslo>Ucitel</Heslo>  
      
     
-    <Testik Test="0">70</Testik><Testik Test="1">70</Testik><Maximum>2</Maximum><Testik Test="2">50</Testik><Vysledek>63</Vysledek></User>
+    <Testik>01011</Testik><Testik>12001</Testik><Testik>25002</Testik><Testik>34002</Testik><Maximum>4</Maximum><Testik>41022</Testik><Vysledek>26</Vysledek></User>
   <User>
     <Jmeno>Student</Jmeno>
     <Heslo>Student</Heslo>
      
     
-  <Maximum>0</Maximum><Testik Test="0">50</Testik><Vysledek>50</Vysledek></User>
+  <Testik>01011</Testik><Testik>12001</Testik><Testik>25002</Testik><Testik>34002</Testik><Testik>41022</Testik><Testik>52021</Testik><Testik>60011</Testik><Testik>70021</Testik><Testik>80021</Testik><Maximum>9</Maximum><Testik>90021</Testik><Vysledek>15</Vysledek></User>
   
-<User><Jmeno>Luke</Jmeno><Heslo>123</Heslo><Maximum>0</Maximum><Vysledek>Nic</Vysledek></User><User><Jmeno>ucitel</Jmeno><Heslo>ucitel</Heslo><Testik Test="0">10</Testik><Testik Test="1">10</Testik><Testik Test="2">80</Testik><Testik Test="3">80</Testik><Testik Test="4">80</Testik><Testik Test="5">0</Testik><Testik Test="6">10</Testik><Testik Test="7">0</Testik><Testik Test="8">0</Testik><Testik Test="9">0</Testik><Testik Test="10">0</Testik><Testik Test="11">0</Testik><Testik Test="12">70</Testik><Testik Test="13">0</Testik><Maximum>14</Maximum><Testik Test="14">20</Testik><Vysledek>24</Vysledek></User><User><Jmeno>Matty</Jmeno><Heslo>12345</Heslo><Testik Test="0">30</Testik><Maximum>1</Maximum><Testik Test="1">80</Testik><Vysledek>55</Vysledek></User></Users>
+<User><Jmeno>Luke</Jmeno><Heslo>123</Heslo><Testik>01011</Testik><Testik>12001</Testik><Testik>25002</Testik><Testik>34002</Testik><Maximum>4</Maximum><Testik>41022</Testik><Vysledek>26</Vysledek></User><User><Jmeno>ucitel</Jmeno><Heslo>ucitel</Heslo><Testik>01011</Testik><Testik>12001</Testik><Testik>25002</Testik><Testik>34002</Testik><Maximum>4</Maximum><Testik>41022</Testik><Vysledek>26</Vysledek></User><User><Jmeno>Tim</Jmeno><Heslo>ahoj</Heslo><Testik>01011</Testik><Testik>12001</Testik><Testik>25002</Testik><Testik>34002</Testik><Maximum>4</Maximum><Testik>41022</Testik><Vysledek>26</Vysledek></User></Users>

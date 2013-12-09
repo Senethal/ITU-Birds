@@ -749,7 +749,7 @@ public class PictureTestScreen extends Background {
 
     private void PotvrditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PotvrditActionPerformed
         try {
-            this.Tester.Evaluate(this.Okno.getUserName());
+            this.Tester.Evaluate(this.Okno.getUserName(),this.Tester.TypeLess,this.Tester.TypeTest);
         } catch (ParserConfigurationException | SAXException | IOException | TransformerException ex) {
             Logger.getLogger(PictureTestScreen.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -758,7 +758,11 @@ public class PictureTestScreen extends Background {
         this.Okno.createNewPicture();
         this.TestProgress.setValue(0);
         this.Okno.setobrazTestObrazovkaVisible(false);
-        this.Okno.setHlavniMenuVisible(true);
+        try {
+            this.Okno.setstatistikyObrazovkaVisible(true);
+        } catch (ParserConfigurationException | SAXException | IOException ex) {
+            Logger.getLogger(ClassicTestScreen.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_PotvrditActionPerformed
     
     private birds.control.Tests Tester;

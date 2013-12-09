@@ -25,6 +25,8 @@ public class Tests {
     public String[] Rights_A;
     public int Diff = 0;
     
+    public int TypeTest;
+    public int TypeLess;
     public int maxim = 10;
     public int index;
  
@@ -36,6 +38,8 @@ public class Tests {
         this.Users_A = new String[maxim];
         this.Rights_A = new String[maxim];
         this.index = 0;
+        this.TypeTest = TypeTest;
+        this.TypeLess = Less;
         
         for (int i =0; i<10; i++) {
             if (TypeTest == 1) {
@@ -157,9 +161,10 @@ public class Tests {
         
         String text;
         
-        text = "\n" + "\n" + "\n";
-        text += "        " + s + "\n";
-
+        text = "\n" + "\n";
+        text += "    " + s + "\n";
+        
+        
         
         return text;
     }
@@ -201,7 +206,7 @@ public class Tests {
     public String GetUserAns() {
         return this.Users_A[this.index];
     }
-    public void Evaluate(String Name) throws ParserConfigurationException, SAXException, IOException, TransformerException {
+    public void Evaluate(String Name, int less, int typ) throws ParserConfigurationException, SAXException, IOException, TransformerException {
     
         int rights = 0;
         
@@ -213,7 +218,7 @@ public class Tests {
          
         rights = rights*this.maxim; 
         
-        rights = UserDatabase.AddTest(rights, Name);
+        rights = UserDatabase.AddTest(rights, Name, less, typ);
         UserDatabase.AddOut(rights, Name);
         
     }

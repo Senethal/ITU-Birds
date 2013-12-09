@@ -5,6 +5,13 @@
 package birds.screens;
 
 import birds.graphics.Background;
+import birds.users.UserDatabase;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPathExpressionException;
+import org.xml.sax.SAXException;
 
 /**
  *
@@ -15,8 +22,9 @@ public class StatisticScreen extends Background {
     /**
      * Creates new form StatisticScreen
      */
-    public StatisticScreen() {
+    public StatisticScreen() throws ParserConfigurationException, SAXException, IOException {
         initComponents();
+        this.TestID = 0; 
     }
 
     /**
@@ -196,14 +204,59 @@ public class StatisticScreen extends Background {
     }// </editor-fold>//GEN-END:initComponents
 
     private void TestChooserItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_TestChooserItemStateChanged
-        // TODO add your handling code here:
+        try {
+            this.ShowResult(this.TestChooser.getSelectedIndex());
+        } catch (ParserConfigurationException | SAXException | IOException ex) {
+            Logger.getLogger(StatisticScreen.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (XPathExpressionException ex) {
+            Logger.getLogger(StatisticScreen.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_TestChooserItemStateChanged
 
     private void mainMenuButActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainMenuButActionPerformed
-        this.Okno.setstatistikyObrazovkaVisible(false);
+        try {
+            this.Okno.setstatistikyObrazovkaVisible(false);
+        } catch (ParserConfigurationException | SAXException | IOException ex) {
+            Logger.getLogger(StatisticScreen.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        this.TestChooser.removeAllItems();
         this.Okno.setHlavniMenuVisible(true);
     }//GEN-LAST:event_mainMenuButActionPerformed
 
+    
+    
+    private void ShowResult(int ID) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
+        if ("1".equals(UserDatabase.TypTest(ID, this.Okno.getUserName()))) {
+            this.TestType.setText("Klasický test");
+        }
+        else {
+            this.TestType.setText("Poznávácí test");
+        }
+        this.result.setText(UserDatabase.GetResult(ID, this.Okno.getUserName())+"%");
+        this.TestId.setText(Integer.toString(ID+1));
+        this.percent.setText(UserDatabase.GetVysledek(this.Okno.getUserName())+"%");
+        if ("0".equals(UserDatabase.TypLess(ID, this.Okno.getUserName()))) {
+           this.difficulty.setText("1. - 3. lekce"); 
+        }
+        else if ("1".equals(UserDatabase.TypLess(ID, this.Okno.getUserName()))) {
+           this.difficulty.setText("4. - 6. lekce"); 
+        }
+        else if ("2".equals(UserDatabase.TypLess(ID, this.Okno.getUserName()))) {
+           this.difficulty.setText("7. - 8. lekce"); 
+        }
+        else {
+           this.difficulty.setText("Celkový test");  
+        }
+    }
+    
+    public void Omg() throws ParserConfigurationException, SAXException, IOException{
+        int pom = UserDatabase.GetMax(this.Okno.getUserName());
+        for (int i = 0; i <= pom ; i++) {
+            this.TestChooser.addItem((i+1) + ".Test");
+        }   
+    }
+    private int TestID;
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Popis;
     private birds.graphics.LessonPanel StatPanel;

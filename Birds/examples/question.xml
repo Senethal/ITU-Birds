@@ -65,6 +65,7 @@
     <rigans>D</rigans>
   </question>
   
+  
   <question id="9">
     <quest>Čím se vyznačuje samec Datla černého?</quest>
     <ansA>Má na hlavě žlutý klobouček</ansA>
@@ -122,6 +123,7 @@
     <rigans>B</rigans>
   </question>
   
+  
   <question id="16">
     <quest>Jaké délky v centimetrech dorůstá Husa velká?</quest>
     <ansA>10-20 cm</ansA>
@@ -147,7 +149,7 @@
     <rigans>B</rigans>
   </question>
   <question id="19">
-    <quest>Kde nejčastěji a nejhojněji žijí ptáci z čeledi kachnovití?</quest>
+    <quest>Kde nejčastěji a nejhojněji žijí ptáci z čeledi kachnovitých?</quest>
     <ansA>Na vodních plochách</ansA>
     <ansB>V lese</ansB>
     <ansC>V parku</ansC>
@@ -162,5 +164,385 @@
     <ansD>Letci</ansD>
     <rigans>C</rigans>
   </question>
- 
+  
+  
+  <question id="21">
+    <quest>Kdy se Bělořit šedý vrací ze zimovišť?</quest>
+    <ansA>V prosinci</ansA>
+    <ansB>V březnu a dubnu</ansB>
+    <ansC>V červnu a červenci</ansC>
+    <ansD>V říjnu</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="22">
+    <quest>Kde Bělořit šedý hnízdí?</quest>
+    <ansA>V Bílovicích</ansA>
+    <ansB>Na stromě</ansB>
+    <ansC>V dutinách mezi kameny</ansC>
+    <ansD>Na břehu řeky</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="23">
+    <quest>Čím je typická Červenka obecná?</quest>
+    <ansA>Má červenou čepičku</ansA>
+    <ansB>Má zelené křídla</ansB>
+    <ansC>Nemá zobák</ansC>
+    <ansD>Má oranžovo-červenou náprsenku</ansD>
+    <rigans>D</rigans>
+  </question>
+  <question id="24">
+    <quest>Který z našich ptáků je příbuzný Drozda zpěvného?</quest>
+    <ansA>Sova pálená</ansA>
+    <ansB>Labuť velká</ansB>
+    <ansC>Kos černý</ansC>
+    <ansD>Husa velká</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="25">
+    <quest>Co platí o Drozdu kvíčalovi?</quest>
+    <ansA>Patří do řádu pěvci</ansA>
+    <ansB>Patří do řádu šplhavci</ansB>
+    <ansC>Patří do řádu sovy</ansC>
+    <ansD>Patří do řádu vrubozubí</ansD>
+    <rigans>A</rigans>
+  </question>
+  <question id="26">
+    <quest>Čím je charakteristický Kos černý?</quest>
+    <ansA>Černým zobákem a žlutým peřím</ansA>
+    <ansB>Bílým peřím a černým zobákem</ansB>
+    <ansC>Je celý žlutý</ansC>
+    <ansD>Černým peřím a žlutým zobákem</ansD>
+    <rigans>D</rigans>
+  </question>
+  <question id="27">
+    <quest>Co platí o Kosu černém?</quest>
+    <ansA>Žije na břehu rybníka</ansA>
+    <ansB>Žije v blízkosti člověka</ansB>
+    <ansC>Žije sám v lese</ansC>
+    <ansD>Žije daleko od člověka</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="28">
+    <quest>Čím je známý slavík obecný?</quest>
+    <ansA>Krásným zpěvem</ansA>
+    <ansB>Svým vzhledem</ansB>
+    <ansC>nadměrnou velikostí</ansC>
+    <ansD>Chutí k jídlu</ansD>
+    <rigans>A</rigans>
+  </question>
+  <question id="29">
+    <quest>Do jaké čeledi patří Rehek zahradní?</quest>
+    <ansA>Datlovití</ansA>
+    <ansB>Kachnovití</ansB>
+    <ansC>Drozdovití</ansC>
+    <ansD>Puštíkovití</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="30">
+    <quest>Do jakého rodu spadá Bramborníček hnědý?</quest>
+    <ansA>Rod pěvci</ansA>
+    <ansB>Rod drozdovití</ansB>
+    <ansC>Rod bramborníček</ansC>
+    <ansD>Rod ptáci</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="31">
+    <quest>Jakému českému ptáku se svou velikostí podobá Linduška luční</quest>
+    <ansA>Kachně domácí</ansA>
+    <ansB>Labuti velké</ansB>
+    <ansC>Vrabci domácímu</ansC>
+    <ansD>Datlovi černému</ansD>
+    <rigans>C</rigans>
+  </question>
+  
+  
+  <question id="32">
+    <quest>Co neplatí o Krkavci velkém?</quest>
+    <ansA>Má černé zbarvení</ansA>
+    <ansB>Je chráněný zákonem</ansB>
+    <ansC>Je největším pěvcem Čr</ansC>
+    <ansD>Jeho šat je bílý s leskem</ansD>
+    <rigans>D</rigans>
+  </question>
+  <question id="33">
+    <quest>Čím je známý Krkavec velký?</quest>
+    <ansA>Svou troufalostí</ansA>
+    <ansB>Svou opatrností a nedůvěřivostí</ansB>
+    <ansC>Svou hloupostí</ansC>
+    <ansD>Svou netrpělivostí</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="34">
+    <quest>Je nejbarvitější evropský zástupce své čeledi. Je oranžovohnědá s 
+      černým ocasem a zobákem, růžovooranžovými končetinami, hnědýma očima a
+      bílým kostřcem, který je zvlášť nápadný při letu. Na křídlech má modrá
+      pírka s černými příčnými proužky, pod okem černou podélnou skvrnu. 
+      Létá těžce, vlnovitě a třepotavě, na zemi poskakuje.
+      O jakého ptáka se jedná?</quest>
+    <ansA>Krkavec velký</ansA>
+    <ansB>Straka obecná</ansB>
+    <ansC>Budníček lesní</ansC>
+    <ansD>Sojka obecná</ansD>
+    <rigans>D</rigans>
+  </question>
+  <question id="35">
+    <quest>Čím je známá Straka obecná?</quest>
+    <ansA>Přitahují ji třpitivé věci</ansA>
+    <ansB>Žije u vodních toků</ansB>
+    <ansC>Žije v blízkosti lidé</ansC>
+    <ansD>Přitahuje ji velký hluk</ansD>
+    <rigans>A</rigans>
+  </question>
+  <question id="36">
+    <quest>Do jakého řádu patří Budníček lesní?</quest>
+    <ansA>Pěvci</ansA>
+    <ansB>Vrubozubí</ansB>
+    <ansC>Dravci</ansC>
+    <ansD>Šplhavci</ansD>
+    <rigans>A</rigans>
+  </question>
+  <question id="37">
+    <quest>Jak se lidově přezdívá pěnici černohlavé</quest>
+    <ansA>Černý ocas</ansA>
+    <ansB>Černozobák</ansB>
+    <ansC>Černohlávek</ansC>
+    <ansD>Bělohlávek</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="38">
+    <quest>Je to středně velkým monotypickým druhem pěvce z čeledi
+      rákosníkovitých (Acrocephalidae). Dorůstá délky 11,5–13 cm, v rozpětí
+      křídel měří 17–21 cm a váží 10–15 g. Má hnědý, tmavě skvrnitý hřbet a
+      křídla, černě žíhané temeno, světlou spodinu těla a bělavý nadoční
+      proužek. Končetiny jsou šedavé. Obě pohlaví jsou zbarvena stejně,
+      mladí ptáci mají tmavé skvrnění na hrudi. 
+      O jakého českého ptáka se jedná?</quest>
+    <ansA>Sedmihlásek hajní</ansA>
+    <ansB>Pěnice černohlavá</ansB>
+    <ansC>Kos černý</ansC>
+    <ansD>Rákosník proužkovaný</ansD>
+    <rigans>D</rigans>
+  </question>
+  
+  
+  <question id="39">
+    <quest>Jakým zobákem se vyznačuje Pěnkava obecná?</quest>
+    <ansA>Dlouhým tenkým</ansA>
+    <ansB>Krátkým silným</ansB>
+    <ansC>Žádným</ansC>
+    <ansD>Modrým</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="40">
+    <quest>Do jaké čeledi patří Dlask tlustozobý?</quest>
+    <ansA>Pěnkavovití</ansA>
+    <ansB>Tlustozobý</ansB>
+    <ansC>Dlaskovití</ansC>
+    <ansD>Letci</ansD>
+    <rigans>A</rigans>
+  </question>
+  <question id="41">
+    <quest>Čím je typický Chocholouš obecný?</quest>
+    <ansA>Dlouhýma nohama</ansA>
+    <ansB>Špičatýma drápama</ansB>
+    <ansC>Zřetelnou chocholkou</ansC>
+    <ansD>Plochým zobákem</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="42">
+    <quest>Co neplatí o Skřivanu lesním?</quest>
+    <ansA>Patří mezi pěvce</ansA>
+    <ansB>Má černé zbarvení</ansB>
+    <ansC>Je velikosti vrabce</ansC>
+    <ansD>Obě pohlaví jsou podobně zbravená</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="43">
+    <quest>Jaké velikosti dorůstá Špaček obecný?</quest>
+    <ansA>8 - 10 cm</ansA>
+    <ansB> 19 - 22 cm</ansB>
+    <ansC>40 - 60 cm</ansC>
+    <ansD>70 - 80 cm</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="44">
+    <quest>Jaké zabarvení bříška má Sýkora koňadra?</quest>
+    <ansA>Zelené</ansA>
+    <ansB>Bílé</ansB>
+    <ansC>Žluté</ansC>
+    <ansD>Modré</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="45">
+    <quest>Čím se živý Sýkora koňadra v zimě nejčastěji?</quest>
+    <ansA>Salámem</ansA>
+    <ansB>Listy pampelišky</ansB>
+    <ansC>Bramborama</ansC>
+    <ansD>Semínkama</ansD>
+    <rigans>D</rigans>
+  </question>
+  <question id="46">
+    <quest>Čím je známá Vlaštovka obecná?</quest>
+    <ansA>Živí se létajícím hmyzem.</ansA>
+    <ansB>Neodlétá do teplých krajin</ansB>
+    <ansC>Loví myši</ansC>
+    <ansD>Není příbuzná jiřičky obecné</ansD>
+    <rigans>A</rigans>
+  </question>
+  <question id="47">
+    <quest>Do jaké čeledi patří Jiřička obecná?</quest>
+    <ansA>Krkavcovití</ansA>
+    <ansB>Skřivanovití</ansB>
+    <ansC>Vlaštovkovití</ansC>
+    <ansD>Pěnicovití</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="48">
+    <quest>Jaké tvrzení je pravdivé o Vrabci domácím?</quest>
+    <ansA>Je to největší pták na světě</ansA>
+    <ansB>Je nejrozšířenějším ptákem na světě</ansB>
+    <ansC>Je to nejmenší pták na světě</ansC>
+    <ansD>Je to nejdravější pták na světě</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="49">
+    <quest>Jaké zbarvení převládá u samce Žluvy hajní?</quest>
+    <ansA>Bílá</ansA>
+    <ansB>Červená</ansB>
+    <ansC>Růžová</ansC>
+    <ansD>Žlutá</ansD>
+    <rigans>D</rigans>
+  </question>
+  <question id="50">
+    <quest>Do jakého řádu patří Vrabec domácí?</quest>
+    <ansA>Šplhavci</ansA>
+    <ansB>Vrubozobí</ansB>
+    <ansC>Pěvci</ansC>
+    <ansD>Dravci</ansD>
+    <rigans>C</rigans>
+  </question>
+  
+  
+  <question id="51">
+    <quest>Jak je zbarvena samička Káněte lesního?</quest>
+    <ansA>Červeně</ansA>
+    <ansB>Zeleně</ansB>
+    <ansC>Růžově</ansC>
+    <ansD>Stejně jako sameček</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="52">
+    <quest>Do jaké čeledi patří Krahujec obecný?</quest>
+    <ansA>Krahujcovití</ansA>
+    <ansB>Žluvovití</ansB>
+    <ansC>Jestřábovití</ansC>
+    <ansD>Dravci</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="53">
+    <quest>Který český pták je výrazně podobný Jestřábu lesnímu?</quest>
+    <ansA>Krahujec obecný</ansA>
+    <ansB>Konipas horský</ansB>
+    <ansC>Výr velký</ansC>
+    <ansD>Datel černý</ansD>
+    <rigans>A</rigans>
+  </question>
+  <question id="54">
+    <quest>Je jedním z největších žijících ptáků na severní polokouli a hned po
+    orlovi mořském největší dravec žijící v České republice.
+    O jakého českého ptáka se jedná?</quest>
+    <ansA>Sova pálená</ansA>
+    <ansB>Puštík obecný</ansB>
+    <ansC>Káně lesní</ansC>
+    <ansD>Orel skalní</ansD>
+    <rigans>D</rigans>
+  </question>
+  <question id="55">
+    <quest>Do jaké čeledi patří Poštolka obecná</quest>
+    <ansA>Krahujcovití</ansA>
+    <ansB>Drozdovití</ansB>
+    <ansC>Sokolovití</ansC>
+    <ansD>Lejskovití</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="56">
+    <quest>Do jakého řádu patří Sokol stěhovavý?</quest>
+    <ansA>Dravci</ansA>
+    <ansB>Letci</ansB>
+    <ansC>Pěvci</ansC>
+    <ansD>Sovy</ansD>
+    <rigans>A</rigans>
+  </question>
+  <question id="57">
+    <quest>Jaké dvě barvy má opeření Orlovce říčního?</quest>
+    <ansA>Světle hnědou a tmavě hnědou</ansA>
+    <ansB>Černou a bílou</ansB>
+    <ansC>Žlutou a zelenou</ansC>
+    <ansD>Modrou a černá</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="58">
+    <quest>Do jakého řádu patří Čáp bílý?</quest>
+    <ansA>Komíno-hnízdní</ansA>
+    <ansB>Měkkozobí</ansB>
+    <ansC>Dravci</ansC>
+    <ansD>Brodiví</ansD>
+    <rigans>D</rigans>
+  </question>
+  <question id="59">
+    <quest>Do jakého řádu patří Holub doupňák</quest>
+    <ansA>Dravci</ansA>
+    <ansB>Brodiví</ansB>
+    <ansC>Měkkozobí</ansC>
+    <ansD>Sovy</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="60">
+    <quest>Do jaké čeledi patří Hrdlička zahradní?</quest>
+    <ansA>Měkkozobí</ansA>
+    <ansB>Holubovití</ansB>
+    <ansC>Zahradníkovití</ansC>
+    <ansD>Hrdličkovití</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="61">
+    <quest>Do jaké čeledi patří Bukač velký?</quest>
+    <ansA>Krkavcovití</ansA>
+    <ansB>Pěnicovití</ansB>
+    <ansC>Brodiví</ansC>
+    <ansD>Volavkovití</ansD>
+    <rigans>D</rigans>
+  </question>
+  <question id="62">
+    <quest>Jakou barvu má opeření Volavky rusohlavé?</quest>
+    <ansA>Bílou</ansA>
+    <ansB>Červenou</ansB>
+    <ansC>Černou</ansC>
+    <ansD>Fialovou</ansD>
+    <rigans>A</rigans>
+  </question>
+  <question id="63">
+    <quest>Do jaké čeledi patří Jeřábek lesní?</quest>
+    <ansA>Brodiví</ansA>
+    <ansB>Tetřevovití</ansB>
+    <ansC>Volavkovití</ansC>
+    <ansD>Jestřábovití</ansD>
+    <rigans>B</rigans>
+  </question>
+  <question id="64">
+    <quest>Jakou barvu mají křídla Ledňáčka říčního?</quest>
+    <ansA>Bílou</ansA>
+    <ansB>Černou</ansB>
+    <ansC>Modrou</ansC>
+    <ansD>Červenou</ansD>
+    <rigans>C</rigans>
+  </question>
+  <question id="65">
+    <quest>Co je výrazným znakem Ledňáčka říčního?</quest>
+    <ansA>Nemá zobák</ansA>
+    <ansB>Dlouhé ostré drápy</ansB>
+    <ansC>Obrovská křídla</ansC>
+    <ansD>Dlouhý zašpičatělý zobák</ansD>
+    <rigans>B</rigans>
+  </question>
 </questions>

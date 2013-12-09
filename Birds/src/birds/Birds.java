@@ -82,29 +82,37 @@ public class Birds extends javax.swing.JFrame {
             e3.printStackTrace();
         }
         prihlObrazovka = new birds.screens.LoginSreen();
-        statistikyObrazovka = new birds.screens.StatisticScreen();
+        try {
+            statistikyObrazovka = new birds.screens.StatisticScreen();
+        } catch (javax.xml.parsers.ParserConfigurationException e1) {
+            e1.printStackTrace();
+        } catch (org.xml.sax.SAXException e2) {
+            e2.printStackTrace();
+        } catch (java.io.IOException e3) {
+            e3.printStackTrace();
+        }
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1000, 700));
         setMinimumSize(new java.awt.Dimension(1000, 700));
         setResizable(false);
 
+        vrstva.add(regObrazovka);
         regObrazovka.setBounds(0, 0, 1100, 720);
-        vrstva.add(regObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        vrstva.add(hlavniMenu);
         hlavniMenu.setBounds(0, 0, 1000, 700);
-        vrstva.add(hlavniMenu, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        vrstva.add(vyberTestuObrazovka);
         vyberTestuObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(vyberTestuObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        vrstva.add(lekceObrazovka);
         lekceObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(lekceObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        vrstva.add(klasickyTestObrazovka);
         klasickyTestObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(klasickyTestObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        vrstva.add(obrazTestObrazovka);
         obrazTestObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(obrazTestObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        vrstva.add(prihlObrazovka);
         prihlObrazovka.setBounds(0, 0, 1100, 700);
-        vrstva.add(prihlObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        vrstva.add(statistikyObrazovka);
         statistikyObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(statistikyObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -189,8 +197,9 @@ public class Birds extends javax.swing.JFrame {
         this.obrazTestObrazovka.setVisible(b);
     }
     
-    public void setstatistikyObrazovkaVisible(boolean b) {
+    public void setstatistikyObrazovkaVisible(boolean b) throws ParserConfigurationException, SAXException, IOException {
         this.statistikyObrazovka.setVisible(b);
+        this.statistikyObrazovka.Omg();
     }
    /*********************************************/ 
     
