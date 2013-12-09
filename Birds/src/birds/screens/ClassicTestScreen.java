@@ -29,7 +29,7 @@ public class ClassicTestScreen extends Background {
         this.Question.setForeground(new Color(0,0,0,255));
         this.Test.setVisible(true);
         this.Vyhodnoceni.setVisible(false);
-        this.Tester = new Tests();
+        this.Tester = new Tests(this.Okno.getLesson(),this.Okno.getTypeTest());
         
         for (this.Tester.index = 0; this.Tester.index < this.TestProgress.getMaximum(); this.Tester.index++){
             this.Tester.Users_A[this.Tester.index] = "";

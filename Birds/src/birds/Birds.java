@@ -186,8 +186,23 @@ public class Birds extends javax.swing.JFrame {
         return this.UserName;
     }
     
+    public void setTypeTest(int type){
+        this.TestType = type;
+    }
     
+    public int getTypeTest(){
+        return this.TestType;
+    }
     
+    public void setLesson(int lesson){
+        this.lesson = lesson;
+    }
+    
+    public int getLesson(){
+        return this.lesson;
+    }
+    private int lesson = 0; 
+    private int TestType = 0; // 1- klasicky test 2- poznavaci test 3- doplnovaci test
     private String UserName;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private birds.screens.MainMenu hlavniMenu;

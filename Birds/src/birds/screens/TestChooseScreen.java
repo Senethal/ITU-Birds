@@ -35,10 +35,6 @@ public class TestChooseScreen extends Background {
         Potvrdit = new javax.swing.JButton();
         BackToMenu = new javax.swing.JButton();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        TestPanel = new birds.graphics.loginPanel();
-        ClassicTestButton = new javax.swing.JButton();
-        PictureTestButton = new javax.swing.JButton();
-        FillTestButton = new javax.swing.JButton();
         DifficultTestPanel = new birds.graphics.loginPanel();
         TestLabel = new javax.swing.JLabel();
         DifficultPanel = new javax.swing.JPanel();
@@ -48,10 +44,13 @@ public class TestChooseScreen extends Background {
         DifficultLabel = new javax.swing.JLabel();
         LessonChooser = new javax.swing.JComboBox();
         BackButton = new javax.swing.JButton();
+        TestPanel = new birds.graphics.loginPanel();
+        ClassicTestButton = new javax.swing.JButton();
+        PictureTestButton = new javax.swing.JButton();
+        FillTestButton = new javax.swing.JButton();
 
         setMaximumSize(new java.awt.Dimension(1000, 700));
         setMinimumSize(new java.awt.Dimension(1000, 700));
-        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         Popis.setFont(new java.awt.Font("Impact", 0, 28)); // NOI18N
         Popis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -90,6 +89,126 @@ public class TestChooseScreen extends Background {
                 BackToMenuActionPerformed(evt);
             }
         });
+
+        DifficultTestPanel.setOpaque(false);
+
+        TestLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        TestLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TestLabel.setText("Klasický test");
+        TestLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        DifficultPanel.setOpaque(false);
+
+        Easy.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        Easy.setText("Snadná");
+        Easy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EasyActionPerformed(evt);
+            }
+        });
+
+        Medium.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        Medium.setText("Střední");
+        Medium.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MediumActionPerformed(evt);
+            }
+        });
+
+        Hard.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        Hard.setText("Těžká");
+        Hard.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HardActionPerformed(evt);
+            }
+        });
+
+        DifficultLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        DifficultLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DifficultLabel.setText("Obtížnost");
+        DifficultLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        javax.swing.GroupLayout DifficultPanelLayout = new javax.swing.GroupLayout(DifficultPanel);
+        DifficultPanel.setLayout(DifficultPanelLayout);
+        DifficultPanelLayout.setHorizontalGroup(
+            DifficultPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DifficultPanelLayout.createSequentialGroup()
+                .addContainerGap(30, Short.MAX_VALUE)
+                .addGroup(DifficultPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Hard, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Medium, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Easy, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(29, Short.MAX_VALUE))
+            .addGroup(DifficultPanelLayout.createSequentialGroup()
+                .addComponent(DifficultLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        DifficultPanelLayout.setVerticalGroup(
+            DifficultPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DifficultPanelLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(DifficultLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(13, 13, 13)
+                .addComponent(Easy, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Medium, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Hard)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        LessonChooser.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        LessonChooser.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1. - 3. lekce", "4. - 6. lekce", "7. lekce", "všechny lekce" }));
+
+        BackButton.setBackground(new java.awt.Color(252, 197, 80));
+        BackButton.setFont(new java.awt.Font("Impact", 0, 20)); // NOI18N
+        BackButton.setText("Zpět");
+        BackButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(251, 171, 0), 8, true));
+        BackButton.setFocusable(false);
+        BackButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        BackButton.setMaximumSize(new java.awt.Dimension(300, 70));
+        BackButton.setMinimumSize(new java.awt.Dimension(300, 70));
+        BackButton.setPreferredSize(new java.awt.Dimension(300, 70));
+        BackButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout DifficultTestPanelLayout = new javax.swing.GroupLayout(DifficultTestPanel);
+        DifficultTestPanel.setLayout(DifficultTestPanelLayout);
+        DifficultTestPanelLayout.setHorizontalGroup(
+            DifficultTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DifficultTestPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(DifficultTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DifficultTestPanelLayout.createSequentialGroup()
+                        .addComponent(TestLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DifficultTestPanelLayout.createSequentialGroup()
+                        .addGap(0, 53, Short.MAX_VALUE)
+                        .addGroup(DifficultTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(LessonChooser, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(DifficultPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addGap(63, 63, 63))))
+        );
+        DifficultTestPanelLayout.setVerticalGroup(
+            DifficultTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DifficultTestPanelLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(TestLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(DifficultPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(LessonChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+
+        DifficultTestPanel.setBounds(0, 0, 300, 400);
+        jLayeredPane1.add(DifficultTestPanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         TestPanel.setOpaque(false);
 
@@ -164,126 +283,6 @@ public class TestChooseScreen extends Background {
 
         TestPanel.setBounds(0, 0, 300, 400);
         jLayeredPane1.add(TestPanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        DifficultTestPanel.setOpaque(false);
-
-        TestLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        TestLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        TestLabel.setText("Klasický test");
-        TestLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        DifficultPanel.setOpaque(false);
-
-        Easy.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        Easy.setText("Snadná");
-        Easy.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EasyActionPerformed(evt);
-            }
-        });
-
-        Medium.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        Medium.setText("Střední");
-        Medium.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MediumActionPerformed(evt);
-            }
-        });
-
-        Hard.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        Hard.setText("Těžká");
-        Hard.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                HardActionPerformed(evt);
-            }
-        });
-
-        DifficultLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        DifficultLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DifficultLabel.setText("Obtížnost");
-        DifficultLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout DifficultPanelLayout = new javax.swing.GroupLayout(DifficultPanel);
-        DifficultPanel.setLayout(DifficultPanelLayout);
-        DifficultPanelLayout.setHorizontalGroup(
-            DifficultPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DifficultPanelLayout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
-                .addGroup(DifficultPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Hard, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Medium, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Easy, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(29, Short.MAX_VALUE))
-            .addGroup(DifficultPanelLayout.createSequentialGroup()
-                .addComponent(DifficultLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        DifficultPanelLayout.setVerticalGroup(
-            DifficultPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DifficultPanelLayout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(DifficultLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
-                .addComponent(Easy, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(Medium, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Hard)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LessonChooser.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        LessonChooser.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1. lekce", "2. lekce", "3. lekce", "4. lekce", "5. lekce", "6. lekce", "7. lekce", "8. lekce", "9. lekce", "10. lekce" }));
-
-        BackButton.setBackground(new java.awt.Color(252, 197, 80));
-        BackButton.setFont(new java.awt.Font("Impact", 0, 20)); // NOI18N
-        BackButton.setText("Zpět");
-        BackButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(251, 171, 0), 8, true));
-        BackButton.setFocusable(false);
-        BackButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        BackButton.setMaximumSize(new java.awt.Dimension(300, 70));
-        BackButton.setMinimumSize(new java.awt.Dimension(300, 70));
-        BackButton.setPreferredSize(new java.awt.Dimension(300, 70));
-        BackButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BackButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout DifficultTestPanelLayout = new javax.swing.GroupLayout(DifficultTestPanel);
-        DifficultTestPanel.setLayout(DifficultTestPanelLayout);
-        DifficultTestPanelLayout.setHorizontalGroup(
-            DifficultTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DifficultTestPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(DifficultTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DifficultTestPanelLayout.createSequentialGroup()
-                        .addComponent(TestLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DifficultTestPanelLayout.createSequentialGroup()
-                        .addGap(0, 53, Short.MAX_VALUE)
-                        .addGroup(DifficultTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(LessonChooser, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(DifficultPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                        .addGap(63, 63, 63))))
-        );
-        DifficultTestPanelLayout.setVerticalGroup(
-            DifficultTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DifficultTestPanelLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(TestLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(DifficultPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(LessonChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(46, Short.MAX_VALUE))
-        );
-
-        DifficultTestPanel.setBounds(0, 0, 300, 400);
-        jLayeredPane1.add(DifficultTestPanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -397,13 +396,15 @@ public class TestChooseScreen extends Background {
                 case 3:{
                             break;
                         }    
+            
             }
+            this.Okno.setTypeTest(TestType);
+            this.Okno.setLesson(this.LessonChooser.getSelectedIndex());
         }
     }//GEN-LAST:event_PotvrditActionPerformed
 
     
-    
-    private int TestType = 0; // 1- klasicky test 2- poznavaci test 3- doplnovaci test
+    private int TestType = 0;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackButton;
     private javax.swing.JButton BackToMenu;
