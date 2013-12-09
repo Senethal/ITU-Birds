@@ -309,7 +309,7 @@
                   <StringArray count="4">
                     <StringItem index="0" value="1. - 3. lekce"/>
                     <StringItem index="1" value="4. - 6. lekce"/>
-                    <StringItem index="2" value="7. lekce"/>
+                    <StringItem index="2" value="7. - 8. lekce"/>
                     <StringItem index="3" value="v&#x161;echny lekce"/>
                   </StringArray>
                 </Property>

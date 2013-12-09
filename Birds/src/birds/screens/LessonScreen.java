@@ -45,9 +45,12 @@ public class LessonScreen extends Background {
         jmeno = new javax.swing.JLabel();
         celed = new javax.swing.JLabel();
         rad = new javax.swing.JLabel();
-        celedLabel1 = new javax.swing.JLabel();
-        celed1 = new javax.swing.JLabel();
+        rodLabel = new javax.swing.JLabel();
+        rod = new javax.swing.JLabel();
         BirdInfo = new birds.graphics.TextArea();
+        mainMenuBut = new javax.swing.JButton();
+        prevBirdBut = new javax.swing.JButton();
+        nextBirdBut = new javax.swing.JButton();
 
         setMaximumSize(new java.awt.Dimension(1000, 700));
         setMinimumSize(new java.awt.Dimension(1000, 700));
@@ -62,7 +65,12 @@ public class LessonScreen extends Background {
 
         LessonChooser.setBackground(new java.awt.Color(252, 197, 80));
         LessonChooser.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        LessonChooser.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Lekce č. 1", "Lekce č. 2", "Lekce č. 3", "Lekce č. 4", "Lekce č. 5", "Lekce č. 6", "Lekce č. 7", "Lekce č. 8", "Lekce č. 9", "Lekce č. 10" }));
+        LessonChooser.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Lekce č. 1", "Lekce č. 2", "Lekce č. 3", "Lekce č. 4", "Lekce č. 5", "Lekce č. 6", "Lekce č. 7", "Lekce č. 8" }));
+        LessonChooser.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                LessonChooserItemStateChanged(evt);
+            }
+        });
 
         Picture.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(252, 197, 80), 4));
 
@@ -86,11 +94,11 @@ public class LessonScreen extends Background {
         rad.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         rad.setText("dravci");
 
-        celedLabel1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        celedLabel1.setText("Rod:");
+        rodLabel.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        rodLabel.setText("Rod:");
 
-        celed1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        celed1.setText("orel");
+        rod.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        rod.setText("orel");
 
         javax.swing.GroupLayout baseStatLayout = new javax.swing.GroupLayout(baseStat);
         baseStat.setLayout(baseStatLayout);
@@ -100,9 +108,9 @@ public class LessonScreen extends Background {
                 .addGap(31, 31, 31)
                 .addGroup(baseStatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(baseStatLayout.createSequentialGroup()
-                        .addComponent(celedLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(rodLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(celed1, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
+                        .addComponent(rod, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
                     .addGroup(baseStatLayout.createSequentialGroup()
                         .addComponent(jmenoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -134,8 +142,8 @@ public class LessonScreen extends Background {
                     .addComponent(celed, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(baseStatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(celedLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(celed1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(rodLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rod, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(93, Short.MAX_VALUE))
         );
 
@@ -151,27 +159,66 @@ public class LessonScreen extends Background {
         BirdInfo.setPreferredSize(new java.awt.Dimension(500, 200));
         BirdInfo.setRequestFocusEnabled(false);
 
+        mainMenuBut.setBackground(new java.awt.Color(252, 197, 80));
+        mainMenuBut.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        mainMenuBut.setText("Hlavní menu");
+        mainMenuBut.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(251, 171, 0), 8, true));
+        mainMenuBut.setFocusable(false);
+        mainMenuBut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mainMenuButActionPerformed(evt);
+            }
+        });
+
+        prevBirdBut.setBackground(new java.awt.Color(252, 197, 80));
+        prevBirdBut.setFont(new java.awt.Font("Impact", 0, 100)); // NOI18N
+        prevBirdBut.setText("<");
+        prevBirdBut.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(251, 171, 0), 8, true));
+        prevBirdBut.setFocusable(false);
+        prevBirdBut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                prevBirdButActionPerformed(evt);
+            }
+        });
+
+        nextBirdBut.setBackground(new java.awt.Color(252, 197, 80));
+        nextBirdBut.setFont(new java.awt.Font("Impact", 0, 100)); // NOI18N
+        nextBirdBut.setText(">");
+        nextBirdBut.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(251, 171, 0), 8, true));
+        nextBirdBut.setFocusable(false);
+        nextBirdBut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextBirdButActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
         background1.setLayout(background1Layout);
         background1Layout.setHorizontalGroup(
             background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(background1Layout.createSequentialGroup()
-                .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(background1Layout.createSequentialGroup()
-                        .addGap(350, 350, 350)
-                        .addComponent(LessonChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(background1Layout.createSequentialGroup()
-                        .addGap(77, 77, 77)
-                        .addComponent(Picture, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(44, 44, 44)
-                        .addComponent(baseStat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(350, 350, 350)
+                .addComponent(LessonChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(350, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, background1Layout.createSequentialGroup()
                 .addContainerGap(250, Short.MAX_VALUE)
                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(BirdInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(250, 250, 250))
+            .addGroup(background1Layout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(Picture, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(baseStat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(background1Layout.createSequentialGroup()
+                        .addComponent(prevBirdBut, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(54, 54, 54)
+                        .addComponent(nextBirdBut, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(mainMenuBut, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32))
         );
         background1Layout.setVerticalGroup(
             background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -180,13 +227,23 @@ public class LessonScreen extends Background {
                 .addComponent(Popis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(LessonChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Picture, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(baseStat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                .addComponent(BirdInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                    .addGroup(background1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Picture, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(baseStat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                        .addComponent(BirdInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(background1Layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(nextBirdBut, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(prevBirdBut, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(97, 97, 97)
+                        .addComponent(mainMenuBut, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         background1.setBounds(0, 0, 1000, 700);
@@ -207,6 +264,27 @@ public class LessonScreen extends Background {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mainMenuButActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainMenuButActionPerformed
+        this.Okno.setlekceObrazovkaVisible(false);
+        this.Okno.setHlavniMenuVisible(true);
+    }//GEN-LAST:event_mainMenuButActionPerformed
+
+    private void prevBirdButActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevBirdButActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_prevBirdButActionPerformed
+
+    private void nextBirdButActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextBirdButActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nextBirdButActionPerformed
+
+    private void LessonChooserItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_LessonChooserItemStateChanged
+        if (this.LessonChooser.getSelectedIndex() == 0)
+            this.celed.setText("Debil");
+        else
+            this.celed.setText("Hnup");
+    }//GEN-LAST:event_LessonChooserItemStateChanged
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private birds.graphics.TextArea BirdInfo;
     private javax.swing.JComboBox LessonChooser;
@@ -215,13 +293,16 @@ public class LessonScreen extends Background {
     private birds.graphics.Background background1;
     private birds.graphics.LessonPanel baseStat;
     private javax.swing.JLabel celed;
-    private javax.swing.JLabel celed1;
     private javax.swing.JLabel celedLabel;
-    private javax.swing.JLabel celedLabel1;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JLabel jmeno;
     private javax.swing.JLabel jmenoLabel;
+    private javax.swing.JButton mainMenuBut;
+    private javax.swing.JButton nextBirdBut;
+    private javax.swing.JButton prevBirdBut;
     private javax.swing.JLabel rad;
     private javax.swing.JLabel radLabel;
+    private javax.swing.JLabel rod;
+    private javax.swing.JLabel rodLabel;
     // End of variables declaration//GEN-END:variables
 }
