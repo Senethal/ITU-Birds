@@ -383,6 +383,8 @@ public class TestChooseScreen extends Background {
 
     private void PotvrditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PotvrditActionPerformed
         if (this.TestType != 0){
+            this.DifficultTestPanel.setVisible(false);
+            this.TestPanel.setVisible(true);
             this.Okno.setTypeTest(TestType);
             this.Okno.setLesson(this.LessonChooser.getSelectedIndex());
             switch (this.TestType){
