@@ -46,7 +46,6 @@ public class Tests {
                 Test[i] = this.GenerateImage(Test);
                 this.Fill(i,Test[i], TypeTest);     
             }
-
         }      
     }
      
@@ -56,17 +55,37 @@ public class Tests {
  * @return 
  */
     private int Generate(int[] pole, int TypeLess) {
-            
+        
+        int gener = 0;
+        int plus = 0;
+        
+        if (TypeLess == 0){
+            gener = 19;
+            plus = 0;
+        }    
+        else if(TypeLess == 1) {
+            gener = 29;
+            plus = 20;
+        }
+        else if(TypeLess == 2) {
+            gener = 14;
+            plus = 50;
+        }
+        else {
+            gener = 64;        
+        }
+        
         int value;
-        value = (int)(Math.random()*19+1);
+        value = (int)(Math.random()*gener+1);
         
         for (int i = 0;i<10;i++) {
-            if (pole[i] == value) {
-                value = (int)(Math.random()*19+1);
+            if (pole[i] == (value + plus)) {
+                value = (int)(Math.random()*gener+1);
                 i = 0;
             }   
-        }         
-        return value;       
+        }   
+        
+        return (value + plus);       
     }  
 
 /**
@@ -119,7 +138,10 @@ public class Tests {
                 Element element = (Element) nNode;
                 
                 if (Integer.toString(id).equals(element.getAttribute("id"))) {
-                    this.Questions[index] = Format(element.getElementsByTagName("quest").item(0).getTextContent());
+                    if (Type == 1)
+                        this.Questions[index] = Format(element.getElementsByTagName("quest").item(0).getTextContent());
+                    else
+                        this.Questions[index] = element.getElementsByTagName("quest").item(0).getTextContent();
                     this.Answers[index][0] = element.getElementsByTagName("ansA").item(0).getTextContent();
                     this.Answers[index][1] = element.getElementsByTagName("ansB").item(0).getTextContent();
                     this.Answers[index][2] = element.getElementsByTagName("ansC").item(0).getTextContent();
@@ -136,7 +158,7 @@ public class Tests {
         String text;
         
         text = "\n" + "\n" + "\n";
-        text += "                     " + s + "\n";
+        text += "        " + s + "\n";
 
         
         return text;

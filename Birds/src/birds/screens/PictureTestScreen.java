@@ -10,6 +10,7 @@ import java.awt.Color;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import org.xml.sax.SAXException;
@@ -458,6 +459,7 @@ public class PictureTestScreen extends Background {
         }
         this.Tester.index = 0;
         //this.Question.setText(this.Tester.GetQuestion());
+        this.jLabel1.setIcon(new ImageIcon(this.Tester.GetQuestion()));
         this.AnswerA.setText(this.Tester.GetAnswerA());
         this.AnswerB.setText(this.Tester.GetAnswerB());
         this.AnswerC.setText(this.Tester.GetAnswerC());
@@ -567,6 +569,7 @@ public class PictureTestScreen extends Background {
             this.AnswerB.setText(this.Tester.GetAnswerB());
             this.AnswerC.setText(this.Tester.GetAnswerC());
             this.AnswerD.setText(this.Tester.GetAnswerD());
+            this.jLabel1.setIcon(new ImageIcon(this.Tester.GetQuestion()));
             
             if (this.Tester.GetUserAns() == "A") {
                 this.AnswerA.setSelected(true);
