@@ -750,6 +750,10 @@ public class PictureTestScreen extends Background {
         } catch (ParserConfigurationException | SAXException | IOException | TransformerException ex) {
             Logger.getLogger(PictureTestScreen.class.getName()).log(Level.SEVERE, null, ex);
         }
+        this.Vyhodnoceni.setVisible(false);
+        this.Test.setVisible(true);
+        this.Okno.createNewPicture();
+        this.TestProgress.setValue(0);
         this.Okno.setklasickyTestObrazovkaVisible(false);
         this.Okno.setHlavniMenuVisible(true);
     }//GEN-LAST:event_PotvrditActionPerformed

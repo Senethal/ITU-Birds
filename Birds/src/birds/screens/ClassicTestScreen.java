@@ -759,6 +759,10 @@ public class ClassicTestScreen extends Background {
         } catch (ParserConfigurationException | SAXException | IOException | TransformerException ex) {
             Logger.getLogger(ClassicTestScreen.class.getName()).log(Level.SEVERE, null, ex);
         }
+        this.Vyhodnoceni.setVisible(false);
+        this.Test.setVisible(true);
+        this.Okno.createNewClassic();
+        this.TestProgress.setValue(0);
         this.Okno.setklasickyTestObrazovkaVisible(false);
         this.Okno.setHlavniMenuVisible(true);
     }//GEN-LAST:event_PotvrditActionPerformed
