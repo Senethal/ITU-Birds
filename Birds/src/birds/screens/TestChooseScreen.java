@@ -382,15 +382,19 @@ public class TestChooseScreen extends Background {
 
     private void PotvrditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PotvrditActionPerformed
         if (this.TestType != 0){
+            this.Okno.setTypeTest(TestType);
+            this.Okno.setLesson(this.LessonChooser.getSelectedIndex());
             switch (this.TestType){
                 case 1:{
                             this.Okno.setvyberTestuObrazovkaObrazovkaVisible(false);
                             this.Okno.setklasickyTestObrazovkaVisible(true);
+                            this.Okno.createNewClassic();
                             break;
                        }
                 case 2:{
                             this.Okno.setvyberTestuObrazovkaObrazovkaVisible(false);
                             this.Okno.setobrazTestObrazovkaVisible(true);
+                            this.Okno.createNewPicture();
                             break;
                         }
                 case 3:{
@@ -398,8 +402,8 @@ public class TestChooseScreen extends Background {
                         }    
             
             }
-            this.Okno.setTypeTest(TestType);
-            this.Okno.setLesson(this.LessonChooser.getSelectedIndex());
+            
+            
         }
     }//GEN-LAST:event_PotvrditActionPerformed
 

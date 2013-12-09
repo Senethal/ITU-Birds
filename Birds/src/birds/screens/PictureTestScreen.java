@@ -26,14 +26,7 @@ public class PictureTestScreen extends Background {
     public PictureTestScreen() throws ParserConfigurationException, SAXException, IOException {
         initComponents();
         this.Test.setVisible(true);
-        this.Vyhodnoceni.setVisible(false);
-        this.Tester = new Tests(this.Okno.getLesson(),this.Okno.getTypeTest());
-        
-        //this.Question.setText(this.Tester.GetQuestion());
-        this.AnswerA.setText(this.Tester.GetAnswerA());
-        this.AnswerB.setText(this.Tester.GetAnswerB());
-        this.AnswerC.setText(this.Tester.GetAnswerC());
-        this.AnswerD.setText(this.Tester.GetAnswerD());       
+        this.Vyhodnoceni.setVisible(false);      
     }
 
     /**
@@ -79,7 +72,7 @@ public class PictureTestScreen extends Background {
 
         Popis.setFont(new java.awt.Font("Impact", 0, 28)); // NOI18N
         Popis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Popis.setText("Klasický test");
+        Popis.setText("Obrázkový test");
         Popis.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         Popis.setMaximumSize(new java.awt.Dimension(500, 80));
         Popis.setMinimumSize(new java.awt.Dimension(500, 80));
@@ -457,6 +450,20 @@ public class PictureTestScreen extends Background {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    public void createTest(Tests t){
+        this.Tester = t;
+        
+        for (this.Tester.index = 0; this.Tester.index < this.TestProgress.getMaximum(); this.Tester.index++){
+            this.Tester.Users_A[this.Tester.index] = "";
+        }
+        this.Tester.index = 0;
+        //this.Question.setText(this.Tester.GetQuestion());
+        this.AnswerA.setText(this.Tester.GetAnswerA());
+        this.AnswerB.setText(this.Tester.GetAnswerB());
+        this.AnswerC.setText(this.Tester.GetAnswerC());
+        this.AnswerD.setText(this.Tester.GetAnswerD()); 
+    
+    }
     
     private void showAnswers(){
             for (this.Tester.index = 0; this.Tester.index<this.TestProgress.getMaximum(); this.Tester.index++){

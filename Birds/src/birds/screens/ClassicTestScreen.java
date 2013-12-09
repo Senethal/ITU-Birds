@@ -29,18 +29,8 @@ public class ClassicTestScreen extends Background {
         this.Question.setForeground(new Color(0,0,0,255));
         this.Test.setVisible(true);
         this.Vyhodnoceni.setVisible(false);
-        this.Tester = new Tests(this.Okno.getLesson(),this.Okno.getTypeTest());
         
-        for (this.Tester.index = 0; this.Tester.index < this.TestProgress.getMaximum(); this.Tester.index++){
-            this.Tester.Users_A[this.Tester.index] = "";
-        }
-        this.Tester.index = 0;
-        
-        this.Question.setText(this.Tester.GetQuestion());
-        this.AnswerA.setText(this.Tester.GetAnswerA());
-        this.AnswerB.setText(this.Tester.GetAnswerB());
-        this.AnswerC.setText(this.Tester.GetAnswerC());
-        this.AnswerD.setText(this.Tester.GetAnswerD());       
+              
     }
 
     /**
@@ -471,6 +461,20 @@ public class ClassicTestScreen extends Background {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    public void createTest(Tests t){
+        this.Tester = t;
+        
+        for (this.Tester.index = 0; this.Tester.index < this.TestProgress.getMaximum(); this.Tester.index++){
+            this.Tester.Users_A[this.Tester.index] = "";
+        }
+        this.Tester.index = 0;
+        this.Question.setText(this.Tester.GetQuestion());
+        this.AnswerA.setText(this.Tester.GetAnswerA());
+        this.AnswerB.setText(this.Tester.GetAnswerB());
+        this.AnswerC.setText(this.Tester.GetAnswerC());
+        this.AnswerD.setText(this.Tester.GetAnswerD()); 
+    
+    }
     
     private void showAnswers(){
             for (this.Tester.index = 0; this.Tester.index<this.TestProgress.getMaximum(); this.Tester.index++){

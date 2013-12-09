@@ -7,6 +7,13 @@
  */
 package birds;
 
+import birds.control.Tests;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
+
 /**
  *
  * @author Lukas
@@ -189,18 +196,31 @@ public class Birds extends javax.swing.JFrame {
     public void setTypeTest(int type){
         this.TestType = type;
     }
-    
-    public int getTypeTest(){
-        return this.TestType;
-    }
-    
+   
     public void setLesson(int lesson){
         this.lesson = lesson;
     }
     
-    public int getLesson(){
-        return this.lesson;
+    public void createNewClassic(){
+        Tests t = null;
+        try {
+            t = new Tests(this.lesson, this.TestType);
+        } catch (ParserConfigurationException | SAXException | IOException ex) {
+            Logger.getLogger(Birds.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        this.klasickyTestObrazovka.createTest(t);
     }
+    
+    public void createNewPicture(){
+        Tests t = null;
+        try {
+            t = new Tests(this.lesson, this.TestType);
+        } catch (ParserConfigurationException | SAXException | IOException ex) {
+            Logger.getLogger(Birds.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        this.obrazTestObrazovka.createTest(t);
+    }
+   
     private int lesson = 0; 
     private int TestType = 0; // 1- klasicky test 2- poznavaci test 3- doplnovaci test
     private String UserName;
