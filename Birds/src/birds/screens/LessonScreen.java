@@ -4,9 +4,16 @@
  */
 package birds.screens;
 
+import birds.control.Lessons;
 import birds.graphics.Background;
 import java.awt.Color;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPathExpressionException;
+import org.xml.sax.SAXException;
 
 /**
  *
@@ -21,7 +28,16 @@ public class LessonScreen extends Background {
         initComponents();
         this.BirdInfo.setBackground(new Color(255,255,255,0));
         this.BirdInfo.setForeground(new Color(0,0,0,255));
-        this.Picture.setIcon(new ImageIcon("lib\\orel.jpg"));
+        this.B_index = 1;
+        this.L_index = 1;
+        this.low = 1;
+        Less = new Lessons();
+            try {
+                this.Max_count = this.Less.GetCount(this.L_index);
+                this.ShowBird(this.B_index , this.L_index);
+            } catch (    ParserConfigurationException | IOException | SAXException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
     }
 
     /**
@@ -271,20 +287,135 @@ public class LessonScreen extends Background {
     }//GEN-LAST:event_mainMenuButActionPerformed
 
     private void prevBirdButActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevBirdButActionPerformed
-        // TODO add your handling code here:
+        if ( this.B_index > this.low ) {
+            this.B_index--;  
+            try {
+                this.ShowBird(this.B_index, this.L_index);
+            } catch (    ParserConfigurationException | IOException | SAXException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }    
     }//GEN-LAST:event_prevBirdButActionPerformed
 
     private void nextBirdButActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextBirdButActionPerformed
-        // TODO add your handling code here:
+        if ( this.B_index < this.Max_count ) {
+            this.B_index++;
+            try {
+                this.ShowBird(this.B_index, this.L_index);
+            } catch (    ParserConfigurationException | IOException | SAXException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }    
     }//GEN-LAST:event_nextBirdButActionPerformed
 
     private void LessonChooserItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_LessonChooserItemStateChanged
-        if (this.LessonChooser.getSelectedIndex() == 0)
-            this.celed.setText("Debil");
-        else
-            this.celed.setText("Hnup");
+
+        if (this.LessonChooser.getSelectedIndex() == 0) {
+            this.B_index = 1;
+            this.L_index = 1;
+            this.low = this.B_index;
+            try {
+                this.Max_count = this.Less.GetCount(this.L_index);
+                this.ShowBird(this.B_index, this.L_index);
+            } catch (    ParserConfigurationException | SAXException | IOException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }   
+        else if (this.LessonChooser.getSelectedIndex() == 1) {
+            this.B_index = 9;
+            this.L_index = 2;
+            this.low = this.B_index;
+            try {
+                
+                this.Max_count = this.Less.GetCount(this.L_index)+ 8;
+                this.ShowBird(this.B_index, this.L_index);
+            } catch (    ParserConfigurationException | SAXException | IOException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }   
+        else if (this.LessonChooser.getSelectedIndex() == 2) {
+            this.B_index = 16;
+            this.L_index = 3;
+            this.low = this.B_index;
+            try {
+                this.Max_count = this.Less.GetCount(this.L_index) + 16;
+                this.ShowBird(B_index, this.L_index);
+            } catch (    ParserConfigurationException | SAXException | IOException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }   
+        else if (this.LessonChooser.getSelectedIndex() == 3) {
+            this.B_index = 23;
+            this.L_index = 4;
+            this.low = this.B_index;
+            try {
+                this.Max_count = this.Less.GetCount(this.L_index) + 22;
+                this.ShowBird(this.B_index, this.L_index);
+            } catch (    ParserConfigurationException | SAXException | IOException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }   
+        else if (this.LessonChooser.getSelectedIndex() == 4) {
+            this.B_index = 33;
+            this.L_index = 5;
+            try {
+                this.Max_count = this.Less.GetCount(this.L_index) + 32;
+                this.ShowBird(this.B_index, this.L_index);
+            } catch (    ParserConfigurationException | SAXException | IOException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }   
+        else if (this.LessonChooser.getSelectedIndex() == 5) {
+            this.B_index = 40;
+            this.L_index = 6;
+            this.low = this.B_index;
+            try {
+                this.Max_count = this.Less.GetCount(this.L_index) + 39;
+                this.ShowBird(this.B_index, this.L_index);
+            } catch (    ParserConfigurationException | SAXException | IOException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }   
+        else if (this.LessonChooser.getSelectedIndex() == 6) {
+            this.B_index = 51;
+            this.L_index = 7;
+            this.low = this.B_index;
+            try {
+                this.Max_count = this.Less.GetCount(this.L_index) + 50;
+                this.ShowBird(this.B_index, this.L_index);
+            } catch (    ParserConfigurationException | SAXException | IOException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }   
+        else {
+            this.B_index = 58;
+            this.L_index = 8;
+            this.low = this.B_index;
+            try {
+                this.Max_count = this.Less.GetCount(this.L_index) + 57;
+                this.ShowBird(this.B_index, this.L_index);
+            } catch (    ParserConfigurationException | SAXException | IOException | XPathExpressionException ex) {
+                Logger.getLogger(LessonScreen.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }   
+ 
     }//GEN-LAST:event_LessonChooserItemStateChanged
 
+    private void ShowBird(int Id_b, int Id_l) throws ParserConfigurationException, IOException, SAXException, XPathExpressionException {
+        this.jmeno.setText(this.Less.GetNameBird(Id_l,Id_b));
+        this.rad.setText(this.Less.GetRad(Id_l,Id_b));
+        this.rod.setText(this.Less.GetRod(Id_l, Id_b));
+        this.celed.setText(this.Less.GetCeled(Id_l, Id_b));
+        this.BirdInfo.setText(this.Less.GetPopis(Id_l, Id_b));
+        this.Picture.setIcon(new ImageIcon("lib//" + this.Less.GetImage(Id_l, Id_b)));
+    }
+    
+    private int B_index;
+    private int L_index;
+    private int Max_count;
+    private int low;
+    private Lessons Less;
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private birds.graphics.TextArea BirdInfo;
     private javax.swing.JComboBox LessonChooser;
