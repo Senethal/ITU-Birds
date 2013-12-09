@@ -79,7 +79,7 @@ public class LessonScreen extends Background {
         Popis.setMinimumSize(new java.awt.Dimension(500, 80));
         Popis.setPreferredSize(new java.awt.Dimension(500, 80));
 
-        LessonChooser.setBackground(new java.awt.Color(252, 197, 80));
+        LessonChooser.setBackground(new java.awt.Color(251, 171, 0));
         LessonChooser.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         LessonChooser.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Lekce č. 1", "Lekce č. 2", "Lekce č. 3", "Lekce č. 4", "Lekce č. 5", "Lekce č. 6", "Lekce č. 7", "Lekce č. 8" }));
         LessonChooser.addItemListener(new java.awt.event.ItemListener() {

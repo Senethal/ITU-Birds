@@ -757,7 +757,7 @@ public class PictureTestScreen extends Background {
         this.Test.setVisible(true);
         this.Okno.createNewPicture();
         this.TestProgress.setValue(0);
-        this.Okno.setklasickyTestObrazovkaVisible(false);
+        this.Okno.setobrazTestObrazovkaVisible(false);
         this.Okno.setHlavniMenuVisible(true);
     }//GEN-LAST:event_PotvrditActionPerformed
     
