@@ -34,6 +34,7 @@ public class Birds extends javax.swing.JFrame {
         this.klasickyTestObrazovka.setVisible(false);
         this.lekceObrazovka.setVisible(false);
         this.obrazTestObrazovka.setVisible(false);
+        this.statistikyObrazovka.setVisible(false);
         ////////////////////////////////////////////////////
         
         //Pridavani odkazu na okno jednotlivym obrazovkam
@@ -44,6 +45,7 @@ public class Birds extends javax.swing.JFrame {
         this.klasickyTestObrazovka.addFrame(this);
         this.lekceObrazovka.addFrame(this);
         this.obrazTestObrazovka.addFrame(this);
+        this.statistikyObrazovka.addFrame(this);
         ////////////////////////////////////////////////////
     }
 
@@ -80,6 +82,7 @@ public class Birds extends javax.swing.JFrame {
             e3.printStackTrace();
         }
         prihlObrazovka = new birds.screens.LoginSreen();
+        statistikyObrazovka = new birds.screens.StatisticScreen();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1000, 700));
@@ -100,6 +103,8 @@ public class Birds extends javax.swing.JFrame {
         vrstva.add(obrazTestObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
         prihlObrazovka.setBounds(0, 0, 1100, 700);
         vrstva.add(prihlObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        statistikyObrazovka.setBounds(0, 0, 1000, 700);
+        vrstva.add(statistikyObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -183,6 +188,10 @@ public class Birds extends javax.swing.JFrame {
     public void setobrazTestObrazovkaVisible(boolean b) {
         this.obrazTestObrazovka.setVisible(b);
     }
+    
+    public void setstatistikyObrazovkaVisible(boolean b) {
+        this.statistikyObrazovka.setVisible(b);
+    }
    /*********************************************/ 
     
     public void setUserName(String name){
@@ -231,6 +240,7 @@ public class Birds extends javax.swing.JFrame {
     private birds.screens.PictureTestScreen obrazTestObrazovka;
     private birds.screens.LoginSreen prihlObrazovka;
     private birds.screens.RegistrationScreen regObrazovka;
+    private birds.screens.StatisticScreen statistikyObrazovka;
     private javax.swing.JLayeredPane vrstva;
     private birds.screens.TestChooseScreen vyberTestuObrazovka;
     // End of variables declaration//GEN-END:variables

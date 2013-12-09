@@ -157,6 +157,7 @@ public class TestChooseScreen extends Background {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        LessonChooser.setBackground(new java.awt.Color(251, 171, 0));
         LessonChooser.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         LessonChooser.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1. - 3. lekce", "4. - 6. lekce", "7. - 8. lekce", "všechny lekce" }));
 

@@ -90,6 +90,11 @@ public class MainMenu extends Background {
         Vysledky.setMaximumSize(new java.awt.Dimension(300, 70));
         Vysledky.setMinimumSize(new java.awt.Dimension(300, 70));
         Vysledky.setPreferredSize(new java.awt.Dimension(300, 70));
+        Vysledky.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VysledkyActionPerformed(evt);
+            }
+        });
 
         logout.setBackground(new java.awt.Color(252, 197, 80));
         logout.setFont(new java.awt.Font("Impact", 0, 20)); // NOI18N
@@ -164,6 +169,11 @@ public class MainMenu extends Background {
         this.Okno.setHlavniMenuVisible(false);
         this.Okno.setlekceObrazovkaVisible(true);
     }//GEN-LAST:event_VyukaActionPerformed
+
+    private void VysledkyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VysledkyActionPerformed
+        this.Okno.setHlavniMenuVisible(false);
+        this.Okno.setstatistikyObrazovkaVisible(true);
+    }//GEN-LAST:event_VysledkyActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Popis;
