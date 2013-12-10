@@ -122,11 +122,11 @@ public class Lessons {
         
         delka = delka/62;
         
-        text = "\n" + "     ";
+        text = "\n" + "                  ";
         
         for (int i = 0; i<delka ; i++) {
             text += s.substring(62*i,((62*i)+62));
-            text += "\n" + "     ";
+            text += "\n" + "                  ";
         }
         
         return text;

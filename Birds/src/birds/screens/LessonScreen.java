@@ -169,7 +169,7 @@ public class LessonScreen extends Background {
         BirdInfo.setRows(5);
         BirdInfo.setTabSize(4);
         BirdInfo.setText("\n        Popis:\n        Dospělý jedinec má hnědé peří na těle a bílé na hlavě a ocasu. \n        Ocas nemá příliš dlouhý a jeho tvar poněkud připomíná \n        trojúhelník. Samci i samice jsou zbarveni stejně. Zobák,\n        pařáty a duhovky má orel bělohlavý svítivě žluté. \n        Na neopeřených pařátech má krátké silné prsty s velkými drápy. ");
-        BirdInfo.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        BirdInfo.setFont(new java.awt.Font("Impact", 0, 12)); // NOI18N
         BirdInfo.setMaximumSize(new java.awt.Dimension(500, 200));
         BirdInfo.setMinimumSize(new java.awt.Dimension(500, 200));
         BirdInfo.setPreferredSize(new java.awt.Dimension(500, 200));
