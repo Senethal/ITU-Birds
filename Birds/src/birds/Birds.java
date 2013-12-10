@@ -1,8 +1,19 @@
 /*
  * Projekt ITU
- * Výukový program na znalost ptáků
- * Hlavni okno obsahujici jednotlive obrazovky
- * a funkce pro jejich rizeni
+ * Výukový program na znalost ptáků CR
+ * Autori: Lukas Valek
+ *         Michal Malanik
+ *         Tomas Lascak
+ * 
+ * Rozdeleni prace: Lukas Valek -Navrh vzhledu aplikace, implementace grafickych
+ *                               prvku a jejich rozmisteni v obrazovkach.
+ *          
+ *                  Michal Malanik -Vytvoreni databaze ptaku, jednotlivych vyukovych
+ *                                  lekci a testu. Propojeni databazi s aplikaci. 
+ * 
+ *                  Tomas Lascak -Implementace vnitrnich funkci programu a vytvoreni
+ *                                databaze uzivatelu.
+ * 
  * 
  */
 package birds;
@@ -97,22 +108,22 @@ public class Birds extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1000, 700));
         setResizable(false);
 
-        vrstva.add(regObrazovka);
         regObrazovka.setBounds(0, 0, 1100, 720);
-        vrstva.add(hlavniMenu);
+        vrstva.add(regObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
         hlavniMenu.setBounds(0, 0, 1000, 700);
-        vrstva.add(vyberTestuObrazovka);
+        vrstva.add(hlavniMenu, javax.swing.JLayeredPane.DEFAULT_LAYER);
         vyberTestuObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(lekceObrazovka);
+        vrstva.add(vyberTestuObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
         lekceObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(klasickyTestObrazovka);
+        vrstva.add(lekceObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
         klasickyTestObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(obrazTestObrazovka);
+        vrstva.add(klasickyTestObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
         obrazTestObrazovka.setBounds(0, 0, 1000, 700);
-        vrstva.add(prihlObrazovka);
+        vrstva.add(obrazTestObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
         prihlObrazovka.setBounds(0, 0, 1100, 700);
-        vrstva.add(statistikyObrazovka);
+        vrstva.add(prihlObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
         statistikyObrazovka.setBounds(0, 0, 1000, 700);
+        vrstva.add(statistikyObrazovka, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
