@@ -12,10 +12,7 @@ import javax.xml.parsers.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
@@ -208,7 +205,10 @@ public class UserDatabase {
                              if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                                 
                                 Element element = (Element) nNode;
-                                celkem += Integer.parseInt(element.getTextContent().substring(1,3));
+                                if (Integer.parseInt(element.getTextContent().substring(1,3)) == 99)
+                                    celkem += 100;
+                                else
+                                    celkem += Integer.parseInt(element.getTextContent().substring(1,3));
                                 if (Integer.toString(max).equals(element.getTextContent().substring(0,1))) {
                                     max++;
                                     celkem = (celkem)/(max+1); 
@@ -226,6 +226,8 @@ public class UserDatabase {
                     
                     if ( proc == 0 )
                         text = Integer.toString(max) + Integer.toString(proc) + "0" + Integer.toString(less) + Integer.toString(type);
+                    else if ( proc == 100 )
+                        text = Integer.toString(max) + "99" + Integer.toString(less) + Integer.toString(type);
                     else
                         text = Integer.toString(max) + Integer.toString(proc) + Integer.toString(less) + Integer.toString(type);
                     
@@ -322,7 +324,10 @@ public class UserDatabase {
                         Node nNode1 = nUser.item(temp2);
                         if (nNode1.getNodeType() == Node.ELEMENT_NODE) {  
                             if (Integer.toString(ID).equals(eElement2.getElementsByTagName("Testik").item(temp).getTextContent().substring(0,1))) { 
-                                return eElement2.getElementsByTagName("Testik").item(temp).getTextContent().substring(1, 3);
+                                if ("99".equals(eElement2.getElementsByTagName("Testik").item(temp).getTextContent().substring(1, 3)))
+                                    return "100";
+                                else 
+                                    return eElement2.getElementsByTagName("Testik").item(temp).getTextContent().substring(1, 3);
                              } 
                         }    
                     }
